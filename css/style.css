@@ -10,20 +10,24 @@
    3.  Base Typography & Elements
    4.  Layout & Container
    5.  Navigation
-   6.  Hero Section
-   7.  Article Card Grid
-   8.  Article Page -- Header
-   9.  Article Page -- Body & Reading Experience
+   6.  Theme Toggle Icons
+   7.  Hero Section
+   8.  Article Card Grid
+   9.  Empty State
    10. Article Page -- Reading Progress Bar
-   11. Category Colors & Tags
-   12. Footer
-   13. Utility Classes
-   14. Animations & Keyframes
-   15. Skeleton Loading Placeholders
-   16. Responsive -- 480px
-   17. Responsive -- 768px
-   18. Responsive -- 1024px
-   19. Print Styles
+   11. Article Page -- Header & Meta
+   12. Article Page -- Content & Reading Experience
+   13. Article Page -- Blog-Builder Generated Content
+   14. Article Page -- Footer / Back Link
+   15. Category Colors & Tags
+   16. Site Footer
+   17. Card Animations
+   18. Utility Classes
+   19. Animations & Keyframes
+   20. Responsive -- 480px
+   21. Responsive -- 768px
+   22. Responsive -- 1024px
+   23. Print Styles
    ========================================================================== */
 
 
@@ -320,9 +324,13 @@ pre code {
   padding-right: var(--space-4);
 }
 
-.main-content {
-  min-height: calc(100vh - var(--nav-height) - 200px);
-  padding-top: var(--nav-height);
+.container-narrow {
+  width: 100%;
+  max-width: var(--article-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
 }
 
 
@@ -330,7 +338,7 @@ pre code {
    5. Navigation
    ========================================================================== */
 
-.nav {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -347,17 +355,14 @@ pre code {
     border-color var(--duration-slow) var(--ease-in-out);
 }
 
-.nav__inner {
+.nav-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  max-width: var(--container-max);
-  margin: 0 auto;
-  padding: 0 var(--space-4);
 }
 
-.nav__logo {
+.nav-logo {
   font-family: var(--font-heading);
   font-size: 1.375rem;
   font-weight: 700;
@@ -370,31 +375,19 @@ pre code {
   transition: opacity var(--duration-fast) ease;
 }
 
-.nav__logo:hover {
+.nav-logo:hover {
   opacity: 0.8;
   color: var(--text-primary);
 }
 
-.nav__logo-icon {
+.logo-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
-  background: var(--accent);
-  color: #FFFFFF;
-  border-radius: var(--radius-sm);
-  font-size: 0.875rem;
-  font-weight: 700;
+  flex-shrink: 0;
 }
 
-.nav__actions {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-}
-
-.nav__theme-toggle {
+.theme-toggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -407,24 +400,40 @@ pre code {
     color var(--duration-fast) ease;
 }
 
-.nav__theme-toggle:hover {
+.theme-toggle:hover {
   background-color: var(--bg-tertiary);
   color: var(--text-primary);
 }
 
-.nav__theme-toggle svg {
+.theme-toggle svg {
   width: 20px;
   height: 20px;
 }
 
 
 /* ==========================================================================
-   6. Hero Section
+   6. Theme Toggle Icons
+   Show sun in dark mode (to switch to light), moon in light mode (to switch
+   to dark). Default state is light, so hide the sun icon by default.
+   ========================================================================== */
+
+[data-theme="light"] .icon-sun {
+  display: none;
+}
+
+[data-theme="dark"] .icon-moon {
+  display: none;
+}
+
+
+/* ==========================================================================
+   7. Hero Section
    ========================================================================== */
 
 .hero {
   background: var(--bg-hero);
   padding: var(--space-16) 0 var(--space-12);
+  margin-top: var(--nav-height);
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -463,35 +472,12 @@ pre code {
   pointer-events: none;
 }
 
-.hero__content {
+.hero-inner {
   position: relative;
   z-index: 1;
 }
 
-.hero__badge {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  background: var(--accent-ghost);
-  color: var(--accent);
-  font-family: var(--font-body);
-  font-size: 0.8125rem;
-  font-weight: 600;
-  padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius-pill);
-  margin-bottom: var(--space-6);
-  border: 1px solid rgba(var(--accent-rgb), 0.15);
-}
-
-.hero__badge-dot {
-  width: 6px;
-  height: 6px;
-  background: var(--accent);
-  border-radius: 50%;
-  animation: pulse-dot 2s ease-in-out infinite;
-}
-
-.hero__title {
+.hero-title {
   font-family: var(--font-heading);
   font-size: clamp(2rem, 6vw, 3.5rem);
   font-weight: 700;
@@ -501,11 +487,7 @@ pre code {
   line-height: 1.1;
 }
 
-.hero__title-accent {
-  color: var(--accent);
-}
-
-.hero__subtitle {
+.hero-subtitle {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   color: var(--text-secondary);
   max-width: 560px;
@@ -513,10 +495,7 @@ pre code {
   line-height: 1.6;
 }
 
-.hero__date {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
+.hero-note {
   margin-top: var(--space-6);
   font-size: 0.875rem;
   color: var(--text-tertiary);
@@ -525,44 +504,20 @@ pre code {
 
 
 /* ==========================================================================
-   7. Article Card Grid
+   8. Article Card Grid
    ========================================================================== */
 
-.card-grid-section {
-  padding: var(--space-12) 0;
-}
-
-.card-grid-section__header {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  margin-bottom: var(--space-8);
-  flex-wrap: wrap;
-  gap: var(--space-3);
-}
-
-.card-grid-section__title {
-  font-family: var(--font-heading);
-  font-size: clamp(1.25rem, 3vw, 1.75rem);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-.card-grid-section__count {
-  font-size: 0.875rem;
-  color: var(--text-tertiary);
-  font-weight: 500;
-}
-
-.card-grid {
+.articles-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-6);
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-12);
 }
 
-/* --- Individual Card --- */
+/* --- Individual Article Card --- */
 
-.card {
+.article-card {
   background: var(--bg-card);
   border: 1px solid var(--border-card);
   border-radius: var(--radius-lg);
@@ -577,19 +532,19 @@ pre code {
     border-color var(--duration-slow) var(--ease-in-out);
 }
 
-.card:hover {
+.article-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-card-hover);
 }
 
-.card__color-strip {
+.card-accent {
   height: 4px;
   width: 100%;
   background: var(--accent);
   flex-shrink: 0;
 }
 
-.card__body {
+.card-body {
   padding: var(--space-5) var(--space-5) var(--space-4);
   display: flex;
   flex-direction: column;
@@ -597,11 +552,7 @@ pre code {
   gap: var(--space-3);
 }
 
-.card__category {
-  align-self: flex-start;
-}
-
-.card__title {
+.card-title {
   font-family: var(--font-heading);
   font-size: 1.125rem;
   font-weight: 700;
@@ -610,17 +561,17 @@ pre code {
   color: var(--text-primary);
 }
 
-.card__title a {
+.card-title a {
   color: inherit;
   text-decoration: none;
   transition: color var(--duration-fast) ease;
 }
 
-.card__title a:hover {
+.card-title a:hover {
   color: var(--accent);
 }
 
-.card__excerpt {
+.card-excerpt {
   font-size: 0.9375rem;
   color: var(--text-secondary);
   line-height: 1.6;
@@ -631,7 +582,7 @@ pre code {
   flex-grow: 1;
 }
 
-.card__footer {
+.card-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -642,112 +593,73 @@ pre code {
   font-weight: 500;
 }
 
-.card__date {
+.reading-time {
   display: flex;
   align-items: center;
   gap: var(--space-1);
-}
-
-.card__reading-time {
-  display: flex;
-  align-items: center;
-  gap: var(--space-1);
-}
-
-/* --- Featured / Large Card (spans full width) --- */
-
-.card--featured {
-  grid-column: 1 / -1;
-}
-
-.card--featured .card__color-strip {
-  height: 5px;
-}
-
-.card--featured .card__title {
-  font-size: clamp(1.25rem, 3vw, 1.5rem);
-}
-
-/* --- Pagination / Load More --- */
-
-.pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-2);
-  padding: var(--space-10) 0 var(--space-6);
-}
-
-.pagination__btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 40px;
-  height: 40px;
-  padding: 0 var(--space-3);
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  background: var(--bg-card);
-  border: 1px solid var(--border-primary);
-  border-radius: var(--radius-md);
-  transition:
-    background-color var(--duration-fast) ease,
-    color var(--duration-fast) ease,
-    border-color var(--duration-fast) ease;
-}
-
-.pagination__btn:hover {
-  background: var(--bg-tertiary);
-  color: var(--text-primary);
-}
-
-.pagination__btn--active {
-  background: var(--accent);
-  color: #FFFFFF;
-  border-color: var(--accent);
-}
-
-.pagination__btn--active:hover {
-  background: var(--accent-dark);
-  color: #FFFFFF;
-}
-
-.load-more {
-  display: flex;
-  justify-content: center;
-  padding: var(--space-10) 0 var(--space-6);
-}
-
-.load-more__btn {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-3) var(--space-6);
-  font-family: var(--font-body);
-  font-size: 0.9375rem;
-  font-weight: 600;
-  color: var(--accent);
-  background: var(--accent-ghost);
-  border: 1px solid rgba(var(--accent-rgb), 0.2);
-  border-radius: var(--radius-pill);
-  transition:
-    background-color var(--duration-fast) ease,
-    border-color var(--duration-fast) ease,
-    transform var(--duration-fast) ease;
-}
-
-.load-more__btn:hover {
-  background: rgba(var(--accent-rgb), 0.14);
-  border-color: rgba(var(--accent-rgb), 0.35);
-  transform: translateY(-1px);
 }
 
 
 /* ==========================================================================
-   8. Article Page -- Header
+   9. Empty State
    ========================================================================== */
+
+.empty-state {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-16) var(--space-4);
+  text-align: center;
+}
+
+.empty-state-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-4);
+  color: var(--text-tertiary);
+}
+
+.empty-state-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+.empty-state-text {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  max-width: 400px;
+}
+
+
+/* ==========================================================================
+   10. Article Page -- Reading Progress Bar
+   ========================================================================== */
+
+.reading-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  z-index: var(--z-progress);
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-light) 100%);
+  border-radius: 0 2px 2px 0;
+  width: 0%;
+  transition: width 80ms linear;
+  will-change: width;
+  pointer-events: none;
+}
+
+
+/* ==========================================================================
+   11. Article Page -- Header & Meta
+   ========================================================================== */
+
+.article-page {
+  padding-top: var(--nav-height);
+}
 
 .article-header {
   padding: var(--space-10) 0 var(--space-8);
@@ -755,108 +667,89 @@ pre code {
   border-bottom: 1px solid var(--border-secondary);
 }
 
-.article-header__inner {
-  max-width: var(--article-max);
-  margin: 0 auto;
-}
-
-.article-header__category {
-  margin-bottom: var(--space-4);
-}
-
-.article-header__title {
+.article-title {
   font-family: var(--font-heading);
   font-size: clamp(1.75rem, 5vw, 2.75rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.15;
+  margin-top: var(--space-4);
   margin-bottom: var(--space-5);
   color: var(--text-primary);
 }
 
-.article-header__meta {
+.article-meta {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: var(--space-2) var(--space-4);
+  gap: var(--space-2) var(--space-3);
   font-size: 0.875rem;
   color: var(--text-tertiary);
   font-weight: 500;
 }
 
-.article-header__meta-item {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-1);
-}
-
-.article-header__meta-divider {
-  display: none;
+.meta-separator {
+  display: inline-block;
   width: 3px;
   height: 3px;
   border-radius: 50%;
   background: var(--text-tertiary);
+  vertical-align: middle;
 }
 
 
 /* ==========================================================================
-   9. Article Page -- Body & Reading Experience
+   12. Article Page -- Content & Reading Experience
    ========================================================================== */
 
-.article-body {
-  max-width: var(--article-max);
-  margin: 0 auto;
-  padding: var(--space-8) var(--space-4) var(--space-12);
+.article-content {
+  padding: var(--space-8) 0 var(--space-12);
   font-size: 1.0625rem;
   line-height: 1.8;
   color: var(--text-primary);
 }
 
-.article-body > * + * {
+.article-content > .container-narrow > * + * {
   margin-top: var(--space-5);
 }
 
-/* --- Headings --- */
+/* --- Headings inside article --- */
 
-.article-body h2 {
+.article-content h2 {
   font-family: var(--font-heading);
   font-size: clamp(1.25rem, 3vw, 1.75rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   margin-top: var(--space-10);
   margin-bottom: var(--space-4);
-  padding-left: var(--space-4);
-  border-left: 3px solid var(--accent);
   color: var(--text-primary);
 }
 
-.article-body h3 {
+.article-content h3 {
   font-family: var(--font-heading);
   font-size: clamp(1.0625rem, 2.5vw, 1.375rem);
   font-weight: 600;
   letter-spacing: -0.01em;
   margin-top: var(--space-8);
   margin-bottom: var(--space-3);
-  padding-left: var(--space-4);
-  border-left: 3px solid rgba(var(--accent-rgb), 0.35);
   color: var(--text-primary);
 }
 
 /* --- Paragraphs --- */
 
-.article-body p {
+.article-content p {
   color: var(--text-secondary);
 }
 
-.article-body strong {
+.article-content strong {
   color: var(--text-primary);
   font-weight: 600;
 }
 
 /* --- Links --- */
 
-.article-body a {
+.article-content a {
   color: var(--text-link);
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -866,28 +759,28 @@ pre code {
     text-decoration-color var(--duration-fast) ease;
 }
 
-.article-body a:hover {
+.article-content a:hover {
   color: var(--text-link-hover);
   text-decoration-color: var(--text-link-hover);
 }
 
-/* --- Lists --- */
+/* --- Standard lists inside article --- */
 
-.article-body ul {
+.article-content ul {
   padding-left: var(--space-5);
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
 }
 
-.article-body ul li {
+.article-content ul li {
   position: relative;
   padding-left: var(--space-4);
   color: var(--text-secondary);
   line-height: 1.7;
 }
 
-.article-body ul li::before {
+.article-content ul li::before {
   content: '';
   position: absolute;
   left: 0;
@@ -899,7 +792,7 @@ pre code {
   flex-shrink: 0;
 }
 
-.article-body ol {
+.article-content ol {
   padding-left: var(--space-5);
   counter-reset: ol-counter;
   display: flex;
@@ -907,7 +800,7 @@ pre code {
   gap: var(--space-2);
 }
 
-.article-body ol li {
+.article-content ol li {
   position: relative;
   padding-left: var(--space-6);
   color: var(--text-secondary);
@@ -915,7 +808,7 @@ pre code {
   counter-increment: ol-counter;
 }
 
-.article-body ol li::before {
+.article-content ol li::before {
   content: counter(ol-counter);
   position: absolute;
   left: 0;
@@ -935,7 +828,7 @@ pre code {
 
 /* --- Blockquotes --- */
 
-.article-body blockquote {
+.article-content blockquote {
   margin: var(--space-6) 0;
   padding: var(--space-5) var(--space-5) var(--space-5) var(--space-6);
   background: var(--bg-blockquote);
@@ -947,37 +840,158 @@ pre code {
   line-height: 1.7;
 }
 
-.article-body blockquote p {
+.article-content blockquote p {
   color: inherit;
 }
 
 /* --- Images --- */
 
-.article-body img {
+.article-content img {
   border-radius: var(--radius-lg);
   margin: var(--space-6) 0;
 }
 
-.article-body figure {
+.article-content figure {
   margin: var(--space-8) 0;
 }
 
-.article-body figcaption {
+.article-content figcaption {
   text-align: center;
   font-size: 0.8125rem;
   color: var(--text-tertiary);
   margin-top: var(--space-3);
 }
 
-/* --- Article Footer --- */
 
-.article-footer {
-  max-width: var(--article-max);
-  margin: 0 auto;
-  padding: 0 var(--space-4) var(--space-12);
+/* ==========================================================================
+   13. Article Page -- Blog-Builder Generated Content
+   Classes generated by blog_builder.py for structured article sections.
+   ========================================================================== */
+
+/* --- Section Headers with colored left border --- */
+
+.content-section-header {
+  padding-left: var(--space-4);
+  border-left: 3px solid var(--accent);
+  margin-top: var(--space-10);
+  margin-bottom: var(--space-4);
 }
 
-.article-footer__back {
+.section-icon {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin-right: var(--space-1);
+}
+
+/* Section color variants — left border */
+.section-headlines  { border-left-color: #6366F1; }
+.section-llm        { border-left-color: #6366F1; }
+.section-research   { border-left-color: #8B5CF6; }
+.section-startups   { border-left-color: #EC4899; }
+.section-tools      { border-left-color: #14B8A6; }
+.section-policy     { border-left-color: #F59E0B; }
+.section-robotics   { border-left-color: #EF4444; }
+.section-trend      { border-left-color: #10B981; }
+.section-default    { border-left-color: var(--accent); }
+
+/* --- Section Dividers --- */
+
+.section-divider {
+  border: none;
+  border-top: 1px solid var(--border-primary);
+  margin: var(--space-8) 0;
+}
+
+/* --- Numbered Items (Top 3 Headlines) --- */
+
+.numbered-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.item-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  background: var(--accent);
+  color: #FFFFFF;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  border-radius: 50%;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.item-content {
+  color: var(--text-primary);
+  line-height: 1.6;
+  padding-top: 2px;
+}
+
+/* --- Arrow Description (indented paragraph after numbered items) --- */
+
+.arrow-description {
+  padding-left: calc(28px + var(--space-3));
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-top: var(--space-1);
+}
+
+/* --- Content List (styled bullet list from blog builder) --- */
+
+.content-list {
+  padding-left: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.content-list li {
+  position: relative;
+  padding-left: var(--space-4);
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.content-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #6366F1;
+  flex-shrink: 0;
+}
+
+[data-theme="dark"] .content-list li::before {
+  background: #818CF8;
+}
+
+.content-list li strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+
+/* ==========================================================================
+   14. Article Page -- Footer / Back Link
+   ========================================================================== */
+
+.article-footer {
+  padding: var(--space-6) 0 var(--space-12);
+}
+
+.back-link {
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
@@ -988,82 +1002,22 @@ pre code {
   transition: gap var(--duration-fast) ease;
 }
 
-.article-footer__back:hover {
+.back-link:hover {
   gap: var(--space-3);
   color: var(--accent-dark);
 }
 
-.article-footer__back svg,
-.article-footer__back-arrow {
+.back-link svg {
   transition: transform var(--duration-fast) ease;
 }
 
-.article-footer__back:hover svg,
-.article-footer__back:hover .article-footer__back-arrow {
+.back-link:hover svg {
   transform: translateX(-3px);
 }
 
-/* --- Source List (inside article) --- */
-
-.article-sources {
-  margin-top: var(--space-8);
-  padding: var(--space-5);
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-primary);
-  border-radius: var(--radius-lg);
-}
-
-.article-sources__title {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: var(--space-3);
-  color: var(--text-primary);
-}
-
-.article-sources ul {
-  padding-left: 0;
-}
-
-.article-sources li {
-  font-size: 0.875rem;
-  padding-left: var(--space-3) !important;
-}
-
-.article-sources li::before {
-  width: 4px !important;
-  height: 4px !important;
-  top: 0.7em !important;
-}
-
 
 /* ==========================================================================
-   10. Article Page -- Reading Progress Bar
-   ========================================================================== */
-
-.reading-progress {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  z-index: var(--z-progress);
-  background: transparent;
-  pointer-events: none;
-}
-
-.reading-progress__bar {
-  height: 100%;
-  width: 0%;
-  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-light) 100%);
-  border-radius: 0 2px 2px 0;
-  transition: width 80ms linear;
-  will-change: width;
-}
-
-
-/* ==========================================================================
-   11. Category Colors & Tags
+   15. Category Colors & Tags
    ========================================================================== */
 
 .category-tag {
@@ -1082,91 +1036,83 @@ pre code {
     color var(--duration-slow) var(--ease-in-out);
 }
 
-/* Default / LLM Updates */
+/* Default / Digest / LLM Updates */
 .category-tag,
-.category-tag--llm {
+.category-digest,
+.category-llm {
   background: rgba(99, 102, 241, 0.10);
   color: #4F46E5;
 }
 [data-theme="dark"] .category-tag,
-[data-theme="dark"] .category-tag--llm {
+[data-theme="dark"] .category-digest,
+[data-theme="dark"] .category-llm {
   background: rgba(99, 102, 241, 0.18);
   color: #A5B4FC;
 }
 
 /* Research */
-.category-tag--research {
+.category-research {
   background: rgba(139, 92, 246, 0.10);
   color: #7C3AED;
 }
-[data-theme="dark"] .category-tag--research {
+[data-theme="dark"] .category-research {
   background: rgba(139, 92, 246, 0.18);
   color: #C4B5FD;
 }
 
 /* Startups */
-.category-tag--startups {
+.category-startups {
   background: rgba(236, 72, 153, 0.10);
   color: #DB2777;
 }
-[data-theme="dark"] .category-tag--startups {
+[data-theme="dark"] .category-startups {
   background: rgba(236, 72, 153, 0.18);
   color: #F9A8D4;
 }
 
 /* Tools */
-.category-tag--tools {
+.category-tools {
   background: rgba(20, 184, 166, 0.10);
   color: #0D9488;
 }
-[data-theme="dark"] .category-tag--tools {
+[data-theme="dark"] .category-tools {
   background: rgba(20, 184, 166, 0.18);
   color: #5EEAD4;
 }
 
 /* Policy */
-.category-tag--policy {
+.category-policy {
   background: rgba(245, 158, 11, 0.10);
   color: #D97706;
 }
-[data-theme="dark"] .category-tag--policy {
+[data-theme="dark"] .category-policy {
   background: rgba(245, 158, 11, 0.18);
   color: #FCD34D;
 }
 
 /* Robotics */
-.category-tag--robotics {
+.category-robotics {
   background: rgba(239, 68, 68, 0.10);
   color: #DC2626;
 }
-[data-theme="dark"] .category-tag--robotics {
+[data-theme="dark"] .category-robotics {
   background: rgba(239, 68, 68, 0.18);
   color: #FCA5A5;
 }
 
 /* Trend */
-.category-tag--trend {
+.category-trend {
   background: rgba(16, 185, 129, 0.10);
   color: #059669;
 }
-[data-theme="dark"] .category-tag--trend {
+[data-theme="dark"] .category-trend {
   background: rgba(16, 185, 129, 0.18);
   color: #6EE7B7;
 }
 
-/* --- Card color strips by category --- */
-
-.card__color-strip--llm       { background: #6366F1; }
-.card__color-strip--research   { background: #8B5CF6; }
-.card__color-strip--startups   { background: #EC4899; }
-.card__color-strip--tools      { background: #14B8A6; }
-.card__color-strip--policy     { background: #F59E0B; }
-.card__color-strip--robotics   { background: #EF4444; }
-.card__color-strip--trend      { background: #10B981; }
-
 
 /* ==========================================================================
-   12. Footer
+   16. Site Footer
    ========================================================================== */
 
 .site-footer {
@@ -1178,79 +1124,69 @@ pre code {
     border-color var(--duration-slow) var(--ease-in-out);
 }
 
-.site-footer__inner {
+.footer-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-4);
+  gap: var(--space-3);
   text-align: center;
 }
 
-.site-footer__brand {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--text-primary);
-}
-
-.site-footer__links {
-  display: flex;
-  align-items: center;
-  gap: var(--space-4);
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.site-footer__link {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--text-secondary);
-  transition: color var(--duration-fast) ease;
-}
-
-.site-footer__link:hover {
-  color: var(--accent);
-}
-
-.site-footer__copy {
+.footer-copy {
   font-size: 0.8125rem;
   color: var(--text-tertiary);
 }
 
-.site-footer__powered {
-  font-size: 0.75rem;
+.footer-powered {
+  font-size: 0.8125rem;
   color: var(--text-tertiary);
   display: flex;
   align-items: center;
   gap: var(--space-1);
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.site-footer__powered-accent {
+.footer-powered a {
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: color var(--duration-fast) ease;
+}
+
+.footer-powered a:hover {
   color: var(--accent);
-  font-weight: 600;
+}
+
+.external-icon {
+  display: inline;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
 }
 
 
 /* ==========================================================================
-   13. Utility Classes
+   17. Card Animations
+   Used by main.js IntersectionObserver for scroll-triggered card reveals.
    ========================================================================== */
 
-.article-meta {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  font-size: 0.8125rem;
-  color: var(--text-tertiary);
-  font-weight: 500;
+.card-hidden {
+  opacity: 0;
+  transform: translateY(20px);
 }
 
-.article-meta__separator {
-  width: 3px;
-  height: 3px;
-  border-radius: 50%;
-  background: var(--text-tertiary);
-  display: inline-block;
+.card-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity var(--duration-slow) var(--ease-out),
+    transform var(--duration-slow) var(--ease-out);
 }
+
+
+/* ==========================================================================
+   18. Utility Classes
+   ========================================================================== */
 
 .sr-only {
   position: absolute;
@@ -1264,39 +1200,6 @@ pre code {
   border: 0;
 }
 
-.text-center   { text-align: center; }
-.text-left     { text-align: left; }
-.text-right    { text-align: right; }
-.text-primary  { color: var(--text-primary); }
-.text-secondary{ color: var(--text-secondary); }
-.text-tertiary { color: var(--text-tertiary); }
-.text-accent   { color: var(--accent); }
-
-.mt-0  { margin-top: 0; }
-.mt-4  { margin-top: var(--space-4); }
-.mt-6  { margin-top: var(--space-6); }
-.mt-8  { margin-top: var(--space-8); }
-.mb-0  { margin-bottom: 0; }
-.mb-4  { margin-bottom: var(--space-4); }
-.mb-6  { margin-bottom: var(--space-6); }
-.mb-8  { margin-bottom: var(--space-8); }
-
-.gap-2 { gap: var(--space-2); }
-.gap-4 { gap: var(--space-4); }
-.gap-6 { gap: var(--space-6); }
-
-.flex            { display: flex; }
-.flex-col        { flex-direction: column; }
-.items-center    { align-items: center; }
-.justify-center  { justify-content: center; }
-.justify-between { justify-content: space-between; }
-.flex-wrap       { flex-wrap: wrap; }
-
-
-/* ==========================================================================
-   14. Animations & Keyframes
-   ========================================================================== */
-
 .fade-in {
   animation: fadeIn var(--duration-slow) var(--ease-out) both;
 }
@@ -1305,12 +1208,10 @@ pre code {
   animation: fadeInUp var(--duration-slow) var(--ease-out) both;
 }
 
-.stagger-1 { animation-delay: 60ms; }
-.stagger-2 { animation-delay: 120ms; }
-.stagger-3 { animation-delay: 180ms; }
-.stagger-4 { animation-delay: 240ms; }
-.stagger-5 { animation-delay: 300ms; }
-.stagger-6 { animation-delay: 360ms; }
+
+/* ==========================================================================
+   19. Animations & Keyframes
+   ========================================================================== */
 
 @keyframes fadeIn {
   from {
@@ -1341,15 +1242,6 @@ pre code {
   }
 }
 
-@keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
-}
-
 /* Reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -1364,58 +1256,7 @@ pre code {
 
 
 /* ==========================================================================
-   15. Skeleton Loading Placeholders
-   ========================================================================== */
-
-.skeleton {
-  background: linear-gradient(
-    90deg,
-    var(--bg-tertiary) 25%,
-    var(--bg-secondary) 50%,
-    var(--bg-tertiary) 75%
-  );
-  background-size: 200% 100%;
-  animation: shimmer 1.8s ease-in-out infinite;
-  border-radius: var(--radius-sm);
-}
-
-.skeleton--text {
-  height: 1em;
-  width: 100%;
-  margin-bottom: var(--space-2);
-}
-
-.skeleton--text-sm {
-  height: 0.75em;
-  width: 60%;
-}
-
-.skeleton--title {
-  height: 1.5em;
-  width: 80%;
-  margin-bottom: var(--space-3);
-}
-
-.skeleton--card {
-  height: 260px;
-  border-radius: var(--radius-lg);
-}
-
-.skeleton--strip {
-  height: 4px;
-  width: 100%;
-  border-radius: 0;
-}
-
-.skeleton--avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-}
-
-
-/* ==========================================================================
-   16. Responsive -- 480px (Small phones)
+   20. Responsive -- 480px (Small phones)
    ========================================================================== */
 
 @media (min-width: 480px) {
@@ -1424,26 +1265,31 @@ pre code {
     padding-right: var(--space-5);
   }
 
+  .container-narrow {
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+  }
+
   .hero {
     padding: var(--space-16) 0 var(--space-12);
   }
 
-  .card__body {
+  .card-body {
     padding: var(--space-6) var(--space-6) var(--space-5);
   }
 
-  .article-header__meta-divider {
+  .meta-separator {
     display: inline-block;
   }
 
-  .article-body {
+  .article-content {
     font-size: 1.125rem;
   }
 }
 
 
 /* ==========================================================================
-   17. Responsive -- 768px (Tablet)
+   21. Responsive -- 768px (Tablet)
    ========================================================================== */
 
 @media (min-width: 768px) {
@@ -1456,7 +1302,12 @@ pre code {
     padding-right: var(--space-6);
   }
 
-  .nav__logo {
+  .container-narrow {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+
+  .nav-logo {
     font-size: 1.5rem;
   }
 
@@ -1464,40 +1315,32 @@ pre code {
     padding: var(--space-20) 0 var(--space-16);
   }
 
-  .card-grid {
+  .articles-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .card-grid-section {
-    padding: var(--space-16) 0;
   }
 
   .article-header {
     padding: var(--space-12) 0 var(--space-10);
   }
 
-  .article-body {
-    padding: var(--space-10) var(--space-4) var(--space-16);
+  .article-content {
+    padding: var(--space-10) 0 var(--space-16);
   }
 
-  .article-body h2 {
+  .article-content h2 {
     margin-top: var(--space-12);
   }
 
-  .site-footer__inner {
+  .footer-inner {
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
-  }
-
-  .site-footer__links {
-    order: 0;
   }
 }
 
 
 /* ==========================================================================
-   18. Responsive -- 1024px (Desktop)
+   22. Responsive -- 1024px (Desktop)
    ========================================================================== */
 
 @media (min-width: 1024px) {
@@ -1506,30 +1349,14 @@ pre code {
     padding-right: var(--space-8);
   }
 
-  .card-grid {
+  .articles-grid {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .card--featured {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr;
-  }
-
-  .card--featured .card__color-strip {
-    grid-column: 1 / -1;
-    grid-row: 1;
-  }
-
-  .card--featured .card__body {
-    padding: var(--space-8);
   }
 }
 
 
 /* ==========================================================================
-   19. Print Styles
+   23. Print Styles
    ========================================================================== */
 
 @media print {
@@ -1542,17 +1369,15 @@ pre code {
     text-shadow: none !important;
   }
 
-  .nav,
-  .reading-progress,
-  .nav__theme-toggle,
+  .navbar,
+  .reading-progress-bar,
+  .theme-toggle,
   .site-footer,
-  .load-more,
-  .pagination,
-  .article-footer__back {
+  .back-link {
     display: none !important;
   }
 
-  .main-content {
+  .article-page {
     padding-top: 0;
   }
 
@@ -1561,7 +1386,7 @@ pre code {
     line-height: 1.6;
   }
 
-  .article-body {
+  .article-content {
     max-width: 100%;
     padding: 0;
   }
@@ -1571,7 +1396,8 @@ pre code {
     text-align: left;
   }
 
-  .container {
+  .container,
+  .container-narrow {
     max-width: 100%;
     padding: 0;
   }
