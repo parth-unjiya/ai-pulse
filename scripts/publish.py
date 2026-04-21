@@ -120,7 +120,15 @@ for line in lines:
 
 # Build HTML
 title = f"AI Pulse — {TARGET_LONG}"
-tpl = open(f"{REPO}/blog/article-template.html").read()
+# Template is at repo root (for ai-pulse cloud clone) OR in blog/ subdir (local dev)
+tpl_paths = [f"{REPO}/article-template.html", f"{REPO}/blog/article-template.html"]
+tpl = None
+for p in tpl_paths:
+    if os.path.exists(p):
+        tpl = open(p).read()
+        break
+if tpl is None:
+    raise FileNotFoundError(f"Template not found in: {tpl_paths}")
 html_out = tpl
 html_out = html_out.replace("{{TITLE}}", html.escape(title, quote=True))
 html_out = html_out.replace("{{EXCERPT}}", html.escape(excerpt, quote=True))
