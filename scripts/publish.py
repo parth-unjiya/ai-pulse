@@ -45,6 +45,10 @@ articles = json.load(open("/tmp/articles.json"))
 article_count = len(articles)
 source_count = len(set(a["source"] for a in articles))
 
+if article_count == 0:
+    print("ERROR: articles.json is empty — fetch must have failed. Aborting publish.", file=sys.stderr)
+    sys.exit(2)
+
 
 # Markdown -> HTML
 def md_inline(t):

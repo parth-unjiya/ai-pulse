@@ -2,9 +2,19 @@
 
 Parallelized feed fetching to stay under 60s.
 """
-import feedparser, requests, json, re, sys
+import json, re, sys, subprocess
 from datetime import datetime, timezone, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
+
+# Auto-install missing deps (defensive, in case pip install failed silently before)
+try:
+    import feedparser
+    import requests
+except ImportError:
+    print("Installing missing deps...", file=sys.stderr)
+    subprocess.run([sys.executable, "-m", "pip", "install", "--quiet", "feedparser", "requests"], check=True)
+    import feedparser
+    import requests
 
 TARGET = (datetime.now(timezone.utc) - timedelta(days=1)).date()
 DAY_START = datetime(TARGET.year, TARGET.month, TARGET.day, tzinfo=timezone.utc)
