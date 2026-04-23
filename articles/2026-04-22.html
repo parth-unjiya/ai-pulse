@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meta publishes official Llama API client libraries in Python and TypeScript">
+
+  <title>AI Pulse — Wednesday, April 22, 2026 — AI Pulse</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI Pulse — Wednesday, April 22, 2026 — AI Pulse">
+  <meta property="og:description" content="Meta publishes official Llama API client libraries in Python and TypeScript">
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2026-04-22">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%234f46e5'/><stop offset='100%' stop-color='%237c3aed'/></linearGradient></defs><path d='M18 2L6 18h8l-2 12 12-16h-8z' fill='url(%23g)'/></svg>" type="image/svg+xml">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress-bar" id="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner container">
+      <a href="../" class="nav-logo" aria-label="AI Pulse home">
+        <svg class="logo-icon" width="24" height="24" viewBox="0 0 32 32" aria-hidden="true">
+          <defs>
+            <linearGradient id="logo-grad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#4f46e5"/>
+              <stop offset="100%" stop-color="#7c3aed"/>
+            </linearGradient>
+          </defs>
+          <path d="M18 2L6 18h8l-2 12 12-16h-8z" fill="url(#logo-grad)"/>
+        </svg>
+        <span>AI Pulse</span>
+      </a>
+
+      <button
+        class="theme-toggle"
+        id="theme-toggle"
+        type="button"
+        aria-label="Toggle dark mode"
+        title="Toggle dark mode"
+      >
+        <!-- Sun icon (shown in dark mode) -->
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <!-- Moon icon (shown in light mode) -->
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Article -->
+  <article class="article-page">
+    <header class="article-header">
+      <div class="container">
+        <span class="category-tag">Daily Digest</span>
+        <h1 class="article-title">AI Pulse — Wednesday, April 22, 2026</h1>
+        <div class="article-meta">
+          <time datetime="2026-04-22">Wednesday, April 22, 2026</time>
+          <span class="meta-separator" aria-hidden="true">&middot;</span>
+          <span>6 min read</span>
+          <span class="meta-separator" aria-hidden="true">&middot;</span>
+          <span>41 articles from 8 sources</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="article-content">
+      <div class="container-narrow">
+        <h2 class="content-section-header">TOP 3 HEADLINES</h2>
+<div class="numbered-item"><span class="item-number">1</span><span class="item-content"><strong>Meta publishes official Llama API client libraries in Python and TypeScript</strong> (GitHub / Meta)</span></div>
+<p class="arrow-description">Meta shipped `llama-api-python` and `llama-api-typescript` on the same day, formalizing developer access to its hosted Llama API. The simultaneous two-language release signals Meta is treating the Llama API as a first-class product rather than a weights-only offering, positioning it against the OpenAI and Anthropic SDK experience. Typed SDKs materially lower the cost for web and backend teams to evaluate Llama alongside closed models, which is where Meta has historically leaked developer mindshare. Expect integrations in LangChain, LlamaIndex, and agent frameworks within days.</p>
+<div class="numbered-item"><span class="item-number">2</span><span class="item-content"><strong>Open-source MoonViT implementation lands, tracking Kimi-VL's native-resolution vision encoder</strong> (GitHub Trending)</span></div>
+<p class="arrow-description">A single-file PyTorch port of MoonViT — the native-resolution vision encoder from Moonshot's Kimi-VL — appeared as a reference implementation. Native-resolution encoders skip the aspect-ratio distortion that plagues fixed-tile ViTs, and the ultra-small reference makes the approach easy to drop into research pipelines. This continues a pattern of Chinese lab architectures (Kimi, DeepSeek, Qwen) being rapidly reproduced in the Western open-source stack. Watch for the technique to show up in the next round of open multimodal models.</p>
+<div class="numbered-item"><span class="item-number">3</span><span class="item-content"><strong>Agent tooling stack consolidates around lean-context and MCP patterns</strong> (GitHub Trending)</span></div>
+<p class="arrow-description">Several launches on the same day point to a shared direction: Obi-Wan (AI-native terminal IDE with a code knowledge graph), code-outline (AST-based signatures for agent context), and contendeo-mcp (multimodal video analysis MCP server). The common thread is stripping agent context windows down to structured, query-relevant slices rather than dumping whole files. MCP's role as the connective tissue between agents and tools is now visible in third-party releases, not just Anthropic's reference servers. Teams building coding or multimodal agents should plan for context-routing as a first-class layer.</p>
+<hr class="section-divider">
+<h2 class="content-section-header">LLM &amp; MODEL UPDATES</h2>
+<ul class="content-list">
+<li><strong>Meta Llama API SDKs (Python + TypeScript)</strong>: Meta's official client libraries for the hosted Llama API went live, mirroring the ergonomics of OpenAI and Anthropic SDKs. The dual-language release removes the last friction point — typed, idiomatic bindings — for teams who wanted to try Llama without self-hosting. It also strongly implies the Llama API surface is now stable enough for external dependents.</li>
+</ul>
+<ul class="content-list">
+<li><strong>MoonViT reference port (Kimi-VL encoder)</strong>: A minimal PyTorch implementation of the MoonViT native-resolution vision encoder was published as a single-file reference. It gives researchers a readable starting point to experiment with aspect-ratio-preserving vision pipelines. Expect derivative work swapping it into open multimodal stacks over the next few weeks.</li>
+</ul>
+<hr class="section-divider">
+<h2 class="content-section-header">RESEARCH &amp; BREAKTHROUGHS</h2>
+<ul class="content-list">
+<li><strong>EOQ / PolarQuant entropy-optimal quantization</strong>: A new quantization toolkit (`eoq-quantization`) frames weight compression as an entropy-optimal problem via PolarQuant, claiming near-lossless compression with lower VRAM and faster inference. If the approach holds outside cherry-picked benchmarks, it could push 4-bit quality closer to FP8 for deployment-time quantization. Worth watching against AWQ/GPTQ baselines.</li>
+</ul>
+<ul class="content-list">
+<li><strong>Fraqtl transformer compressibility diagnostic</strong>: `fraqtl-diagnostic` fingerprints a transformer's compression potential using γ, k95, depth-law, and a Shannon bit budget. It is effectively a pre-quantization oracle — estimate how much a model will tolerate before spending GPU-hours. Useful for teams doing systematic quantization sweeps.</li>
+</ul>
+<ul class="content-list">
+<li><strong>DiT reference implementation</strong>: A fresh implementation of the Diffusion Transformer (Peebles et al., 2022) was released, adding another readable educational reference to the open catalog. DiT remains the architecture under most state-of-the-art video and image diffusion systems, so clean reimplementations continue to matter for students and researchers.</li>
+</ul>
+<ul class="content-list">
+<li><strong>Grokking visualizer</strong>: `watch-a-model-grok` ships a scroll-driven visualization of a 1-layer transformer grokking modular addition, following Nanda et al. 2023. Interactive mechanistic-interpretability demos lower the bar for entering the field.</li>
+</ul>
+<hr class="section-divider">
+<h2 class="content-section-header">STARTUP &amp; FUNDING NEWS</h2>
+<ul class="content-list">
+<li><strong>DeployWhisper launches open-source pre-deployment risk intelligence</strong>: An AI-powered platform for predicting risk in infrastructure changes debuted as open source. It targets the DevOps/SRE buyer and joins a crowded but undersupplied category — AI for change management. Open-source launches in this space typically precede a hosted commercial tier.</li>
+</ul>
+<ul class="content-list">
+<li><strong>Intuno's Samantha Foundation open-sourced</strong>: A framework for building "present-feeling" AI entities with persistent memory, heartbeat, sleep cycles, and dreams shipped as OSS with an optional network tie-in. It is a bet that consumer AI companions need structured temporal state, not just longer context. Commercial viability depends on whether the Intuno network attracts a user base.</li>
+</ul>
+<ul class="content-list">
+<li><strong>SparkEngineAI releases QuantClaw plugin</strong>: A task-type routing quantization plugin for the OpenClaw ecosystem arrived. SparkEngineAI is building a quantization-and-routing moat in the open inference stack; the plugin model suggests a platform play rather than a one-off tool.</li>
+</ul>
+<p>No major VC funding rounds tracked in today's open-source-heavy feed — industry funding signals were quiet.</p>
+<hr class="section-divider">
+<h2 class="content-section-header">AI TOOLS &amp; PRODUCT LAUNCHES</h2>
+<ul class="content-list">
+<li><strong>Obi-Wan AI-native terminal IDE</strong>: An AI IDE that builds a persistent knowledge graph of your codebase and retrieves only the functions, structs, and relationships relevant to a query — instead of dumping files into the context window. It directly attacks the "context pollution" problem that limits Claude Code, Cursor, and Aider on large codebases. Early but worth tracking as a reference design for graph-backed agent context.</li>
+</ul>
+<ul class="content-list">
+<li><strong>code-outline CLI for LLM coding agents</strong>: An AST-based outline tool (C#, Python, TypeScript, Markdown) that prints class and method signatures with line ranges, cutting token usage 5–10× versus full-file reads. Explicitly positioned as a companion for Claude Code, Cursor, and Aider. A small utility with large leverage for anyone running agents against big repos.</li>
+</ul>
+<ul class="content-list">
+<li><strong>contendeo-mcp multimodal video MCP server</strong>: An MCP server for multimodal video analysis, marketed as giving an agent "eyes." As MCP adoption widens, domain-specific servers (video, CAD, aerospace documents via `harnetics`) are becoming the practical surface through which agents get capabilities.</li>
+</ul>
+<ul class="content-list">
+<li><strong>text-to-cad open harness</strong>: An open-source CAD generation harness arrived, feeding into the rising interest in AI for physical/mechanical design rather than purely visual output.</li>
+</ul>
+<hr class="section-divider">
+<h2 class="content-section-header">POLICY &amp; REGULATION</h2>
+<p>No major regulatory or policy announcements surfaced in today's tracked sources. The feed was dominated by open-source and developer-ecosystem activity rather than government or enterprise-compliance news.</p>
+<ul class="content-list">
+<li><strong>Simulacra misinformation simulator</strong>: An autonomous multi-agent social-media simulator landed on GitHub, explicitly designed to study misinformation propagation, emergent behavior, and opinion dynamics in AI-driven social networks. While framed as a research tool, it is also exactly the kind of artifact regulators and platform trust-and-safety teams will want to look at — and exactly the kind that raises dual-use questions. Expect scrutiny around misuse potential even as it contributes to academic understanding.</li>
+</ul>
+<hr class="section-divider">
+<h2 class="content-section-header">ROBOTICS &amp; HARDWARE</h2>
+<ul class="content-list">
+<li><strong>text-to-cad open harness</strong>: An open-source harness for generating CAD models from text was released, extending generative AI from pixels into geometry that can actually be manufactured. It is a prerequisite building block for closed-loop AI-assisted mechanical design and a meaningful signal that the community is serious about AI-for-hardware workflows.</li>
+</ul>
+<ul class="content-list">
+<li><strong>EV charging platform with AI dispatch</strong>: A full-stack EV charging management platform with AI dispatch, V2G, and virtual-power-plant features was open-sourced. It is an applied-AI artifact rather than a research release, showing the pattern of AI becoming load-bearing in energy-grid software rather than a cosmetic add-on.</li>
+</ul>
+<p>No major robotics-hardware launches or humanoid news were tracked in today's sources.</p>
+<hr class="section-divider">
+<h2 class="content-section-header">TREND ANALYSIS</h2>
+<p>The through-line across today's releases is <strong>context economics</strong>. Obi-Wan's knowledge-graph IDE, code-outline's AST signature printer, token-diet's prompt-optimization framework, and even the EOQ/PolarQuant quantization work are all attacking the same economic constraint from different angles: the cost of tokens, weights, and attention that an agent has to move through per task. The research community has stopped treating "just use a bigger context window" as the answer; the practical frontier is structured retrieval, selective outlines, and compressibility-aware quantization. That is a healthier equilibrium for agent deployability.</p>
+<p>The second trend is <strong>Meta closing the developer-experience gap</strong>. Shipping first-party Python and TypeScript Llama API SDKs on the same day is a small but telling move — it turns Llama into a drop-in alternative in the same code that imports the OpenAI or Anthropic SDK. Combined with the rapid reproduction of Chinese-lab architectures (MoonViT from Kimi-VL, earlier DeepSeek ports) into the Western OSS stack, the open ecosystem is consolidating into a coherent, cross-vendor substrate rather than fragmenting along model-provider lines.</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Article Footer -->
+  <div class="article-footer">
+    <div class="container-narrow">
+      <a href="../" class="back-link" aria-label="Back to all digests">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="19" y1="12" x2="5" y2="12"/>
+          <polyline points="12 19 5 12 12 5"/>
+        </svg>
+        Back to all digests
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2026 AI Pulse. All rights reserved.</p>
+      <p class="footer-powered">
+        Powered by <strong>AI Pulse</strong> &middot;
+        <a href="https://t.me/cyberrr_knighttt_bot" target="_blank" rel="noopener noreferrer" aria-label="Follow AI Pulse on Telegram">
+          Telegram
+          <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
