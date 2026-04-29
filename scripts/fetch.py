@@ -190,7 +190,9 @@ def fetch_rss(src, url, cat, pri):
         out = []
         for e in f.entries[:8]:
             pub = parse_pub(e)
-            if pub and not (DAY_START <= pub < DAY_END):
+            # Strict date filtering: must have a parseable date AND be in target window.
+            # Undated entries could be any age and pollute results across days.
+            if pub is None or not (DAY_START <= pub < DAY_END):
                 continue
             link = e.get("link", "")
             title = (e.get("title") or "").strip()
@@ -249,13 +251,14 @@ def fetch_hf_papers():
             return "HF Papers", []
         papers = r.json()[:8]
         out = []
+        # HF "daily papers" are by definition for the target date — stamp them
         for p in papers:
             paper = p.get("paper", p)
             out.append({
                 "title": paper.get("title", "").strip(),
                 "link": "https://huggingface.co/papers/" + paper.get("id", ""),
                 "description": (paper.get("summary") or "")[:300],
-                "pub_date": None,
+                "pub_date": DAY_START.isoformat(),
                 "source": "HF Papers", "category": "Research", "priority": 8,
             })
         return "HF Papers", out

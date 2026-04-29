@@ -35,16 +35,18 @@ BASE_URL = "https://parth-unjiya.github.io/ai-pulse"
 # Front-matter parser (minimal YAML — we only use simple key: value)
 # ═══════════════════════════════════════════════════════════════════════
 def parse_md(path):
-    """Return (meta_dict, body_str). Frontmatter is delimited by --- lines."""
+    """Return (meta_dict, body_str). Frontmatter is delimited by --- on its own line."""
     with open(path) as f:
         text = f.read()
-    if not text.startswith("---"):
+    if not text.startswith("---\n") and not text.startswith("---\r\n"):
         return {}, text
-    end = text.find("\n---", 3)
-    if end == -1:
+    # Find closing --- as a standalone line (not embedded in body)
+    m = re.search(r"^---\s*$", text[4:], re.MULTILINE)
+    if not m:
         return {}, text
-    fm = text[3:end].strip()
-    body = text[end + 4:].lstrip("\n")
+    fm_end = 4 + m.start()
+    fm = text[4:fm_end].strip()
+    body = text[fm_end + m.end() - m.start():].lstrip("\n")
     meta = {}
     for line in fm.split("\n"):
         line = line.rstrip()

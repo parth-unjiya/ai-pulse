@@ -119,16 +119,33 @@ subprocess.run(
 # ──────────────────────────────────────────────────────────────────────
 # Git commit and push
 # ──────────────────────────────────────────────────────────────────────
+# Pull latest BEFORE committing to avoid non-fast-forward push failures
+# (the cloud Claude scheduler and local fallback can race)
+subprocess.run(
+    ["git", "pull", "--rebase", "--autostash", "origin", "main"],
+    cwd=REPO, check=False,
+)
+
 subprocess.run(
     ["git", "add", "articles/", "index.html", "manifest.json", "feed.xml", "sitemap.xml", "_layouts/", "css/", "js/"],
     cwd=REPO, check=True,
 )
-# Allow empty add — only commit if there are staged changes
 diff = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=REPO).returncode
 if diff == 0:
     print("No changes to commit.")
     sys.exit(0)
 
 subprocess.run(["git", "commit", "-m", f"Add digest for {TARGET_DATE}"], cwd=REPO, check=True)
-subprocess.run(["git", "push", "origin", "main"], cwd=REPO, check=True)
+
+# Push with retry — if first push fails with non-FF, rebase + retry once
+push = subprocess.run(["git", "push", "origin", "main"], cwd=REPO)
+if push.returncode != 0:
+    print("Push failed; pulling + rebasing then retrying...", file=sys.stderr)
+    subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=REPO, check=False)
+    push2 = subprocess.run(["git", "push", "origin", "main"], cwd=REPO)
+    if push2.returncode != 0:
+        # Roll back the local commit so we don't leave orphaned state
+        print("Push failed again; rolling back local commit.", file=sys.stderr)
+        subprocess.run(["git", "reset", "--soft", "HEAD~1"], cwd=REPO, check=False)
+        sys.exit(3)
 print(f"PUSHED https://parth-unjiya.github.io/ai-pulse/articles/{TARGET_DATE}.html")
