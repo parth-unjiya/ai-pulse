@@ -11,7 +11,17 @@
   <meta property="og:title" content="AI Pulse — March 1, 2026 — AI Pulse">
   <meta property="og:description" content="AI can link fake online names to real identities in minutes for just a few dollars. This research from ETH Zurich and **Anthropic** demonstrating the de-anon...">
   <meta property="og:type" content="article">
+  <meta property="og:url" content="https://parth-unjiya.github.io/ai-pulse/articles/2026-03-01.html">
   <meta property="article:published_time" content="2026-03-01">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Pulse — March 1, 2026">
+  <meta name="twitter:description" content="AI can link fake online names to real identities in minutes for just a few dollars. This research from ETH Zurich and **Anthropic** demonstrating the de-anon...">
+
+  <!-- Canonical + RSS -->
+  <link rel="canonical" href="https://parth-unjiya.github.io/ai-pulse/articles/2026-03-01.html">
+  <link rel="alternate" type="application/rss+xml" title="AI Pulse RSS" href="../feed.xml">
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%234f46e5'/><stop offset='100%' stop-color='%237c3aed'/></linearGradient></defs><path d='M18 2L6 18h8l-2 12 12-16h-8z' fill='url(%23g)'/></svg>" type="image/svg+xml">
@@ -30,7 +40,7 @@
   <!-- Reading Progress Bar -->
   <div class="reading-progress-bar" id="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
-  <!-- Navigation -->
+  <!-- Top navbar -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner container">
       <a href="../" class="nav-logo" aria-label="AI Pulse home">
@@ -46,49 +56,42 @@
         <span>AI Pulse</span>
       </a>
 
-      <button
-        class="theme-toggle"
-        id="theme-toggle"
-        type="button"
-        aria-label="Toggle dark mode"
-        title="Toggle dark mode"
-      >
-        <!-- Sun icon (shown in dark mode) -->
-        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="12" cy="12" r="5"/>
-          <line x1="12" y1="1" x2="12" y2="3"/>
-          <line x1="12" y1="21" x2="12" y2="23"/>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-          <line x1="1" y1="12" x2="3" y2="12"/>
-          <line x1="21" y1="12" x2="23" y2="12"/>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-        </svg>
-        <!-- Moon icon (shown in light mode) -->
-        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-        </svg>
-      </button>
+      <div class="nav-actions">
+        <button class="toc-trigger-mobile" id="toc-trigger-mobile" type="button" aria-label="Open table of contents" title="Table of contents">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+            <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+          </svg>
+        </button>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </nav>
 
-  <!-- TOP article navigation (Prev / Index / Next) -->
-  <nav class="article-nav article-nav-top" id="article-nav-top" aria-label="Article navigation (top)">
-    <div class="container-narrow article-nav-inner">
+  <!-- TOP article navigation: Prev / All / Next -->
+  <nav class="article-nav article-nav-top" aria-label="Article navigation (top)">
+    <div class="container article-nav-inner">
       <a href="#" class="article-nav-btn article-nav-prev" data-nav="prev" aria-label="Previous digest">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         <span class="article-nav-label">
           <span class="article-nav-direction">Previous</span>
           <span class="article-nav-date" data-nav-date="prev">—</span>
         </span>
       </a>
-      <a href="../" class="article-nav-btn article-nav-index" aria-label="All digests">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-        </svg>
+      <a href="../" class="article-nav-btn article-nav-index">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         <span>All digests</span>
       </a>
       <a href="#" class="article-nav-btn article-nav-next" data-nav="next" aria-label="Next digest">
@@ -96,118 +99,115 @@
           <span class="article-nav-direction">Next</span>
           <span class="article-nav-date" data-nav-date="next">—</span>
         </span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
   </nav>
 
-  <!-- Article -->
-  <article class="article-page">
-    <header class="article-header">
-      <div class="container">
-        <span class="category-tag">Daily Digest</span>
-        <h1 class="article-title">AI Pulse — March 1, 2026</h1>
-        <div class="article-meta">
-          <time datetime="2026-03-01">March 1, 2026</time>
-          <span class="meta-separator" aria-hidden="true">&middot;</span>
-          <span>4 min read</span>
-          <span class="meta-separator" aria-hidden="true">&middot;</span>
-          <span>10 articles from 3 sources</span>
-        </div>
-
-        <div class="share-bar" aria-label="Share this digest">
-          <button class="share-btn" data-share="copy" type="button" aria-label="Copy link" title="Copy link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            <span class="share-label">Copy link</span>
-          </button>
-          <a class="share-btn" data-share="twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21l-6.514 7.443L22 22h-6.094l-4.77-6.231L5.65 22H2.892l6.97-7.964L2 2h6.244l4.318 5.711L18.244 2zm-1.07 18h1.687L7.59 4H5.785l11.39 16z"/></svg>
-            <span class="share-label">Share on X</span>
-          </a>
-          <a class="share-btn" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            <span class="share-label">Share on LinkedIn</span>
-          </a>
-        </div>
-</div>
-    </header>
-
-        <aside class="article-toc" id="article-toc" aria-label="Table of contents">
-      <div class="container-narrow">
-        <button class="toc-toggle" id="toc-toggle" type="button" aria-expanded="true" aria-controls="toc-list">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-          <span>Table of Contents</span>
-          <svg class="toc-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  <!-- Article body with optional left TOC sidebar -->
+  <div class="article-layout">
+    <!-- TOC sidebar (sticky on desktop, drawer on mobile) -->
+    <aside class="article-toc-sidebar" id="article-toc" aria-label="Table of contents">
+      <div class="toc-sidebar-inner">
+        <button class="toc-close-mobile" id="toc-close-mobile" aria-label="Close table of contents">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
         </button>
+        <h3 class="toc-title">On this page</h3>
         <ul class="toc-list" id="toc-list"></ul>
+
+        <div class="toc-meta">
+          <a class="toc-back-link" href="../">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            <span>All digests</span>
+          </a>
+        </div>
       </div>
     </aside>
+    <div class="article-toc-overlay" id="article-toc-overlay"></div>
 
-    <div class="article-content">
-      <div class="container-narrow">
-                <h2 class="content-section-header section-headlines"><span class="section-icon"></span>Top 3 Headlines</h2>
-        <div class="numbered-item"><span class="item-number">1</span><span class="item-content"><strong>AI can link fake online names to real identities in minutes for just a few dollars</strong> (The Decoder)</span></div>
-        <p class="arrow-description">This research from ETH Zurich and <strong>Anthropic</strong> demonstrating the de-anonymization of pseudonymous internet users using commercially available AI models is a watershed moment. The fact that this can be achieved for just a few dollars per person using existing technology fundamentally challenges the assumption of online anonymity. This has massive implications for privacy, security, and freedom of speech online. Expect increased scrutiny of AI's role in eroding anonymity, and potential calls for stricter regulations on data collection and model training. This also creates a significant business opportunity for companies offering enhanced privacy solutions, but also raises ethical questions for AI developers like Anthropic.</p>
-        <div class="numbered-item"><span class="item-number">2</span><span class="item-content"><strong>The Pentagon-OpenAI-Anthropic fallout comes down to three words: &quot;all lawful use&quot;</strong> (The Decoder)</span></div>
-        <p class="arrow-description">The ongoing controversy surrounding <strong>OpenAI's</strong> and <strong>Anthropic's</strong> engagement with the Department of Defense highlights the complex ethical considerations surrounding AI development and deployment. While OpenAI attempts to build trust by publishing contract details, the vague &quot;all lawful use&quot; clause is proving to be a sticking point. This controversy is not just about optics; it's about the fundamental question of control and responsibility for AI's use in potentially harmful applications. The fact that Anthropic's <strong>Claude</strong> chatbot is seeing increased popularity amidst this dispute (as noted in another article) suggests a growing segment of users are actively seeking alternatives that align with their ethical concerns. Expect increased pressure on AI companies to adopt more transparent and restrictive policies regarding government contracts.</p>
-        <div class="numbered-item"><span class="item-number">3</span><span class="item-content"><strong>Google looks to tackle longstanding RCS spam in India — but not alone</strong> (TechCrunch)</span></div>
-        <p class="arrow-description"><strong>Google's</strong> partnership with <strong>Airtel</strong> to combat RCS spam in India is a crucial step towards protecting users from malicious actors. India, with its massive mobile user base, has become a prime target for spam and fraud via RCS messaging. This initiative demonstrates Google's commitment to securing its platform and maintaining user trust, particularly in emerging markets. The success of this collaboration hinges on the effectiveness of the carrier-level filtering and Google's ability to adapt to evolving spam tactics. This move could set a precedent for similar partnerships in other regions facing similar challenges, and underscores the importance of collaboration between tech companies and telecommunication providers in combating online threats.</p>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-llm"><span class="section-icon"></span>LLM &amp; Model Updates</h2>
+    <article class="article-page">
+      <header class="article-header">
+        <div class="article-header-inner">
+          <span class="category-tag">Daily Digest</span>
+          <h1 class="article-title">AI Pulse — March 1, 2026</h1>
+          <div class="article-meta">
+            <time datetime="2026-03-01">Sunday, March 1, 2026</time>
+            <span class="meta-separator" aria-hidden="true">&middot;</span>
+            <span>4 min read</span>
+            <span class="meta-separator" aria-hidden="true">&middot;</span>
+            <span>10 articles from 3 sources</span>
+          </div>
+
+          <div class="share-bar" aria-label="Share this digest">
+            <button class="share-btn" data-share="copy" type="button" aria-label="Copy link" title="Copy link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="share-label">Copy link</span>
+            </button>
+            <a class="share-btn" data-share="twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.514 7.443L22 22h-6.094l-4.77-6.231L5.65 22H2.892l6.97-7.964L2 2h6.244l4.318 5.711L18.244 2zm-1.07 18h1.687L7.59 4H5.785l11.39 16z"/></svg>
+              <span class="share-label">Share on X</span>
+            </a>
+            <a class="share-btn" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span class="share-label">LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="article-content">
+        <div class="article-content-inner">
+          <p>Top 3 Headlines</p>
+          <div class="numbered-item"><span class="item-number">1</span><span class="item-content"><strong>AI can link fake online names to real identities in minutes for just a few dollars</strong> (The Decoder)</span></div>
+          <p class="arrow-description">This research from ETH Zurich and <strong>Anthropic</strong> demonstrating the de-anonymization of pseudonymous internet users using commercially available AI models is a watershed moment. The fact that this can be achieved for just a few dollars per person using existing technology fundamentally challenges the assumption of online anonymity. This has massive implications for privacy, security, and freedom of speech online. Expect increased scrutiny of AI's role in eroding anonymity, and potential calls for stricter regulations on data collection and model training. This also creates a significant business opportunity for companies offering enhanced privacy solutions, but also raises ethical questions for AI developers like Anthropic.</p>
+          <div class="numbered-item"><span class="item-number">2</span><span class="item-content"><strong>The Pentagon-OpenAI-Anthropic fallout comes down to three words: "all lawful use"</strong> (The Decoder)</span></div>
+          <p class="arrow-description">The ongoing controversy surrounding <strong>OpenAI's</strong> and <strong>Anthropic's</strong> engagement with the Department of Defense highlights the complex ethical considerations surrounding AI development and deployment. While OpenAI attempts to build trust by publishing contract details, the vague "all lawful use" clause is proving to be a sticking point. This controversy is not just about optics; it's about the fundamental question of control and responsibility for AI's use in potentially harmful applications. The fact that Anthropic's <strong>Claude</strong> chatbot is seeing increased popularity amidst this dispute (as noted in another article) suggests a growing segment of users are actively seeking alternatives that align with their ethical concerns. Expect increased pressure on AI companies to adopt more transparent and restrictive policies regarding government contracts.</p>
+          <div class="numbered-item"><span class="item-number">3</span><span class="item-content"><strong>Google looks to tackle longstanding RCS spam in India — but not alone</strong> (TechCrunch)</span></div>
+          <p class="arrow-description"><strong>Google's</strong> partnership with <strong>Airtel</strong> to combat RCS spam in India is a crucial step towards protecting users from malicious actors. India, with its massive mobile user base, has become a prime target for spam and fraud via RCS messaging. This initiative demonstrates Google's commitment to securing its platform and maintaining user trust, particularly in emerging markets. The success of this collaboration hinges on the effectiveness of the carrier-level filtering and Google's ability to adapt to evolving spam tactics. This move could set a precedent for similar partnerships in other regions facing similar challenges, and underscores the importance of collaboration between tech companies and telecommunication providers in combating online threats.</p>
+          <p>LLM &amp; Model Updates</p>
           <ul class="content-list">
-            <li>No major LLM updates yesterday.</li>
+          <li>No major LLM updates yesterday.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-research"><span class="section-icon"></span>Research &amp; Breakthroughs</h2>
+          <p>Research &amp; Breakthroughs</p>
           <ul class="content-list">
-            <li>Researchers from ETH Zurich and Anthropic demonstrated that commercially available AI models can link fake online names to real identities in minutes for just a few dollars. The methodology involved training models on publicly available data and then using them to identify individuals based on their online writing style and other digital footprints. This research highlights the vulnerability of pseudonymous online identities and the potential for AI to be used for mass surveillance and deanonymization. The implications are significant for online privacy and security, potentially requiring new approaches to protect user anonymity.</li>
+          <li>Researchers from ETH Zurich and Anthropic demonstrated that commercially available AI models can link fake online names to real identities in minutes for just a few dollars. The methodology involved training models on publicly available data and then using them to identify individuals based on their online writing style and other digital footprints. This research highlights the vulnerability of pseudonymous online identities and the potential for AI to be used for mass surveillance and deanonymization. The implications are significant for online privacy and security, potentially requiring new approaches to protect user anonymity.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-startups"><span class="section-icon"></span>Startup &amp; Funding</h2>
+          <p>Startup &amp; Funding</p>
           <ul class="content-list">
-            <li>No startup news yesterday.</li>
+          <li>No startup news yesterday.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-tools"><span class="section-icon"></span>AI Tools &amp; Products</h2>
+          <p>AI Tools &amp; Products</p>
           <ul class="content-list">
-            <li><strong>Lenovo</strong> announced a pair of AI-based productivity companion concepts at MWC, including an AI Workmate Concept featuring a robot arm with &quot;puppy dog eyes.&quot; These standalone desk devices are designed to boost productivity and provide office workers with artificial companionship. While still in the concept stage, this highlights the growing interest in integrating AI into everyday work environments, blurring the lines between productivity tools and personal assistants. The success of such devices will depend on their ability to genuinely enhance productivity and address potential concerns about privacy and data security.</li>
+          <li><strong>Lenovo</strong> announced a pair of AI-based productivity companion concepts at MWC, including an AI Workmate Concept featuring a robot arm with "puppy dog eyes." These standalone desk devices are designed to boost productivity and provide office workers with artificial companionship. While still in the concept stage, this highlights the growing interest in integrating AI into everyday work environments, blurring the lines between productivity tools and personal assistants. The success of such devices will depend on their ability to genuinely enhance productivity and address potential concerns about privacy and data security.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-policy"><span class="section-icon"></span>Policy &amp; Regulation</h2>
+          <p>Policy &amp; Regulation</p>
           <ul class="content-list">
-            <li>The Pentagon-OpenAI-Anthropic fallout revolves around the interpretation of the &quot;all lawful use&quot; clause in their contracts. This clause, intended to provide flexibility, has become a source of controversy due to concerns about the potential for AI to be used in ways that violate ethical principles or international law. The lack of specific restrictions on the use of AI in military applications raises questions about accountability and oversight. This situation underscores the need for clearer guidelines and regulations governing the use of AI in defense and security contexts.</li>
+          <li>The Pentagon-OpenAI-Anthropic fallout revolves around the interpretation of the "all lawful use" clause in their contracts. This clause, intended to provide flexibility, has become a source of controversy due to concerns about the potential for AI to be used in ways that violate ethical principles or international law. The lack of specific restrictions on the use of AI in military applications raises questions about accountability and oversight. This situation underscores the need for clearer guidelines and regulations governing the use of AI in defense and security contexts.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-robotics"><span class="section-icon"></span>Robotics &amp; Hardware</h2>
+          <p>Robotics &amp; Hardware</p>
           <ul class="content-list">
-            <li>See AI Tools &amp; Product Launches section for Lenovo's AI Workmate Concept.</li>
+          <li>See AI Tools &amp; Product Launches section for Lenovo's AI Workmate Concept.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-trend"><span class="section-icon"></span>Trend Analysis</h2>
-        <p>The dominant theme emerging from today's AI news is the increasing tension between technological advancement and ethical considerations. The de-anonymization research, the Pentagon-OpenAI-Anthropic controversy, and even the Lenovo's AI companion concept all point to the need for a more nuanced understanding of AI's societal impact. The &quot;all lawful use&quot; debate highlights the limitations of relying solely on legal frameworks to govern AI development, emphasizing the importance of ethical principles and responsible innovation.</p>
-        <p>These developments collectively signal a shift towards greater scrutiny of AI's potential harms and a growing demand for transparency and accountability. AI practitioners, founders, and investors should pay close attention to the evolving regulatory landscape and prioritize ethical considerations in their development and deployment strategies. The rise of Anthropic's Claude amidst the OpenAI controversy suggests that users are increasingly willing to choose AI solutions that align with their values. This presents a significant opportunity for companies that prioritize responsible AI development and build trust with their users. The Google/Airtel partnership also highlights the importance of collaboration in combating AI-related threats, suggesting that a multi-stakeholder approach is necessary to address the complex challenges posed by AI.</p>
+          <p>Trend Analysis</p>
+          <p>The dominant theme emerging from today's AI news is the increasing tension between technological advancement and ethical considerations. The de-anonymization research, the Pentagon-OpenAI-Anthropic controversy, and even the Lenovo's AI companion concept all point to the need for a more nuanced understanding of AI's societal impact. The "all lawful use" debate highlights the limitations of relying solely on legal frameworks to govern AI development, emphasizing the importance of ethical principles and responsible innovation.</p>
+          <p>These developments collectively signal a shift towards greater scrutiny of AI's potential harms and a growing demand for transparency and accountability. AI practitioners, founders, and investors should pay close attention to the evolving regulatory landscape and prioritize ethical considerations in their development and deployment strategies. The rise of Anthropic's Claude amidst the OpenAI controversy suggests that users are increasingly willing to choose AI solutions that align with their values. This presents a significant opportunity for companies that prioritize responsible AI development and build trust with their users. The Google/Airtel partnership also highlights the importance of collaboration in combating AI-related threats, suggesting that a multi-stakeholder approach is necessary to address the complex challenges posed by AI.</p>
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </div>
 
   <!-- BOTTOM article navigation -->
-  <nav class="article-nav article-nav-bottom" id="article-nav-bottom" aria-label="Article navigation (bottom)">
-    <div class="container-narrow article-nav-inner">
+  <nav class="article-nav article-nav-bottom" aria-label="Article navigation (bottom)">
+    <div class="container article-nav-inner">
       <a href="#" class="article-nav-btn article-nav-prev" data-nav="prev" aria-label="Previous digest">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         <span class="article-nav-label">
           <span class="article-nav-direction">Previous</span>
           <span class="article-nav-date" data-nav-date="prev">—</span>
         </span>
       </a>
-      <a href="../" class="article-nav-btn article-nav-index" aria-label="All digests">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-        </svg>
+      <a href="../" class="article-nav-btn article-nav-index">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         <span>All digests</span>
       </a>
       <a href="#" class="article-nav-btn article-nav-next" data-nav="next" aria-label="Next digest">
@@ -215,14 +215,11 @@
           <span class="article-nav-direction">Next</span>
           <span class="article-nav-date" data-nav-date="next">—</span>
         </span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
   </nav>
 
-  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
       <p class="footer-copy">&copy; 2026 AI Pulse. All rights reserved.</p>

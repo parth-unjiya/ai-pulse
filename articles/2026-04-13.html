@@ -11,7 +11,17 @@
   <meta property="og:title" content="AI Pulse — April 13, 2026 — AI Pulse">
   <meta property="og:description" content="Microsoft is working on a new OpenClaw-like agent. Microsoft is developing a new OpenClaw-like agent with enhanced security controls, specifically designed f...">
   <meta property="og:type" content="article">
+  <meta property="og:url" content="https://parth-unjiya.github.io/ai-pulse/articles/2026-04-13.html">
   <meta property="article:published_time" content="2026-04-13">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Pulse — April 13, 2026">
+  <meta name="twitter:description" content="Microsoft is working on a new OpenClaw-like agent. Microsoft is developing a new OpenClaw-like agent with enhanced security controls, specifically designed f...">
+
+  <!-- Canonical + RSS -->
+  <link rel="canonical" href="https://parth-unjiya.github.io/ai-pulse/articles/2026-04-13.html">
+  <link rel="alternate" type="application/rss+xml" title="AI Pulse RSS" href="../feed.xml">
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%234f46e5'/><stop offset='100%' stop-color='%237c3aed'/></linearGradient></defs><path d='M18 2L6 18h8l-2 12 12-16h-8z' fill='url(%23g)'/></svg>" type="image/svg+xml">
@@ -30,7 +40,7 @@
   <!-- Reading Progress Bar -->
   <div class="reading-progress-bar" id="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
-  <!-- Navigation -->
+  <!-- Top navbar -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner container">
       <a href="../" class="nav-logo" aria-label="AI Pulse home">
@@ -46,49 +56,42 @@
         <span>AI Pulse</span>
       </a>
 
-      <button
-        class="theme-toggle"
-        id="theme-toggle"
-        type="button"
-        aria-label="Toggle dark mode"
-        title="Toggle dark mode"
-      >
-        <!-- Sun icon (shown in dark mode) -->
-        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="12" cy="12" r="5"/>
-          <line x1="12" y1="1" x2="12" y2="3"/>
-          <line x1="12" y1="21" x2="12" y2="23"/>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-          <line x1="1" y1="12" x2="3" y2="12"/>
-          <line x1="21" y1="12" x2="23" y2="12"/>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-        </svg>
-        <!-- Moon icon (shown in light mode) -->
-        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-        </svg>
-      </button>
+      <div class="nav-actions">
+        <button class="toc-trigger-mobile" id="toc-trigger-mobile" type="button" aria-label="Open table of contents" title="Table of contents">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+            <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+          </svg>
+        </button>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </nav>
 
-  <!-- TOP article navigation (Prev / Index / Next) -->
-  <nav class="article-nav article-nav-top" id="article-nav-top" aria-label="Article navigation (top)">
-    <div class="container-narrow article-nav-inner">
+  <!-- TOP article navigation: Prev / All / Next -->
+  <nav class="article-nav article-nav-top" aria-label="Article navigation (top)">
+    <div class="container article-nav-inner">
       <a href="#" class="article-nav-btn article-nav-prev" data-nav="prev" aria-label="Previous digest">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         <span class="article-nav-label">
           <span class="article-nav-direction">Previous</span>
           <span class="article-nav-date" data-nav-date="prev">—</span>
         </span>
       </a>
-      <a href="../" class="article-nav-btn article-nav-index" aria-label="All digests">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-        </svg>
+      <a href="../" class="article-nav-btn article-nav-index">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         <span>All digests</span>
       </a>
       <a href="#" class="article-nav-btn article-nav-next" data-nav="next" aria-label="Next digest">
@@ -96,126 +99,123 @@
           <span class="article-nav-direction">Next</span>
           <span class="article-nav-date" data-nav-date="next">—</span>
         </span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
   </nav>
 
-  <!-- Article -->
-  <article class="article-page">
-    <header class="article-header">
-      <div class="container">
-        <span class="category-tag">Daily Digest</span>
-        <h1 class="article-title">AI Pulse — April 13, 2026</h1>
-        <div class="article-meta">
-          <time datetime="2026-04-13">April 13, 2026</time>
-          <span class="meta-separator" aria-hidden="true">&middot;</span>
-          <span>8 min read</span>
-          <span class="meta-separator" aria-hidden="true">&middot;</span>
-          <span>140 articles from 28 sources</span>
-        </div>
-
-        <div class="share-bar" aria-label="Share this digest">
-          <button class="share-btn" data-share="copy" type="button" aria-label="Copy link" title="Copy link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            <span class="share-label">Copy link</span>
-          </button>
-          <a class="share-btn" data-share="twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21l-6.514 7.443L22 22h-6.094l-4.77-6.231L5.65 22H2.892l6.97-7.964L2 2h6.244l4.318 5.711L18.244 2zm-1.07 18h1.687L7.59 4H5.785l11.39 16z"/></svg>
-            <span class="share-label">Share on X</span>
-          </a>
-          <a class="share-btn" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            <span class="share-label">Share on LinkedIn</span>
-          </a>
-        </div>
-</div>
-    </header>
-
-        <aside class="article-toc" id="article-toc" aria-label="Table of contents">
-      <div class="container-narrow">
-        <button class="toc-toggle" id="toc-toggle" type="button" aria-expanded="true" aria-controls="toc-list">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-          <span>Table of Contents</span>
-          <svg class="toc-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  <!-- Article body with optional left TOC sidebar -->
+  <div class="article-layout">
+    <!-- TOC sidebar (sticky on desktop, drawer on mobile) -->
+    <aside class="article-toc-sidebar" id="article-toc" aria-label="Table of contents">
+      <div class="toc-sidebar-inner">
+        <button class="toc-close-mobile" id="toc-close-mobile" aria-label="Close table of contents">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
         </button>
+        <h3 class="toc-title">On this page</h3>
         <ul class="toc-list" id="toc-list"></ul>
+
+        <div class="toc-meta">
+          <a class="toc-back-link" href="../">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            <span>All digests</span>
+          </a>
+        </div>
       </div>
     </aside>
+    <div class="article-toc-overlay" id="article-toc-overlay"></div>
 
-    <div class="article-content">
-      <div class="container-narrow">
-                <h2 class="content-section-header section-headlines"><span class="section-icon"></span>Top 3 Headlines</h2>
-        <div class="numbered-item"><span class="item-number">1</span><span class="item-content"><strong>Microsoft is working on a new OpenClaw-like agent</strong> (TechCrunch)</span></div>
-        <p class="arrow-description">Microsoft is developing a new OpenClaw-like agent with enhanced security controls, specifically designed for enterprise customers. This move is significant as it indicates Microsoft's commitment to providing secure AI solutions for businesses. The new agent will likely compete with other AI models in the market, such as those offered by Anthropic. As Microsoft continues to expand its AI offerings, we can expect to see more innovative solutions tailored to the needs of enterprise customers. The success of this new agent will depend on its ability to balance security and functionality, which are crucial for businesses adopting AI technologies. Microsoft's efforts in this area will likely influence the competitive dynamics in the AI market, with other companies potentially responding with their own secure AI solutions.</p>
-        <div class="numbered-item"><span class="item-number">2</span><span class="item-content"><strong>Vercel CEO signals IPO readiness</strong> (TechCrunch)</span></div>
-        <p class="arrow-description">Vercel's CEO, Guillermo Rauch, has indicated that the company is ready for an initial public offering (IPO), driven by the surge in revenue fueled by AI agents. This development is noteworthy as it highlights the growing importance of AI in the tech industry. Vercel's success with AI-powered solutions has positioned the company for significant growth, and an IPO could provide the necessary funding to further expand its operations. The company's decision to go public will be influenced by market conditions and the demand for AI-driven technologies. As Vercel prepares for its IPO, it will be essential to demonstrate the long-term viability of its AI-powered business model to potential investors. The company's ability to scale its AI solutions while maintaining profitability will be crucial in attracting investors and ensuring a successful IPO.</p>
-        <div class="numbered-item"><span class="item-number">3</span><span class="item-content"><strong>Mark Zuckerberg is building an AI clone</strong> (The Verge)</span></div>
-        <p class="arrow-description">Mark Zuckerberg is reportedly developing an AI clone that can replace him in meetings, trained on his image, voice, and mannerisms. This story is consequential as it raises questions about the potential applications and implications of AI clones in the future. The development of an AI clone that can mimic a person's appearance and behavior could have significant consequences for various industries, including entertainment, education, and business. However, it also raises concerns about privacy, security, and the potential for misuse. As AI technology continues to advance, we can expect to see more innovative applications of AI clones, but it is essential to address the ethical and societal implications of such technologies.</p>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-llm"><span class="section-icon"></span>LLM &amp; Model Updates</h2>
+    <article class="article-page">
+      <header class="article-header">
+        <div class="article-header-inner">
+          <span class="category-tag">Daily Digest</span>
+          <h1 class="article-title">AI Pulse — April 13, 2026</h1>
+          <div class="article-meta">
+            <time datetime="2026-04-13">Monday, April 13, 2026</time>
+            <span class="meta-separator" aria-hidden="true">&middot;</span>
+            <span>8 min read</span>
+            <span class="meta-separator" aria-hidden="true">&middot;</span>
+            <span>140 articles from 28 sources</span>
+          </div>
+
+          <div class="share-bar" aria-label="Share this digest">
+            <button class="share-btn" data-share="copy" type="button" aria-label="Copy link" title="Copy link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="share-label">Copy link</span>
+            </button>
+            <a class="share-btn" data-share="twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.514 7.443L22 22h-6.094l-4.77-6.231L5.65 22H2.892l6.97-7.964L2 2h6.244l4.318 5.711L18.244 2zm-1.07 18h1.687L7.59 4H5.785l11.39 16z"/></svg>
+              <span class="share-label">Share on X</span>
+            </a>
+            <a class="share-btn" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span class="share-label">LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="article-content">
+        <div class="article-content-inner">
+          <p>Top 3 Headlines</p>
+          <div class="numbered-item"><span class="item-number">1</span><span class="item-content"><strong>Microsoft is working on a new OpenClaw-like agent</strong> (TechCrunch)</span></div>
+          <p class="arrow-description">Microsoft is developing a new OpenClaw-like agent with enhanced security controls, specifically designed for enterprise customers. This move is significant as it indicates Microsoft's commitment to providing secure AI solutions for businesses. The new agent will likely compete with other AI models in the market, such as those offered by Anthropic. As Microsoft continues to expand its AI offerings, we can expect to see more innovative solutions tailored to the needs of enterprise customers. The success of this new agent will depend on its ability to balance security and functionality, which are crucial for businesses adopting AI technologies. Microsoft's efforts in this area will likely influence the competitive dynamics in the AI market, with other companies potentially responding with their own secure AI solutions.</p>
+          <div class="numbered-item"><span class="item-number">2</span><span class="item-content"><strong>Vercel CEO signals IPO readiness</strong> (TechCrunch)</span></div>
+          <p class="arrow-description">Vercel's CEO, Guillermo Rauch, has indicated that the company is ready for an initial public offering (IPO), driven by the surge in revenue fueled by AI agents. This development is noteworthy as it highlights the growing importance of AI in the tech industry. Vercel's success with AI-powered solutions has positioned the company for significant growth, and an IPO could provide the necessary funding to further expand its operations. The company's decision to go public will be influenced by market conditions and the demand for AI-driven technologies. As Vercel prepares for its IPO, it will be essential to demonstrate the long-term viability of its AI-powered business model to potential investors. The company's ability to scale its AI solutions while maintaining profitability will be crucial in attracting investors and ensuring a successful IPO.</p>
+          <div class="numbered-item"><span class="item-number">3</span><span class="item-content"><strong>Mark Zuckerberg is building an AI clone</strong> (The Verge)</span></div>
+          <p class="arrow-description">Mark Zuckerberg is reportedly developing an AI clone that can replace him in meetings, trained on his image, voice, and mannerisms. This story is consequential as it raises questions about the potential applications and implications of AI clones in the future. The development of an AI clone that can mimic a person's appearance and behavior could have significant consequences for various industries, including entertainment, education, and business. However, it also raises concerns about privacy, security, and the potential for misuse. As AI technology continues to advance, we can expect to see more innovative applications of AI clones, but it is essential to address the ethical and societal implications of such technologies.</p>
+          <p>LLM &amp; Model Updates</p>
           <ul class="content-list">
-            <li>OpenAI is focusing on beating the competition, including Anthropic, and growing its enterprise business, with a new &quot;Spud&quot; model aimed at improving its products. The &quot;Spud&quot; model is expected to significantly enhance OpenAI's offerings, making them more competitive in the market. This development is crucial for OpenAI as it seeks to maintain its position in the AI industry. The new model will likely be compared to other AI models, such as those offered by Anthropic, and its performance will be closely watched by developers and businesses.</li>
-            <li>Microsoft is testing OpenClaw-like AI bots for Copilot to make Microsoft 365 Copilot &quot;run autonomously around the clock&quot;. This update is significant as it demonstrates Microsoft's commitment to providing autonomous AI solutions for its customers. The integration of OpenClaw-like AI bots into Copilot will enable the platform to operate independently, which could lead to increased efficiency and productivity for users. The technical details of this update include the use of OpenClaw-like AI bots, which are designed to provide secure and reliable AI solutions.</li>
-            <li>GLM-5.1 boasts SOTA level performance, while Qwen3.5 and Gemma4 series have been released, offering improved capabilities for local LLMs. These new models are expected to provide better performance and capabilities for developers, making them more attractive for various applications. The technical details of these models include their architecture and training data, which are crucial for understanding their performance and limitations.</li>
+          <li>OpenAI is focusing on beating the competition, including Anthropic, and growing its enterprise business, with a new "Spud" model aimed at improving its products. The "Spud" model is expected to significantly enhance OpenAI's offerings, making them more competitive in the market. This development is crucial for OpenAI as it seeks to maintain its position in the AI industry. The new model will likely be compared to other AI models, such as those offered by Anthropic, and its performance will be closely watched by developers and businesses.</li>
+          <li>Microsoft is testing OpenClaw-like AI bots for Copilot to make Microsoft 365 Copilot "run autonomously around the clock". This update is significant as it demonstrates Microsoft's commitment to providing autonomous AI solutions for its customers. The integration of OpenClaw-like AI bots into Copilot will enable the platform to operate independently, which could lead to increased efficiency and productivity for users. The technical details of this update include the use of OpenClaw-like AI bots, which are designed to provide secure and reliable AI solutions.</li>
+          <li>GLM-5.1 boasts SOTA level performance, while Qwen3.5 and Gemma4 series have been released, offering improved capabilities for local LLMs. These new models are expected to provide better performance and capabilities for developers, making them more attractive for various applications. The technical details of these models include their architecture and training data, which are crucial for understanding their performance and limitations.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-research"><span class="section-icon"></span>Research &amp; Breakthroughs</h2>
+          <p>Research &amp; Breakthroughs</p>
           <ul class="content-list">
-            <li>Stanford released its 2026 AI Index, showing a widening gap between AI experts and the public, with rising anxiety over jobs, healthcare, and the economy. This research is significant as it highlights the growing concerns about the impact of AI on society. The AI Index provides valuable insights into the current state of AI development and its potential consequences for various industries and communities. The methodology used to create the AI Index includes surveys and analysis of AI-related data, which provides a comprehensive understanding of the AI landscape.</li>
-            <li>Pixel Societies uses AI agents to simulate social interactions, attempting to optimize the process of choosing new colleagues, friends, and romantic partners. This research is noteworthy as it demonstrates the potential applications of AI in social sciences. The use of AI agents to simulate social interactions could lead to new insights into human behavior and relationships. The practical implications of this research include the potential development of AI-powered tools for social networking and matchmaking.</li>
+          <li>Stanford released its 2026 AI Index, showing a widening gap between AI experts and the public, with rising anxiety over jobs, healthcare, and the economy. This research is significant as it highlights the growing concerns about the impact of AI on society. The AI Index provides valuable insights into the current state of AI development and its potential consequences for various industries and communities. The methodology used to create the AI Index includes surveys and analysis of AI-related data, which provides a comprehensive understanding of the AI landscape.</li>
+          <li>Pixel Societies uses AI agents to simulate social interactions, attempting to optimize the process of choosing new colleagues, friends, and romantic partners. This research is noteworthy as it demonstrates the potential applications of AI in social sciences. The use of AI agents to simulate social interactions could lead to new insights into human behavior and relationships. The practical implications of this research include the potential development of AI-powered tools for social networking and matchmaking.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-startups"><span class="section-icon"></span>Startup &amp; Funding</h2>
+          <p>Startup &amp; Funding</p>
           <ul class="content-list">
-            <li>Kepler Communications has launched the largest orbital compute cluster, with 40 GPUs in Earth orbit, and has signed Sophia Space as a customer. Kepler Communications is a startup that provides orbital computing solutions, and its launch of the largest orbital compute cluster is a significant milestone. The company's signing of Sophia Space as a customer demonstrates its ability to attract clients and provide valuable services. The market positioning of Kepler Communications is crucial in the growing orbital computing market, where companies are competing to provide innovative solutions.</li>
-            <li>Unitree is bringing its R1 humanoid robot to international markets, priced at $4,370. Unitree is a startup that develops humanoid robots, and its R1 robot is designed for various applications, including research and education. The pricing of the R1 robot is competitive, making it an attractive option for customers. The signal sent by Unitree's launch of the R1 robot is that the company is committed to expanding its presence in the global market and providing innovative robotic solutions.</li>
+          <li>Kepler Communications has launched the largest orbital compute cluster, with 40 GPUs in Earth orbit, and has signed Sophia Space as a customer. Kepler Communications is a startup that provides orbital computing solutions, and its launch of the largest orbital compute cluster is a significant milestone. The company's signing of Sophia Space as a customer demonstrates its ability to attract clients and provide valuable services. The market positioning of Kepler Communications is crucial in the growing orbital computing market, where companies are competing to provide innovative solutions.</li>
+          <li>Unitree is bringing its R1 humanoid robot to international markets, priced at $4,370. Unitree is a startup that develops humanoid robots, and its R1 robot is designed for various applications, including research and education. The pricing of the R1 robot is competitive, making it an attractive option for customers. The signal sent by Unitree's launch of the R1 robot is that the company is committed to expanding its presence in the global market and providing innovative robotic solutions.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-default"><span class="section-icon"></span>Ai Tools &amp; Products</h2>
+          <p>Ai Tools &amp; Products</p>
           <ul class="content-list">
-            <li>Google offers Ultra subscribers video generation with Veo 3.1 Lite at no extra credit cost. This new feature is significant as it demonstrates Google's commitment to providing innovative AI-powered tools to its subscribers. The use of Veo 3.1 Lite for video generation is a notable development, as it provides users with a powerful tool for creating high-quality videos. The target users of this feature are likely content creators and businesses that require video generation capabilities.</li>
-            <li>Anthropic's Claude now works across all three major Office apps, including Word, Excel, and PowerPoint. This update is crucial as it expands the functionality of Claude, making it a more attractive option for users. The integration of Claude with Office apps demonstrates Anthropic's commitment to providing seamless AI-powered solutions for various applications.</li>
+          <li>Google offers Ultra subscribers video generation with Veo 3.1 Lite at no extra credit cost. This new feature is significant as it demonstrates Google's commitment to providing innovative AI-powered tools to its subscribers. The use of Veo 3.1 Lite for video generation is a notable development, as it provides users with a powerful tool for creating high-quality videos. The target users of this feature are likely content creators and businesses that require video generation capabilities.</li>
+          <li>Anthropic's Claude now works across all three major Office apps, including Word, Excel, and PowerPoint. This update is crucial as it expands the functionality of Claude, making it a more attractive option for users. The integration of Claude with Office apps demonstrates Anthropic's commitment to providing seamless AI-powered solutions for various applications.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-policy"><span class="section-icon"></span>Policy &amp; Regulation</h2>
+          <p>Policy &amp; Regulation</p>
           <ul class="content-list">
-            <li>The AI industry is facing compute capacity limitations, with outages, rationing, and rising GPU prices, up nearly 50%. This development is significant as it highlights the growing demand for compute capacity in the AI industry. The limitations in compute capacity could lead to increased costs and reduced efficiency for AI developers and businesses. The timeline for addressing these limitations is crucial, as it will impact the growth and development of the AI industry.</li>
-            <li>NYC hospitals will stop sharing patients' private health data with Palantir. This decision is noteworthy as it raises concerns about the use of private health data by AI companies. The stopping of data sharing by NYC hospitals demonstrates the need for stricter regulations and guidelines for the use of private health data in AI applications.</li>
+          <li>The AI industry is facing compute capacity limitations, with outages, rationing, and rising GPU prices, up nearly 50%. This development is significant as it highlights the growing demand for compute capacity in the AI industry. The limitations in compute capacity could lead to increased costs and reduced efficiency for AI developers and businesses. The timeline for addressing these limitations is crucial, as it will impact the growth and development of the AI industry.</li>
+          <li>NYC hospitals will stop sharing patients' private health data with Palantir. This decision is noteworthy as it raises concerns about the use of private health data by AI companies. The stopping of data sharing by NYC hospitals demonstrates the need for stricter regulations and guidelines for the use of private health data in AI applications.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-robotics"><span class="section-icon"></span>Robotics &amp; Hardware</h2>
+          <p>Robotics &amp; Hardware</p>
           <ul class="content-list">
-            <li>Unitree's R1 humanoid robot is available for $4,370 on AliExpress, with aerobatic capabilities. The R1 robot is a significant development in the field of robotics, as it provides a humanoid robot with advanced capabilities. The pricing of the R1 robot is competitive, making it an attractive option for customers. The industry impact of the R1 robot will be substantial, as it demonstrates the potential for humanoid robots in various applications.</li>
-            <li>OpenAI opens London office with space for over 500 employees, more than double its current headcount. This development is crucial as it demonstrates OpenAI's commitment to expanding its presence in the global market. The opening of the London office will provide OpenAI with a significant presence in Europe, allowing the company to attract top talent and develop innovative AI solutions.</li>
+          <li>Unitree's R1 humanoid robot is available for $4,370 on AliExpress, with aerobatic capabilities. The R1 robot is a significant development in the field of robotics, as it provides a humanoid robot with advanced capabilities. The pricing of the R1 robot is competitive, making it an attractive option for customers. The industry impact of the R1 robot will be substantial, as it demonstrates the potential for humanoid robots in various applications.</li>
+          <li>OpenAI opens London office with space for over 500 employees, more than double its current headcount. This development is crucial as it demonstrates OpenAI's commitment to expanding its presence in the global market. The opening of the London office will provide OpenAI with a significant presence in Europe, allowing the company to attract top talent and develop innovative AI solutions.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-trend"><span class="section-icon"></span>Trend Analysis</h2>
-        <p>The dominant theme emerging from today's news is the rapid advancement of AI technologies and their increasing applications in various industries. The connections between stories that aren't obvious at first glance include the growing importance of AI in the tech industry, the need for stricter regulations and guidelines for AI development, and the potential consequences of AI on society. The developments in AI technologies, such as the release of new models and tools, demonstrate the significant progress being made in the field. However, the limitations in compute capacity and the concerns about private health data highlight the need for careful consideration and planning in the development and deployment of AI solutions.</p>
-        <p>The trend of AI adoption in various industries is expected to continue, with companies like Microsoft, Google, and Anthropic leading the charge. The growth of AI startups, such as Kepler Communications and Unitree, demonstrates the potential for innovation and disruption in the AI industry. However, the need for stricter regulations and guidelines for AI development will be crucial in ensuring that the benefits of AI are realized while minimizing its risks.</p>
-        <p>The developments in AI technologies signal that the industry is heading towards increased adoption and integration of AI solutions in various applications. The potential consequences of AI on society, including job displacement and privacy concerns, will need to be addressed through careful planning and regulation. The trend of AI adoption is expected to continue, with significant advancements in AI technologies and their applications in the next 3-6 months. The actionable takeaways for AI practitioners, founders, and investors include the need to stay up-to-date with the latest developments in AI technologies, to consider the potential consequences of AI on society, and to prioritize the development of innovative and responsible AI solutions.</p>
+          <p>Trend Analysis</p>
+          <p>The dominant theme emerging from today's news is the rapid advancement of AI technologies and their increasing applications in various industries. The connections between stories that aren't obvious at first glance include the growing importance of AI in the tech industry, the need for stricter regulations and guidelines for AI development, and the potential consequences of AI on society. The developments in AI technologies, such as the release of new models and tools, demonstrate the significant progress being made in the field. However, the limitations in compute capacity and the concerns about private health data highlight the need for careful consideration and planning in the development and deployment of AI solutions.</p>
+          <p>The trend of AI adoption in various industries is expected to continue, with companies like Microsoft, Google, and Anthropic leading the charge. The growth of AI startups, such as Kepler Communications and Unitree, demonstrates the potential for innovation and disruption in the AI industry. However, the need for stricter regulations and guidelines for AI development will be crucial in ensuring that the benefits of AI are realized while minimizing its risks.</p>
+          <p>The developments in AI technologies signal that the industry is heading towards increased adoption and integration of AI solutions in various applications. The potential consequences of AI on society, including job displacement and privacy concerns, will need to be addressed through careful planning and regulation. The trend of AI adoption is expected to continue, with significant advancements in AI technologies and their applications in the next 3-6 months. The actionable takeaways for AI practitioners, founders, and investors include the need to stay up-to-date with the latest developments in AI technologies, to consider the potential consequences of AI on society, and to prioritize the development of innovative and responsible AI solutions.</p>
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </div>
 
   <!-- BOTTOM article navigation -->
-  <nav class="article-nav article-nav-bottom" id="article-nav-bottom" aria-label="Article navigation (bottom)">
-    <div class="container-narrow article-nav-inner">
+  <nav class="article-nav article-nav-bottom" aria-label="Article navigation (bottom)">
+    <div class="container article-nav-inner">
       <a href="#" class="article-nav-btn article-nav-prev" data-nav="prev" aria-label="Previous digest">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         <span class="article-nav-label">
           <span class="article-nav-direction">Previous</span>
           <span class="article-nav-date" data-nav-date="prev">—</span>
         </span>
       </a>
-      <a href="../" class="article-nav-btn article-nav-index" aria-label="All digests">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-        </svg>
+      <a href="../" class="article-nav-btn article-nav-index">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         <span>All digests</span>
       </a>
       <a href="#" class="article-nav-btn article-nav-next" data-nav="next" aria-label="Next digest">
@@ -223,14 +223,11 @@
           <span class="article-nav-direction">Next</span>
           <span class="article-nav-date" data-nav-date="next">—</span>
         </span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
   </nav>
 
-  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
       <p class="footer-copy">&copy; 2026 AI Pulse. All rights reserved.</p>

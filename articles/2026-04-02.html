@@ -3,15 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="OpenAI Acquires TBPN. OpenAI&#x27;s acquisition of TBPN, a founder-led business talk show, marks a significant move by the company to expand its reach and influen...">
+  <meta name="description" content="OpenAI Acquires TBPN. OpenAI&amp;#x27;s acquisition of TBPN, a founder-led business talk show, marks a significant move by the company to expand its reach and influ">
 
   <title>AI Pulse — April 2, 2026 — AI Pulse</title>
 
   <!-- Open Graph -->
   <meta property="og:title" content="AI Pulse — April 2, 2026 — AI Pulse">
-  <meta property="og:description" content="OpenAI Acquires TBPN. OpenAI&#x27;s acquisition of TBPN, a founder-led business talk show, marks a significant move by the company to expand its reach and influen...">
+  <meta property="og:description" content="OpenAI Acquires TBPN. OpenAI&amp;#x27;s acquisition of TBPN, a founder-led business talk show, marks a significant move by the company to expand its reach and influ">
   <meta property="og:type" content="article">
+  <meta property="og:url" content="https://parth-unjiya.github.io/ai-pulse/articles/2026-04-02.html">
   <meta property="article:published_time" content="2026-04-02">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Pulse — April 2, 2026">
+  <meta name="twitter:description" content="OpenAI Acquires TBPN. OpenAI&amp;#x27;s acquisition of TBPN, a founder-led business talk show, marks a significant move by the company to expand its reach and influ">
+
+  <!-- Canonical + RSS -->
+  <link rel="canonical" href="https://parth-unjiya.github.io/ai-pulse/articles/2026-04-02.html">
+  <link rel="alternate" type="application/rss+xml" title="AI Pulse RSS" href="../feed.xml">
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%234f46e5'/><stop offset='100%' stop-color='%237c3aed'/></linearGradient></defs><path d='M18 2L6 18h8l-2 12 12-16h-8z' fill='url(%23g)'/></svg>" type="image/svg+xml">
@@ -30,7 +40,7 @@
   <!-- Reading Progress Bar -->
   <div class="reading-progress-bar" id="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
-  <!-- Navigation -->
+  <!-- Top navbar -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner container">
       <a href="../" class="nav-logo" aria-label="AI Pulse home">
@@ -46,49 +56,42 @@
         <span>AI Pulse</span>
       </a>
 
-      <button
-        class="theme-toggle"
-        id="theme-toggle"
-        type="button"
-        aria-label="Toggle dark mode"
-        title="Toggle dark mode"
-      >
-        <!-- Sun icon (shown in dark mode) -->
-        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="12" cy="12" r="5"/>
-          <line x1="12" y1="1" x2="12" y2="3"/>
-          <line x1="12" y1="21" x2="12" y2="23"/>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-          <line x1="1" y1="12" x2="3" y2="12"/>
-          <line x1="21" y1="12" x2="23" y2="12"/>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-        </svg>
-        <!-- Moon icon (shown in light mode) -->
-        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-        </svg>
-      </button>
+      <div class="nav-actions">
+        <button class="toc-trigger-mobile" id="toc-trigger-mobile" type="button" aria-label="Open table of contents" title="Table of contents">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+            <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+          </svg>
+        </button>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </nav>
 
-  <!-- TOP article navigation (Prev / Index / Next) -->
-  <nav class="article-nav article-nav-top" id="article-nav-top" aria-label="Article navigation (top)">
-    <div class="container-narrow article-nav-inner">
+  <!-- TOP article navigation: Prev / All / Next -->
+  <nav class="article-nav article-nav-top" aria-label="Article navigation (top)">
+    <div class="container article-nav-inner">
       <a href="#" class="article-nav-btn article-nav-prev" data-nav="prev" aria-label="Previous digest">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         <span class="article-nav-label">
           <span class="article-nav-direction">Previous</span>
           <span class="article-nav-date" data-nav-date="prev">—</span>
         </span>
       </a>
-      <a href="../" class="article-nav-btn article-nav-index" aria-label="All digests">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-        </svg>
+      <a href="../" class="article-nav-btn article-nav-index">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         <span>All digests</span>
       </a>
       <a href="#" class="article-nav-btn article-nav-next" data-nav="next" aria-label="Next digest">
@@ -96,130 +99,127 @@
           <span class="article-nav-direction">Next</span>
           <span class="article-nav-date" data-nav-date="next">—</span>
         </span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
   </nav>
 
-  <!-- Article -->
-  <article class="article-page">
-    <header class="article-header">
-      <div class="container">
-        <span class="category-tag">Daily Digest</span>
-        <h1 class="article-title">AI Pulse — April 2, 2026</h1>
-        <div class="article-meta">
-          <time datetime="2026-04-02">April 2, 2026</time>
-          <span class="meta-separator" aria-hidden="true">&middot;</span>
-          <span>9 min read</span>
-          <span class="meta-separator" aria-hidden="true">&middot;</span>
-          <span>143 articles from 33 sources</span>
-        </div>
-
-        <div class="share-bar" aria-label="Share this digest">
-          <button class="share-btn" data-share="copy" type="button" aria-label="Copy link" title="Copy link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            <span class="share-label">Copy link</span>
-          </button>
-          <a class="share-btn" data-share="twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21l-6.514 7.443L22 22h-6.094l-4.77-6.231L5.65 22H2.892l6.97-7.964L2 2h6.244l4.318 5.711L18.244 2zm-1.07 18h1.687L7.59 4H5.785l11.39 16z"/></svg>
-            <span class="share-label">Share on X</span>
-          </a>
-          <a class="share-btn" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            <span class="share-label">Share on LinkedIn</span>
-          </a>
-        </div>
-</div>
-    </header>
-
-        <aside class="article-toc" id="article-toc" aria-label="Table of contents">
-      <div class="container-narrow">
-        <button class="toc-toggle" id="toc-toggle" type="button" aria-expanded="true" aria-controls="toc-list">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-          <span>Table of Contents</span>
-          <svg class="toc-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  <!-- Article body with optional left TOC sidebar -->
+  <div class="article-layout">
+    <!-- TOC sidebar (sticky on desktop, drawer on mobile) -->
+    <aside class="article-toc-sidebar" id="article-toc" aria-label="Table of contents">
+      <div class="toc-sidebar-inner">
+        <button class="toc-close-mobile" id="toc-close-mobile" aria-label="Close table of contents">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
         </button>
+        <h3 class="toc-title">On this page</h3>
         <ul class="toc-list" id="toc-list"></ul>
+
+        <div class="toc-meta">
+          <a class="toc-back-link" href="../">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            <span>All digests</span>
+          </a>
+        </div>
       </div>
     </aside>
+    <div class="article-toc-overlay" id="article-toc-overlay"></div>
 
-    <div class="article-content">
-      <div class="container-narrow">
-                <h2 class="content-section-header section-headlines"><span class="section-icon"></span>Top 3 Headlines</h2>
-        <div class="numbered-item"><span class="item-number">1</span><span class="item-content"><strong>OpenAI Acquires TBPN</strong> (TechCrunch)</span></div>
-        <p class="arrow-description">OpenAI's acquisition of TBPN, a founder-led business talk show, marks a significant move by the company to expand its reach and influence in the tech industry. This acquisition is crucial as it allows OpenAI to operate TBPN independently under the leadership of chief political operative Chris Lehane, potentially shaping the narrative around AI and its applications. The move affects the broader tech community, including builders, businesses, and media outlets, as it signals OpenAI's intent to engage more deeply with public discourse on AI. Competitively, this positions OpenAI as a leader in not just AI technology but also in the conversation about AI's role in society. Expectations for what's next include how OpenAI will leverage TBPN to foster global conversations about AI, potentially leading to more strategic partnerships and public engagements.</p>
-        <div class="numbered-item"><span class="item-number">2</span><span class="item-content"><strong>Google Releases Gemma 4</strong> (The Decoder)</span></div>
-        <p class="arrow-description">Google's release of Gemma 4, its most capable open model family yet, under a fully open Apache 2.0 license, is a landmark event in the AI community. Gemma 4 includes four new models, offering enhanced capabilities in text and image processing. This release matters because it makes Google's proprietary large language model technology available to the open-source community, potentially accelerating innovation and adoption of AI technologies. Developers can expect to leverage Gemma 4 for a wide range of applications, from natural language processing to image generation, competing with other models like those from OpenAI and Microsoft. The competitive dynamics suggest a race towards more open and accessible AI models, with Google taking a significant lead.</p>
-        <div class="numbered-item"><span class="item-number">3</span><span class="item-content"><strong>Microsoft Invests in AI</strong> (Tom's Hardware, Robotics)</span></div>
-        <p class="arrow-description">Microsoft's decision to invest $5.5 billion in AI in Singapore underscores its commitment to sovereign AI investments worldwide. This investment is consequential because it signifies Microsoft's strategy to bolster its AI capabilities, potentially leading to the development of more sophisticated AI systems. The investment affects not just Microsoft but also the broader AI ecosystem, as it could lead to advancements in AI research and development. Competitively, this positions Microsoft as a major player in the global AI race, alongside other tech giants like Google and OpenAI. Expectations for what's next include the development of new AI models and technologies, as well as strategic partnerships and collaborations in the AI sector.</p>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-llm"><span class="section-icon"></span>LLM &amp; Model Updates</h2>
+    <article class="article-page">
+      <header class="article-header">
+        <div class="article-header-inner">
+          <span class="category-tag">Daily Digest</span>
+          <h1 class="article-title">AI Pulse — April 2, 2026</h1>
+          <div class="article-meta">
+            <time datetime="2026-04-02">Thursday, April 2, 2026</time>
+            <span class="meta-separator" aria-hidden="true">&middot;</span>
+            <span>9 min read</span>
+            <span class="meta-separator" aria-hidden="true">&middot;</span>
+            <span>143 articles from 33 sources</span>
+          </div>
+
+          <div class="share-bar" aria-label="Share this digest">
+            <button class="share-btn" data-share="copy" type="button" aria-label="Copy link" title="Copy link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="share-label">Copy link</span>
+            </button>
+            <a class="share-btn" data-share="twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.514 7.443L22 22h-6.094l-4.77-6.231L5.65 22H2.892l6.97-7.964L2 2h6.244l4.318 5.711L18.244 2zm-1.07 18h1.687L7.59 4H5.785l11.39 16z"/></svg>
+              <span class="share-label">Share on X</span>
+            </a>
+            <a class="share-btn" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span class="share-label">LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="article-content">
+        <div class="article-content-inner">
+          <p>Top 3 Headlines</p>
+          <div class="numbered-item"><span class="item-number">1</span><span class="item-content"><strong>OpenAI Acquires TBPN</strong> (TechCrunch)</span></div>
+          <p class="arrow-description">OpenAI's acquisition of TBPN, a founder-led business talk show, marks a significant move by the company to expand its reach and influence in the tech industry. This acquisition is crucial as it allows OpenAI to operate TBPN independently under the leadership of chief political operative Chris Lehane, potentially shaping the narrative around AI and its applications. The move affects the broader tech community, including builders, businesses, and media outlets, as it signals OpenAI's intent to engage more deeply with public discourse on AI. Competitively, this positions OpenAI as a leader in not just AI technology but also in the conversation about AI's role in society. Expectations for what's next include how OpenAI will leverage TBPN to foster global conversations about AI, potentially leading to more strategic partnerships and public engagements.</p>
+          <div class="numbered-item"><span class="item-number">2</span><span class="item-content"><strong>Google Releases Gemma 4</strong> (The Decoder)</span></div>
+          <p class="arrow-description">Google's release of Gemma 4, its most capable open model family yet, under a fully open Apache 2.0 license, is a landmark event in the AI community. Gemma 4 includes four new models, offering enhanced capabilities in text and image processing. This release matters because it makes Google's proprietary large language model technology available to the open-source community, potentially accelerating innovation and adoption of AI technologies. Developers can expect to leverage Gemma 4 for a wide range of applications, from natural language processing to image generation, competing with other models like those from OpenAI and Microsoft. The competitive dynamics suggest a race towards more open and accessible AI models, with Google taking a significant lead.</p>
+          <div class="numbered-item"><span class="item-number">3</span><span class="item-content"><strong>Microsoft Invests in AI</strong> (Tom's Hardware, Robotics)</span></div>
+          <p class="arrow-description">Microsoft's decision to invest $5.5 billion in AI in Singapore underscores its commitment to sovereign AI investments worldwide. This investment is consequential because it signifies Microsoft's strategy to bolster its AI capabilities, potentially leading to the development of more sophisticated AI systems. The investment affects not just Microsoft but also the broader AI ecosystem, as it could lead to advancements in AI research and development. Competitively, this positions Microsoft as a major player in the global AI race, alongside other tech giants like Google and OpenAI. Expectations for what's next include the development of new AI models and technologies, as well as strategic partnerships and collaborations in the AI sector.</p>
+          <p>LLM &amp; Model Updates</p>
           <ul class="content-list">
-            <li><strong>Microsoft Releases New Foundational Models</strong>: Microsoft has released three new foundational models that can transcribe voice into text, generate audio, and images. These models are significant because they demonstrate Microsoft's push towards developing its own AI capabilities, potentially reducing reliance on third-party models. The technical details include the models' ability to run specific tasks, such as speech-to-text and image generation, which can be crucial for developers looking to integrate these functionalities into their applications.</li>
-            <li><strong>Google Releases Gemma 4</strong>: Google's Gemma 4 models are available with 1B, 13B, and 27B parameters, featuring a new vision processor and instruction-tuned variants. This update is notable because it provides developers with a range of options for their AI applications, from smaller, more efficient models to larger, more powerful ones. The competitive context suggests that Gemma 4 will be a benchmark for other AI models, given its open-source nature and Google's reputation for innovation in AI.</li>
-            <li><strong>Anthropic's Claude Model</strong>: Anthropic's Claude model has been found to have 171 distinct emotion-like vectors, which can influence its behavior. This development is important because it highlights the complexity and human-like qualities of modern AI models. For developers, understanding these emotional vectors can be crucial for designing more empathetic and engaging AI interactions.</li>
+          <li><strong>Microsoft Releases New Foundational Models</strong>: Microsoft has released three new foundational models that can transcribe voice into text, generate audio, and images. These models are significant because they demonstrate Microsoft's push towards developing its own AI capabilities, potentially reducing reliance on third-party models. The technical details include the models' ability to run specific tasks, such as speech-to-text and image generation, which can be crucial for developers looking to integrate these functionalities into their applications.</li>
+          <li><strong>Google Releases Gemma 4</strong>: Google's Gemma 4 models are available with 1B, 13B, and 27B parameters, featuring a new vision processor and instruction-tuned variants. This update is notable because it provides developers with a range of options for their AI applications, from smaller, more efficient models to larger, more powerful ones. The competitive context suggests that Gemma 4 will be a benchmark for other AI models, given its open-source nature and Google's reputation for innovation in AI.</li>
+          <li><strong>Anthropic's Claude Model</strong>: Anthropic's Claude model has been found to have 171 distinct emotion-like vectors, which can influence its behavior. This development is important because it highlights the complexity and human-like qualities of modern AI models. For developers, understanding these emotional vectors can be crucial for designing more empathetic and engaging AI interactions.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-research"><span class="section-icon"></span>Research &amp; Breakthroughs</h2>
+          <p>Research &amp; Breakthroughs</p>
           <ul class="content-list">
-            <li><strong>Kintsugi Shuts Down</strong>: Kintsugi's shutdown after failing to secure FDA clearance for its AI-designed tool to detect signs of depression and anxiety is a significant setback. The methodology involved using AI to analyze speech patterns, which, despite its potential, faced regulatory hurdles. The practical implications of this shutdown include the loss of a potentially valuable tool for mental health diagnosis and the challenges faced by startups in navigating complex regulatory environments.</li>
-            <li><strong>Nvidia, UC Berkeley, and Stanford Develop Framework</strong>: The framework developed by Nvidia, UC Berkeley, and Stanford to systematically test AI models' ability to control robots is a breakthrough. The achievement involves creating a structured approach to evaluating the capabilities of AI in robotics, which is crucial for advancing the field. The methodology includes using human-designed abstractions, which are necessary for effective robot control, indicating a collaborative approach between human and machine intelligence.</li>
-            <li><strong>Anthropic Publishes Research on Emotion Concepts</strong>: Anthropic's publication on emotion concepts in large language models provides insights into AI emotional intelligence. The research achievement is significant because it explores how AI models can understand and replicate human emotions, which is essential for developing more relatable and interactive AI systems. The practical implications include the potential for more sophisticated AI applications in fields like customer service and mental health support.</li>
+          <li><strong>Kintsugi Shuts Down</strong>: Kintsugi's shutdown after failing to secure FDA clearance for its AI-designed tool to detect signs of depression and anxiety is a significant setback. The methodology involved using AI to analyze speech patterns, which, despite its potential, faced regulatory hurdles. The practical implications of this shutdown include the loss of a potentially valuable tool for mental health diagnosis and the challenges faced by startups in navigating complex regulatory environments.</li>
+          <li><strong>Nvidia, UC Berkeley, and Stanford Develop Framework</strong>: The framework developed by Nvidia, UC Berkeley, and Stanford to systematically test AI models' ability to control robots is a breakthrough. The achievement involves creating a structured approach to evaluating the capabilities of AI in robotics, which is crucial for advancing the field. The methodology includes using human-designed abstractions, which are necessary for effective robot control, indicating a collaborative approach between human and machine intelligence.</li>
+          <li><strong>Anthropic Publishes Research on Emotion Concepts</strong>: Anthropic's publication on emotion concepts in large language models provides insights into AI emotional intelligence. The research achievement is significant because it explores how AI models can understand and replicate human emotions, which is essential for developing more relatable and interactive AI systems. The practical implications include the potential for more sophisticated AI applications in fields like customer service and mental health support.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-startups"><span class="section-icon"></span>Startup &amp; Funding</h2>
+          <p>Startup &amp; Funding</p>
           <ul class="content-list">
-            <li><strong>Kintsugi Shuts Down</strong>: Kintsugi's shutdown after seven years of developing AI to detect depression and anxiety is a notable event. The company's inability to secure FDA clearance for its product highlights the regulatory challenges faced by health-tech startups. Kintsugi's technology, despite its potential, could not overcome these hurdles, leading to its demise.</li>
-            <li><strong>Cursor Launches AI Agent Experience</strong>: Cursor's launch of a new AI agent experience to compete with Claude Code and Codex is a significant development. The company's product aims to provide an alternative to existing AI coding tools, potentially disrupting the market. The funding and valuation details are not disclosed, but the move signals Cursor's intent to compete in the AI-powered coding solutions space.</li>
-            <li><strong>CoreWeave Evolves Business</strong>: CoreWeave's shift in focus from GPU-as-a-service to inference is a strategic move. The company, known for its GPU provisioning services, is adapting to the changing AI landscape by focusing on inference, which is crucial for deploying AI models in real-world applications. This evolution positions CoreWeave for growth in the AI sector, particularly in areas requiring efficient model deployment.</li>
+          <li><strong>Kintsugi Shuts Down</strong>: Kintsugi's shutdown after seven years of developing AI to detect depression and anxiety is a notable event. The company's inability to secure FDA clearance for its product highlights the regulatory challenges faced by health-tech startups. Kintsugi's technology, despite its potential, could not overcome these hurdles, leading to its demise.</li>
+          <li><strong>Cursor Launches AI Agent Experience</strong>: Cursor's launch of a new AI agent experience to compete with Claude Code and Codex is a significant development. The company's product aims to provide an alternative to existing AI coding tools, potentially disrupting the market. The funding and valuation details are not disclosed, but the move signals Cursor's intent to compete in the AI-powered coding solutions space.</li>
+          <li><strong>CoreWeave Evolves Business</strong>: CoreWeave's shift in focus from GPU-as-a-service to inference is a strategic move. The company, known for its GPU provisioning services, is adapting to the changing AI landscape by focusing on inference, which is crucial for deploying AI models in real-world applications. This evolution positions CoreWeave for growth in the AI sector, particularly in areas requiring efficient model deployment.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-tools"><span class="section-icon"></span>AI Tools &amp; Products</h2>
+          <p>AI Tools &amp; Products</p>
           <ul class="content-list">
-            <li><strong>Google Updates Vids App</strong>: Google's update to its Vids app, allowing users to customize and instruct avatars for video creation through prompts, is a notable launch. The app's new features make it more accessible for users to create personalized video content, leveraging AI for avatar customization and instruction. The competitive context suggests that Google's Vids app will compete with other video creation tools, offering a unique AI-driven approach to content generation.</li>
-            <li><strong>Google Updates Home App</strong>: Google's update to its Home app, making controlling smart home devices with its Gemini AI assistant more natural and reliable, is a significant development. The update affects users of Google's smart home ecosystem, providing them with a more seamless and intuitive experience. The technical details include improvements in voice command recognition and device control, which are essential for a user-friendly smart home experience.</li>
-            <li><strong>Granola Reveals AI-Powered Note-Taking App</strong>: Granola's reveal of its AI-powered note-taking app, which makes notes viewable to anyone with a link by default unless users opt out, raises privacy concerns. The app's functionality is notable because it leverages AI for note-taking, potentially offering advanced features like summarization and organization. However, the default sharing setting could be a drawback for users concerned about privacy, highlighting the need for clear opt-out options and robust privacy controls.</li>
+          <li><strong>Google Updates Vids App</strong>: Google's update to its Vids app, allowing users to customize and instruct avatars for video creation through prompts, is a notable launch. The app's new features make it more accessible for users to create personalized video content, leveraging AI for avatar customization and instruction. The competitive context suggests that Google's Vids app will compete with other video creation tools, offering a unique AI-driven approach to content generation.</li>
+          <li><strong>Google Updates Home App</strong>: Google's update to its Home app, making controlling smart home devices with its Gemini AI assistant more natural and reliable, is a significant development. The update affects users of Google's smart home ecosystem, providing them with a more seamless and intuitive experience. The technical details include improvements in voice command recognition and device control, which are essential for a user-friendly smart home experience.</li>
+          <li><strong>Granola Reveals AI-Powered Note-Taking App</strong>: Granola's reveal of its AI-powered note-taking app, which makes notes viewable to anyone with a link by default unless users opt out, raises privacy concerns. The app's functionality is notable because it leverages AI for note-taking, potentially offering advanced features like summarization and organization. However, the default sharing setting could be a drawback for users concerned about privacy, highlighting the need for clear opt-out options and robust privacy controls.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-policy"><span class="section-icon"></span>Policy &amp; Regulation</h2>
+          <p>Policy &amp; Regulation</p>
           <ul class="content-list">
-            <li><strong>Kintsugi Fails to Secure FDA Clearance</strong>: Kintsugi's failure to secure FDA clearance for its AI-designed tool to detect signs of depression and anxiety highlights regulatory challenges. The timeline for such clearances can be lengthy and unpredictable, affecting not just Kintsugi but also other health-tech startups seeking to bring AI-powered diagnostic tools to market. The impact is significant because it underscores the hurdles faced by innovators in the health-tech sector, particularly those leveraging AI for diagnostic purposes.</li>
-            <li><strong>US Commodity Futures Trading Commission Sues States</strong>: The US Commodity Futures Trading Commission's lawsuit against Illinois, Arizona, and Connecticut for attempting to regulate prediction markets like Kalshi and Polymarket is a significant regulatory development. The lawsuit affects the regulatory landscape for AI-driven prediction markets, potentially setting a precedent for how such markets are governed. The timeline for the resolution of this lawsuit could be lengthy, with implications for the broader AI and fintech industries.</li>
-            <li><strong>Russia Blocks Payments for Apple Services</strong>: Russia's decision to block payments for Apple services, including the App Store, as of April 1, 2026, is a notable regulatory move. The action affects Apple's operations in Russia and could have broader implications for the tech industry, particularly in terms of geopolitical tensions and their impact on technology services.</li>
+          <li><strong>Kintsugi Fails to Secure FDA Clearance</strong>: Kintsugi's failure to secure FDA clearance for its AI-designed tool to detect signs of depression and anxiety highlights regulatory challenges. The timeline for such clearances can be lengthy and unpredictable, affecting not just Kintsugi but also other health-tech startups seeking to bring AI-powered diagnostic tools to market. The impact is significant because it underscores the hurdles faced by innovators in the health-tech sector, particularly those leveraging AI for diagnostic purposes.</li>
+          <li><strong>US Commodity Futures Trading Commission Sues States</strong>: The US Commodity Futures Trading Commission's lawsuit against Illinois, Arizona, and Connecticut for attempting to regulate prediction markets like Kalshi and Polymarket is a significant regulatory development. The lawsuit affects the regulatory landscape for AI-driven prediction markets, potentially setting a precedent for how such markets are governed. The timeline for the resolution of this lawsuit could be lengthy, with implications for the broader AI and fintech industries.</li>
+          <li><strong>Russia Blocks Payments for Apple Services</strong>: Russia's decision to block payments for Apple services, including the App Store, as of April 1, 2026, is a notable regulatory move. The action affects Apple's operations in Russia and could have broader implications for the tech industry, particularly in terms of geopolitical tensions and their impact on technology services.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-robotics"><span class="section-icon"></span>Robotics &amp; Hardware</h2>
+          <p>Robotics &amp; Hardware</p>
           <ul class="content-list">
-            <li><strong>Sony Interactive Entertainment Acquires Cinemersive Labs</strong>: Sony Interactive Entertainment's acquisition of Cinemersive Labs, a UK startup developing tools for 3D volume conversion, is a significant development. The acquisition affects Sony's capabilities in graphical technology, potentially enhancing its offerings in the gaming and entertainment sectors. The technical details include Cinemersive Labs' expertise in converting 2D photos and videos into 3D volumes, which could be crucial for Sony's future projects, including VR and gaming applications.</li>
-            <li><strong>NVIDIA Releases DGX Spark</strong>: NVIDIA's release of DGX Spark, a new hardware platform for building personalized AI assistants, is notable. The platform is optimized for local agentic AI, indicating NVIDIA's focus on enabling more sophisticated and personalized AI experiences. The specs of DGX Spark include its capability to support advanced AI models, making it a significant development for developers and users alike.</li>
+          <li><strong>Sony Interactive Entertainment Acquires Cinemersive Labs</strong>: Sony Interactive Entertainment's acquisition of Cinemersive Labs, a UK startup developing tools for 3D volume conversion, is a significant development. The acquisition affects Sony's capabilities in graphical technology, potentially enhancing its offerings in the gaming and entertainment sectors. The technical details include Cinemersive Labs' expertise in converting 2D photos and videos into 3D volumes, which could be crucial for Sony's future projects, including VR and gaming applications.</li>
+          <li><strong>NVIDIA Releases DGX Spark</strong>: NVIDIA's release of DGX Spark, a new hardware platform for building personalized AI assistants, is notable. The platform is optimized for local agentic AI, indicating NVIDIA's focus on enabling more sophisticated and personalized AI experiences. The specs of DGX Spark include its capability to support advanced AI models, making it a significant development for developers and users alike.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-trend"><span class="section-icon"></span>Trend Analysis</h2>
-        <p>The dominant theme emerging from today's news is the rapid advancement and diversification of AI technologies, from large language models like Gemma 4 to AI-powered note-taking apps and smart home devices. Connections between these stories include the push for more open and accessible AI models, the challenges faced by startups in navigating regulatory environments, and the increasing focus on developing AI for specific applications, such as mental health diagnosis and smart home control. These developments signal that the AI industry is moving towards more specialized and integrated solutions, with companies like Google, Microsoft, and OpenAI leading the charge.</p>
-        <p>For AI practitioners, founders, and investors, the key takeaway is the importance of staying adaptable in a rapidly evolving landscape. The trend towards open-source models and the emphasis on regulatory compliance suggest that transparency and legal savvy will be essential for success. Furthermore, the diversification of AI applications indicates a growing demand for specialized AI solutions, presenting opportunities for innovation and investment. As the industry continues to mature, expect to see more strategic acquisitions, like OpenAI's purchase of TBPN, and significant investments in AI research and development, such as Microsoft's $5.5 billion investment in Singapore.</p>
-        <p>The next 3-6 months will be critical for the AI sector, with anticipated advancements in AI model capabilities, further regulatory clarifications, and potentially more high-profile acquisitions and investments. The race towards more sophisticated and accessible AI technologies is intensifying, with companies and startups alike vying for leadership in the market. As the landscape continues to shift, the ability to innovate, adapt, and navigate the complex interplay of technological, regulatory, and market forces will be paramount for success in the AI industry.</p>
+          <p>Trend Analysis</p>
+          <p>The dominant theme emerging from today's news is the rapid advancement and diversification of AI technologies, from large language models like Gemma 4 to AI-powered note-taking apps and smart home devices. Connections between these stories include the push for more open and accessible AI models, the challenges faced by startups in navigating regulatory environments, and the increasing focus on developing AI for specific applications, such as mental health diagnosis and smart home control. These developments signal that the AI industry is moving towards more specialized and integrated solutions, with companies like Google, Microsoft, and OpenAI leading the charge.</p>
+          <p>For AI practitioners, founders, and investors, the key takeaway is the importance of staying adaptable in a rapidly evolving landscape. The trend towards open-source models and the emphasis on regulatory compliance suggest that transparency and legal savvy will be essential for success. Furthermore, the diversification of AI applications indicates a growing demand for specialized AI solutions, presenting opportunities for innovation and investment. As the industry continues to mature, expect to see more strategic acquisitions, like OpenAI's purchase of TBPN, and significant investments in AI research and development, such as Microsoft's $5.5 billion investment in Singapore.</p>
+          <p>The next 3-6 months will be critical for the AI sector, with anticipated advancements in AI model capabilities, further regulatory clarifications, and potentially more high-profile acquisitions and investments. The race towards more sophisticated and accessible AI technologies is intensifying, with companies and startups alike vying for leadership in the market. As the landscape continues to shift, the ability to innovate, adapt, and navigate the complex interplay of technological, regulatory, and market forces will be paramount for success in the AI industry.</p>
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </div>
 
   <!-- BOTTOM article navigation -->
-  <nav class="article-nav article-nav-bottom" id="article-nav-bottom" aria-label="Article navigation (bottom)">
-    <div class="container-narrow article-nav-inner">
+  <nav class="article-nav article-nav-bottom" aria-label="Article navigation (bottom)">
+    <div class="container article-nav-inner">
       <a href="#" class="article-nav-btn article-nav-prev" data-nav="prev" aria-label="Previous digest">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         <span class="article-nav-label">
           <span class="article-nav-direction">Previous</span>
           <span class="article-nav-date" data-nav-date="prev">—</span>
         </span>
       </a>
-      <a href="../" class="article-nav-btn article-nav-index" aria-label="All digests">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-        </svg>
+      <a href="../" class="article-nav-btn article-nav-index">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         <span>All digests</span>
       </a>
       <a href="#" class="article-nav-btn article-nav-next" data-nav="next" aria-label="Next digest">
@@ -227,14 +227,11 @@
           <span class="article-nav-direction">Next</span>
           <span class="article-nav-date" data-nav-date="next">—</span>
         </span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
   </nav>
 
-  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
       <p class="footer-copy">&copy; 2026 AI Pulse. All rights reserved.</p>

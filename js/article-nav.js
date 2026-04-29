@@ -78,14 +78,18 @@
   // ──────────────────────────────────────────────────────────────────────
   function setupTOC() {
     const tocList = document.getElementById("toc-list");
+    const tocAside = document.getElementById("article-toc");
+    const tocOverlay = document.getElementById("article-toc-overlay");
+    const tocTrigger = document.getElementById("toc-trigger-mobile");
+    const tocClose = document.getElementById("toc-close-mobile");
     if (!tocList) return;
 
     const headers = document.querySelectorAll(
       ".article-content h2.content-section-header"
     );
     if (headers.length < 2) {
-      const tocAside = document.getElementById("article-toc");
       if (tocAside) tocAside.style.display = "none";
+      if (tocTrigger) tocTrigger.style.display = "none";
       return;
     }
 
@@ -102,19 +106,31 @@
       a.href = `#${slug}`;
       a.textContent = text;
       a.className = "toc-link";
+      // Close drawer on mobile after click
+      a.addEventListener("click", () => {
+        if (window.innerWidth < 1024) closeDrawer();
+      });
       li.appendChild(a);
       tocList.appendChild(li);
     });
 
-    // Toggle expand/collapse
-    const toggle = document.getElementById("toc-toggle");
-    if (toggle) {
-      toggle.addEventListener("click", () => {
-        const expanded = toggle.getAttribute("aria-expanded") === "true";
-        toggle.setAttribute("aria-expanded", String(!expanded));
-        tocList.classList.toggle("toc-collapsed", expanded);
-      });
+    // Mobile drawer open/close
+    function openDrawer() {
+      tocAside && tocAside.classList.add("toc-open");
+      tocOverlay && tocOverlay.classList.add("toc-overlay-open");
+      document.body.style.overflow = "hidden";
     }
+    function closeDrawer() {
+      tocAside && tocAside.classList.remove("toc-open");
+      tocOverlay && tocOverlay.classList.remove("toc-overlay-open");
+      document.body.style.overflow = "";
+    }
+    if (tocTrigger) tocTrigger.addEventListener("click", openDrawer);
+    if (tocClose) tocClose.addEventListener("click", closeDrawer);
+    if (tocOverlay) tocOverlay.addEventListener("click", closeDrawer);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeDrawer();
+    });
 
     // Highlight current section while scrolling
     const observer = new IntersectionObserver(
@@ -185,32 +201,11 @@
   }
 
   // ──────────────────────────────────────────────────────────────────────
-  // Search trigger (jumps to index page with query)
-  // ──────────────────────────────────────────────────────────────────────
-  function setupSearch() {
-    const btn = document.getElementById("search-toggle");
-    if (!btn) return;
-    btn.addEventListener("click", () => {
-      window.location.href = "../#search";
-    });
-    // "/" key shortcut → focus search on index
-    document.addEventListener("keydown", (e) => {
-      const tag = (e.target && e.target.tagName) || "";
-      if (tag === "INPUT" || tag === "TEXTAREA") return;
-      if (e.key === "/" && !e.metaKey && !e.ctrlKey) {
-        e.preventDefault();
-        window.location.href = "../#search";
-      }
-    });
-  }
-
-  // ──────────────────────────────────────────────────────────────────────
   // Main
   // ──────────────────────────────────────────────────────────────────────
   function init() {
     setupTOC();
     setupShare();
-    setupSearch();
 
     // Fetch manifest, then wire prev/next + keyboard shortcuts
     fetch("../manifest.json", { cache: "no-cache" })

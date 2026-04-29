@@ -11,7 +11,17 @@
   <meta property="og:title" content="AI Pulse — April 8, 2026 — AI Pulse">
   <meta property="og:description" content="Meta Launches Muse Spark. Meta has launched Muse Spark, its first frontier model since overhauling its AI efforts, to power the Meta AI app and website in th...">
   <meta property="og:type" content="article">
+  <meta property="og:url" content="https://parth-unjiya.github.io/ai-pulse/articles/2026-04-08.html">
   <meta property="article:published_time" content="2026-04-08">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Pulse — April 8, 2026">
+  <meta name="twitter:description" content="Meta Launches Muse Spark. Meta has launched Muse Spark, its first frontier model since overhauling its AI efforts, to power the Meta AI app and website in th...">
+
+  <!-- Canonical + RSS -->
+  <link rel="canonical" href="https://parth-unjiya.github.io/ai-pulse/articles/2026-04-08.html">
+  <link rel="alternate" type="application/rss+xml" title="AI Pulse RSS" href="../feed.xml">
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%234f46e5'/><stop offset='100%' stop-color='%237c3aed'/></linearGradient></defs><path d='M18 2L6 18h8l-2 12 12-16h-8z' fill='url(%23g)'/></svg>" type="image/svg+xml">
@@ -30,7 +40,7 @@
   <!-- Reading Progress Bar -->
   <div class="reading-progress-bar" id="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
-  <!-- Navigation -->
+  <!-- Top navbar -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner container">
       <a href="../" class="nav-logo" aria-label="AI Pulse home">
@@ -46,49 +56,42 @@
         <span>AI Pulse</span>
       </a>
 
-      <button
-        class="theme-toggle"
-        id="theme-toggle"
-        type="button"
-        aria-label="Toggle dark mode"
-        title="Toggle dark mode"
-      >
-        <!-- Sun icon (shown in dark mode) -->
-        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="12" cy="12" r="5"/>
-          <line x1="12" y1="1" x2="12" y2="3"/>
-          <line x1="12" y1="21" x2="12" y2="23"/>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-          <line x1="1" y1="12" x2="3" y2="12"/>
-          <line x1="21" y1="12" x2="23" y2="12"/>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-        </svg>
-        <!-- Moon icon (shown in light mode) -->
-        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-        </svg>
-      </button>
+      <div class="nav-actions">
+        <button class="toc-trigger-mobile" id="toc-trigger-mobile" type="button" aria-label="Open table of contents" title="Table of contents">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+            <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+          </svg>
+        </button>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </nav>
 
-  <!-- TOP article navigation (Prev / Index / Next) -->
-  <nav class="article-nav article-nav-top" id="article-nav-top" aria-label="Article navigation (top)">
-    <div class="container-narrow article-nav-inner">
+  <!-- TOP article navigation: Prev / All / Next -->
+  <nav class="article-nav article-nav-top" aria-label="Article navigation (top)">
+    <div class="container article-nav-inner">
       <a href="#" class="article-nav-btn article-nav-prev" data-nav="prev" aria-label="Previous digest">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         <span class="article-nav-label">
           <span class="article-nav-direction">Previous</span>
           <span class="article-nav-date" data-nav-date="prev">—</span>
         </span>
       </a>
-      <a href="../" class="article-nav-btn article-nav-index" aria-label="All digests">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-        </svg>
+      <a href="../" class="article-nav-btn article-nav-index">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         <span>All digests</span>
       </a>
       <a href="#" class="article-nav-btn article-nav-next" data-nav="next" aria-label="Next digest">
@@ -96,127 +99,124 @@
           <span class="article-nav-direction">Next</span>
           <span class="article-nav-date" data-nav-date="next">—</span>
         </span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
   </nav>
 
-  <!-- Article -->
-  <article class="article-page">
-    <header class="article-header">
-      <div class="container">
-        <span class="category-tag">Daily Digest</span>
-        <h1 class="article-title">AI Pulse — April 8, 2026</h1>
-        <div class="article-meta">
-          <time datetime="2026-04-08">April 8, 2026</time>
-          <span class="meta-separator" aria-hidden="true">&middot;</span>
-          <span>6 min read</span>
-          <span class="meta-separator" aria-hidden="true">&middot;</span>
-          <span>53 articles from 18 sources</span>
-        </div>
-
-        <div class="share-bar" aria-label="Share this digest">
-          <button class="share-btn" data-share="copy" type="button" aria-label="Copy link" title="Copy link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            <span class="share-label">Copy link</span>
-          </button>
-          <a class="share-btn" data-share="twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21l-6.514 7.443L22 22h-6.094l-4.77-6.231L5.65 22H2.892l6.97-7.964L2 2h6.244l4.318 5.711L18.244 2zm-1.07 18h1.687L7.59 4H5.785l11.39 16z"/></svg>
-            <span class="share-label">Share on X</span>
-          </a>
-          <a class="share-btn" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            <span class="share-label">Share on LinkedIn</span>
-          </a>
-        </div>
-</div>
-    </header>
-
-        <aside class="article-toc" id="article-toc" aria-label="Table of contents">
-      <div class="container-narrow">
-        <button class="toc-toggle" id="toc-toggle" type="button" aria-expanded="true" aria-controls="toc-list">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-          <span>Table of Contents</span>
-          <svg class="toc-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  <!-- Article body with optional left TOC sidebar -->
+  <div class="article-layout">
+    <!-- TOC sidebar (sticky on desktop, drawer on mobile) -->
+    <aside class="article-toc-sidebar" id="article-toc" aria-label="Table of contents">
+      <div class="toc-sidebar-inner">
+        <button class="toc-close-mobile" id="toc-close-mobile" aria-label="Close table of contents">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
         </button>
+        <h3 class="toc-title">On this page</h3>
         <ul class="toc-list" id="toc-list"></ul>
+
+        <div class="toc-meta">
+          <a class="toc-back-link" href="../">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            <span>All digests</span>
+          </a>
+        </div>
       </div>
     </aside>
+    <div class="article-toc-overlay" id="article-toc-overlay"></div>
 
-    <div class="article-content">
-      <div class="container-narrow">
-                <h2 class="content-section-header section-headlines"><span class="section-icon"></span>Top 3 Headlines</h2>
-        <div class="numbered-item"><span class="item-number">1</span><span class="item-content"><strong>Meta Launches Muse Spark</strong> (The Verge)</span></div>
-        <p class="arrow-description">Meta has launched Muse Spark, its first frontier model since overhauling its AI efforts, to power the Meta AI app and website in the US. This move signifies a significant step in Meta's AI development, aiming to close the gap with competitors like <strong>OpenAI</strong>, <strong>Anthropic</strong>, and <strong>Google</strong>. The launch of Muse Spark, which does not have open weights, indicates Meta's strategic shift towards more controlled and proprietary AI models. This development affects the broader AI landscape, particularly in how companies balance openness with proprietary strategies. As Meta continues to invest heavily in AI, we can expect more advancements in its capabilities, potentially altering the competitive dynamics in the industry.</p>
-        <div class="numbered-item"><span class="item-number">2</span><span class="item-content"><strong>OpenAI Closes $122 Billion in Funding</strong> (The Verge)</span></div>
-        <p class="arrow-description"><strong>OpenAI</strong> has secured $122 billion in funding at a post-money valuation of $852 billion, positioning the company for a potential IPO later this year. This massive funding round underscores the immense interest and investment in AI technology, particularly in companies that are pushing the boundaries of AI capabilities. The valuation of OpenAI highlights the market's confidence in the company's ability to lead in AI innovation, which could have significant implications for the development and adoption of AI technologies across various sectors. As OpenAI moves forward, its funding will likely accelerate the development of more sophisticated AI models and tools, further solidifying its position in the market.</p>
-        <div class="numbered-item"><span class="item-number">3</span><span class="item-content"><strong>Intel Partners with Elon Musk's Terafab Chip Venture</strong> (Wired AI)</span></div>
-        <p class="arrow-description"><strong>Intel</strong> has partnered with <strong>Elon Musk's</strong> Terafab Chip venture, although details of the partnership are still unclear. This collaboration could mark a significant development in the chip-making industry, potentially leading to advancements in AI computing capabilities. The involvement of Intel, a proven chip-making expert, in Musk's ambitious project could accelerate the development of specialized AI chips, impacting the efficiency and power of future AI systems. As more information about the partnership emerges, we can expect to see how this collaboration will influence the trajectory of AI hardware development.</p>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-llm"><span class="section-icon"></span>LLM &amp; Model Updates</h2>
+    <article class="article-page">
+      <header class="article-header">
+        <div class="article-header-inner">
+          <span class="category-tag">Daily Digest</span>
+          <h1 class="article-title">AI Pulse — April 8, 2026</h1>
+          <div class="article-meta">
+            <time datetime="2026-04-08">Wednesday, April 8, 2026</time>
+            <span class="meta-separator" aria-hidden="true">&middot;</span>
+            <span>6 min read</span>
+            <span class="meta-separator" aria-hidden="true">&middot;</span>
+            <span>53 articles from 18 sources</span>
+          </div>
+
+          <div class="share-bar" aria-label="Share this digest">
+            <button class="share-btn" data-share="copy" type="button" aria-label="Copy link" title="Copy link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="share-label">Copy link</span>
+            </button>
+            <a class="share-btn" data-share="twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.514 7.443L22 22h-6.094l-4.77-6.231L5.65 22H2.892l6.97-7.964L2 2h6.244l4.318 5.711L18.244 2zm-1.07 18h1.687L7.59 4H5.785l11.39 16z"/></svg>
+              <span class="share-label">Share on X</span>
+            </a>
+            <a class="share-btn" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span class="share-label">LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="article-content">
+        <div class="article-content-inner">
+          <p>Top 3 Headlines</p>
+          <div class="numbered-item"><span class="item-number">1</span><span class="item-content"><strong>Meta Launches Muse Spark</strong> (The Verge)</span></div>
+          <p class="arrow-description">Meta has launched Muse Spark, its first frontier model since overhauling its AI efforts, to power the Meta AI app and website in the US. This move signifies a significant step in Meta's AI development, aiming to close the gap with competitors like <strong>OpenAI</strong>, <strong>Anthropic</strong>, and <strong>Google</strong>. The launch of Muse Spark, which does not have open weights, indicates Meta's strategic shift towards more controlled and proprietary AI models. This development affects the broader AI landscape, particularly in how companies balance openness with proprietary strategies. As Meta continues to invest heavily in AI, we can expect more advancements in its capabilities, potentially altering the competitive dynamics in the industry.</p>
+          <div class="numbered-item"><span class="item-number">2</span><span class="item-content"><strong>OpenAI Closes $122 Billion in Funding</strong> (The Verge)</span></div>
+          <p class="arrow-description"><strong>OpenAI</strong> has secured $122 billion in funding at a post-money valuation of $852 billion, positioning the company for a potential IPO later this year. This massive funding round underscores the immense interest and investment in AI technology, particularly in companies that are pushing the boundaries of AI capabilities. The valuation of OpenAI highlights the market's confidence in the company's ability to lead in AI innovation, which could have significant implications for the development and adoption of AI technologies across various sectors. As OpenAI moves forward, its funding will likely accelerate the development of more sophisticated AI models and tools, further solidifying its position in the market.</p>
+          <div class="numbered-item"><span class="item-number">3</span><span class="item-content"><strong>Intel Partners with Elon Musk's Terafab Chip Venture</strong> (Wired AI)</span></div>
+          <p class="arrow-description"><strong>Intel</strong> has partnered with <strong>Elon Musk's</strong> Terafab Chip venture, although details of the partnership are still unclear. This collaboration could mark a significant development in the chip-making industry, potentially leading to advancements in AI computing capabilities. The involvement of Intel, a proven chip-making expert, in Musk's ambitious project could accelerate the development of specialized AI chips, impacting the efficiency and power of future AI systems. As more information about the partnership emerges, we can expect to see how this collaboration will influence the trajectory of AI hardware development.</p>
+          <p>LLM &amp; Model Updates</p>
           <ul class="content-list">
-            <li><strong>Meta</strong> releases <strong>Muse Spark</strong>, its first model without open weights, which independent testing shows is closing the gap to <strong>OpenAI</strong>, <strong>Anthropic</strong>, and <strong>Google</strong>. This development is significant for developers as it offers a new, potentially more controlled alternative for AI model integration, with Meta aiming to provide a more proprietary and secure AI solution.</li>
-            <li><strong>Stability AI</strong> launches <strong>Brand Studio</strong> for brand-consistent image generation using custom-trained models, automated production workflows, and precision image editing tools. This launch means developers can now utilize <strong>Stability AI's</strong> capabilities to generate AI visuals that match specific brand identities, enhancing brand consistency across digital platforms.</li>
-            <li><strong>Z.AI</strong> released <strong>GLM-5.1</strong>, a 754B agentic model that achieves state-of-the-art on SWE-Bench Pro and sustains 8-hour autonomous execution. This update is notable for its autonomous execution capabilities, offering developers a model that can perform complex tasks over extended periods, which could be crucial for applications requiring sustained AI operation.</li>
+          <li><strong>Meta</strong> releases <strong>Muse Spark</strong>, its first model without open weights, which independent testing shows is closing the gap to <strong>OpenAI</strong>, <strong>Anthropic</strong>, and <strong>Google</strong>. This development is significant for developers as it offers a new, potentially more controlled alternative for AI model integration, with Meta aiming to provide a more proprietary and secure AI solution.</li>
+          <li><strong>Stability AI</strong> launches <strong>Brand Studio</strong> for brand-consistent image generation using custom-trained models, automated production workflows, and precision image editing tools. This launch means developers can now utilize <strong>Stability AI's</strong> capabilities to generate AI visuals that match specific brand identities, enhancing brand consistency across digital platforms.</li>
+          <li><strong>Z.AI</strong> released <strong>GLM-5.1</strong>, a 754B agentic model that achieves state-of-the-art on SWE-Bench Pro and sustains 8-hour autonomous execution. This update is notable for its autonomous execution capabilities, offering developers a model that can perform complex tasks over extended periods, which could be crucial for applications requiring sustained AI operation.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-research"><span class="section-icon"></span>Research &amp; Breakthroughs</h2>
+          <p>Research &amp; Breakthroughs</p>
           <ul class="content-list">
-            <li><strong>Mustafa Suleyman</strong> states that AI development won’t hit a wall anytime soon due to exponential trends at its core. This perspective suggests that the fundamental nature of AI development will continue to drive progress, implying that researchers and developers should focus on leveraging these trends to achieve breakthroughs.</li>
-            <li><strong>Hugging Face</strong> introduces <strong>ALTK-Evolve</strong>, an on-the-job learning framework for AI agents. This framework allows for the continuous improvement of AI agents as they perform tasks, potentially leading to more efficient and adaptive AI systems.</li>
-            <li>Researchers introduce <strong>NUMINA</strong>, a training-free framework for improved numerical alignment in text-to-video diffusion models. This development could enhance the accuracy and efficiency of text-to-video generation, a crucial aspect of multimedia content creation.</li>
+          <li><strong>Mustafa Suleyman</strong> states that AI development won’t hit a wall anytime soon due to exponential trends at its core. This perspective suggests that the fundamental nature of AI development will continue to drive progress, implying that researchers and developers should focus on leveraging these trends to achieve breakthroughs.</li>
+          <li><strong>Hugging Face</strong> introduces <strong>ALTK-Evolve</strong>, an on-the-job learning framework for AI agents. This framework allows for the continuous improvement of AI agents as they perform tasks, potentially leading to more efficient and adaptive AI systems.</li>
+          <li>Researchers introduce <strong>NUMINA</strong>, a training-free framework for improved numerical alignment in text-to-video diffusion models. This development could enhance the accuracy and efficiency of text-to-video generation, a crucial aspect of multimedia content creation.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-startups"><span class="section-icon"></span>Startup &amp; Funding</h2>
+          <p>Startup &amp; Funding</p>
           <ul class="content-list">
-            <li><strong>OpenAI</strong> closes $122 billion in funding at a post-money valuation of $852 billion, potentially planning for an IPO later this year. This funding round positions <strong>OpenAI</strong> as a leader in the AI industry, with significant resources to invest in AI research and development.</li>
-            <li><strong>Uber</strong> expands its <strong>AWS</strong> partnership to build AI capabilities, leveraging <strong>AWS'</strong> AI chips for real-time operations and model development. This partnership signals <strong>Uber's</strong> commitment to integrating AI into its operations, potentially leading to more efficient and personalized services.</li>
+          <li><strong>OpenAI</strong> closes $122 billion in funding at a post-money valuation of $852 billion, potentially planning for an IPO later this year. This funding round positions <strong>OpenAI</strong> as a leader in the AI industry, with significant resources to invest in AI research and development.</li>
+          <li><strong>Uber</strong> expands its <strong>AWS</strong> partnership to build AI capabilities, leveraging <strong>AWS'</strong> AI chips for real-time operations and model development. This partnership signals <strong>Uber's</strong> commitment to integrating AI into its operations, potentially leading to more efficient and personalized services.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-tools"><span class="section-icon"></span>AI Tools &amp; Products</h2>
+          <p>AI Tools &amp; Products</p>
           <ul class="content-list">
-            <li><strong>Poke</strong> brings AI agents to everyday users via text message, handling tasks and automations without complex setup or technical know-how. This launch makes AI more accessible to a broader audience, simplifying the interaction with AI agents.</li>
-            <li><strong>Google</strong> updates <strong>Gemini API</strong> to allow combining <strong>Google Search</strong>, <strong>Google Maps</strong>, and custom functions in a single API call with context circulation, parallel tool IDs, and multi-step agentic chains. This update enhances the versatility of the <strong>Gemini API</strong>, allowing developers to create more complex and integrated AI applications.</li>
-            <li><strong>ProtoFlow</strong> launches an AI-powered schematic design tool for PCB making. This tool could revolutionize the design process for printed circuit boards, making it faster and more efficient.</li>
+          <li><strong>Poke</strong> brings AI agents to everyday users via text message, handling tasks and automations without complex setup or technical know-how. This launch makes AI more accessible to a broader audience, simplifying the interaction with AI agents.</li>
+          <li><strong>Google</strong> updates <strong>Gemini API</strong> to allow combining <strong>Google Search</strong>, <strong>Google Maps</strong>, and custom functions in a single API call with context circulation, parallel tool IDs, and multi-step agentic chains. This update enhances the versatility of the <strong>Gemini API</strong>, allowing developers to create more complex and integrated AI applications.</li>
+          <li><strong>ProtoFlow</strong> launches an AI-powered schematic design tool for PCB making. This tool could revolutionize the design process for printed circuit boards, making it faster and more efficient.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-policy"><span class="section-icon"></span>Policy &amp; Regulation</h2>
+          <p>Policy &amp; Regulation</p>
           <ul class="content-list">
-            <li>A US appeals court ruling favors the US government in a case against <strong>Anthropic</strong>, leaving uncertainty about the use of the AI company's <strong>Claude</strong> model. This ruling could have significant implications for the regulation of AI technologies, particularly in how they are used by government entities.</li>
-            <li>Unionized <strong>ProPublica</strong> staff go on strike over AI, layoffs, and wages, with roughly 150 members negotiating a collective bargaining agreement. This strike highlights the growing concerns about the impact of AI on employment and the need for clear policies and regulations regarding AI adoption in the workplace.</li>
+          <li>A US appeals court ruling favors the US government in a case against <strong>Anthropic</strong>, leaving uncertainty about the use of the AI company's <strong>Claude</strong> model. This ruling could have significant implications for the regulation of AI technologies, particularly in how they are used by government entities.</li>
+          <li>Unionized <strong>ProPublica</strong> staff go on strike over AI, layoffs, and wages, with roughly 150 members negotiating a collective bargaining agreement. This strike highlights the growing concerns about the impact of AI on employment and the need for clear policies and regulations regarding AI adoption in the workplace.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-robotics"><span class="section-icon"></span>Robotics &amp; Hardware</h2>
+          <p>Robotics &amp; Hardware</p>
           <ul class="content-list">
-            <li>No major robotics news.</li>
+          <li>No major robotics news.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-trend"><span class="section-icon"></span>Trend Analysis</h2>
-        <p>The dominant theme emerging from today's news is the rapid advancement and investment in AI technologies, with a focus on both the development of more sophisticated AI models and the integration of AI into various industries and applications. The significant funding rounds, such as <strong>OpenAI's</strong> $122 billion, and strategic partnerships, like <strong>Intel's</strong> collaboration with <strong>Elon Musk's</strong> Terafab Chip venture, underscore the confidence in AI's potential to transform industries and create new opportunities.</p>
-        <p>Connections between these stories aren't always obvious at first glance. For instance, the launch of <strong>Meta's Muse Spark</strong> and <strong>Stability AI's Brand Studio</strong> may seem like separate events, but they both contribute to a broader trend of companies developing more controlled and proprietary AI solutions. This trend could lead to a more fragmented AI landscape, with companies opting for bespoke AI models tailored to their specific needs, rather than relying on open-source or third-party solutions.</p>
-        <p>These developments signal that the AI industry is heading towards a period of intense innovation and competition in the next 3-6 months. As companies like <strong>OpenAI</strong>, <strong>Meta</strong>, and <strong>Google</strong> continue to push the boundaries of AI capabilities, we can expect to see more advanced AI models and tools being released. For AI practitioners, founders, and investors, the key takeaway is the importance of staying adaptable and open to new technologies and trends. Investing in AI education and research, and being prepared to integrate AI into core business operations, will be crucial for staying competitive in this rapidly evolving landscape. Furthermore, the regulatory environment is likely to become more defined, with clearer guidelines on the use of AI in various contexts, which will require businesses to be proactive in complying with emerging regulations.</p>
+          <p>Trend Analysis</p>
+          <p>The dominant theme emerging from today's news is the rapid advancement and investment in AI technologies, with a focus on both the development of more sophisticated AI models and the integration of AI into various industries and applications. The significant funding rounds, such as <strong>OpenAI's</strong> $122 billion, and strategic partnerships, like <strong>Intel's</strong> collaboration with <strong>Elon Musk's</strong> Terafab Chip venture, underscore the confidence in AI's potential to transform industries and create new opportunities.</p>
+          <p>Connections between these stories aren't always obvious at first glance. For instance, the launch of <strong>Meta's Muse Spark</strong> and <strong>Stability AI's Brand Studio</strong> may seem like separate events, but they both contribute to a broader trend of companies developing more controlled and proprietary AI solutions. This trend could lead to a more fragmented AI landscape, with companies opting for bespoke AI models tailored to their specific needs, rather than relying on open-source or third-party solutions.</p>
+          <p>These developments signal that the AI industry is heading towards a period of intense innovation and competition in the next 3-6 months. As companies like <strong>OpenAI</strong>, <strong>Meta</strong>, and <strong>Google</strong> continue to push the boundaries of AI capabilities, we can expect to see more advanced AI models and tools being released. For AI practitioners, founders, and investors, the key takeaway is the importance of staying adaptable and open to new technologies and trends. Investing in AI education and research, and being prepared to integrate AI into core business operations, will be crucial for staying competitive in this rapidly evolving landscape. Furthermore, the regulatory environment is likely to become more defined, with clearer guidelines on the use of AI in various contexts, which will require businesses to be proactive in complying with emerging regulations.</p>
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </div>
 
   <!-- BOTTOM article navigation -->
-  <nav class="article-nav article-nav-bottom" id="article-nav-bottom" aria-label="Article navigation (bottom)">
-    <div class="container-narrow article-nav-inner">
+  <nav class="article-nav article-nav-bottom" aria-label="Article navigation (bottom)">
+    <div class="container article-nav-inner">
       <a href="#" class="article-nav-btn article-nav-prev" data-nav="prev" aria-label="Previous digest">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         <span class="article-nav-label">
           <span class="article-nav-direction">Previous</span>
           <span class="article-nav-date" data-nav-date="prev">—</span>
         </span>
       </a>
-      <a href="../" class="article-nav-btn article-nav-index" aria-label="All digests">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-        </svg>
+      <a href="../" class="article-nav-btn article-nav-index">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         <span>All digests</span>
       </a>
       <a href="#" class="article-nav-btn article-nav-next" data-nav="next" aria-label="Next digest">
@@ -224,14 +224,11 @@
           <span class="article-nav-direction">Next</span>
           <span class="article-nav-date" data-nav-date="next">—</span>
         </span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
   </nav>
 
-  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
       <p class="footer-copy">&copy; 2026 AI Pulse. All rights reserved.</p>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{EXCERPT}}">
+
+  <title>{{TITLE}} — AI Pulse</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{TITLE}} — AI Pulse">
+  <meta property="og:description" content="{{EXCERPT}}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://parth-unjiya.github.io/ai-pulse/articles/{{DATE}}.html">
+  <meta property="article:published_time" content="{{DATE}}">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{TITLE}}">
+  <meta name="twitter:description" content="{{EXCERPT}}">
+
+  <!-- Canonical + RSS -->
+  <link rel="canonical" href="https://parth-unjiya.github.io/ai-pulse/articles/{{DATE}}.html">
+  <link rel="alternate" type="application/rss+xml" title="AI Pulse RSS" href="../feed.xml">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%234f46e5'/><stop offset='100%' stop-color='%237c3aed'/></linearGradient></defs><path d='M18 2L6 18h8l-2 12 12-16h-8z' fill='url(%23g)'/></svg>" type="image/svg+xml">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/article-extras.css">
+</head>
+<body data-article-date="{{DATE}}">
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress-bar" id="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <!-- Top navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner container">
+      <a href="../" class="nav-logo" aria-label="AI Pulse home">
+        <svg class="logo-icon" width="24" height="24" viewBox="0 0 32 32" aria-hidden="true">
+          <defs>
+            <linearGradient id="logo-grad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#4f46e5"/>
+              <stop offset="100%" stop-color="#7c3aed"/>
+            </linearGradient>
+          </defs>
+          <path d="M18 2L6 18h8l-2 12 12-16h-8z" fill="url(#logo-grad)"/>
+        </svg>
+        <span>AI Pulse</span>
+      </a>
+
+      <div class="nav-actions">
+        <button class="toc-trigger-mobile" id="toc-trigger-mobile" type="button" aria-label="Open table of contents" title="Table of contents">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+            <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+          </svg>
+        </button>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- TOP article navigation: Prev / All / Next -->
+  <nav class="article-nav article-nav-top" aria-label="Article navigation (top)">
+    <div class="container article-nav-inner">
+      <a href="#" class="article-nav-btn article-nav-prev" data-nav="prev" aria-label="Previous digest">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        <span class="article-nav-label">
+          <span class="article-nav-direction">Previous</span>
+          <span class="article-nav-date" data-nav-date="prev">—</span>
+        </span>
+      </a>
+      <a href="../" class="article-nav-btn article-nav-index">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        <span>All digests</span>
+      </a>
+      <a href="#" class="article-nav-btn article-nav-next" data-nav="next" aria-label="Next digest">
+        <span class="article-nav-label">
+          <span class="article-nav-direction">Next</span>
+          <span class="article-nav-date" data-nav-date="next">—</span>
+        </span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Article body with optional left TOC sidebar -->
+  <div class="article-layout">
+    <!-- TOC sidebar (sticky on desktop, drawer on mobile) -->
+    <aside class="article-toc-sidebar" id="article-toc" aria-label="Table of contents">
+      <div class="toc-sidebar-inner">
+        <button class="toc-close-mobile" id="toc-close-mobile" aria-label="Close table of contents">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <h3 class="toc-title">On this page</h3>
+        <ul class="toc-list" id="toc-list"></ul>
+
+        <div class="toc-meta">
+          <a class="toc-back-link" href="../">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            <span>All digests</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+    <div class="article-toc-overlay" id="article-toc-overlay"></div>
+
+    <article class="article-page">
+      <header class="article-header">
+        <div class="article-header-inner">
+          <span class="category-tag">{{CATEGORY_TAG}}</span>
+          <h1 class="article-title">{{TITLE}}</h1>
+          <div class="article-meta">
+            <time datetime="{{DATE}}">{{DATE_FORMATTED}}</time>
+            <span class="meta-separator" aria-hidden="true">&middot;</span>
+            <span>{{READING_TIME}} min read</span>
+            <span class="meta-separator" aria-hidden="true">&middot;</span>
+            <span>{{ARTICLE_COUNT}} articles from {{SOURCE_COUNT}} sources</span>
+          </div>
+
+          <div class="share-bar" aria-label="Share this digest">
+            <button class="share-btn" data-share="copy" type="button" aria-label="Copy link" title="Copy link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="share-label">Copy link</span>
+            </button>
+            <a class="share-btn" data-share="twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.514 7.443L22 22h-6.094l-4.77-6.231L5.65 22H2.892l6.97-7.964L2 2h6.244l4.318 5.711L18.244 2zm-1.07 18h1.687L7.59 4H5.785l11.39 16z"/></svg>
+              <span class="share-label">Share on X</span>
+            </a>
+            <a class="share-btn" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span class="share-label">LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="article-content">
+        <div class="article-content-inner">
+          {{CONTENT}}
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- BOTTOM article navigation -->
+  <nav class="article-nav article-nav-bottom" aria-label="Article navigation (bottom)">
+    <div class="container article-nav-inner">
+      <a href="#" class="article-nav-btn article-nav-prev" data-nav="prev" aria-label="Previous digest">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        <span class="article-nav-label">
+          <span class="article-nav-direction">Previous</span>
+          <span class="article-nav-date" data-nav-date="prev">—</span>
+        </span>
+      </a>
+      <a href="../" class="article-nav-btn article-nav-index">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        <span>All digests</span>
+      </a>
+      <a href="#" class="article-nav-btn article-nav-next" data-nav="next" aria-label="Next digest">
+        <span class="article-nav-label">
+          <span class="article-nav-direction">Next</span>
+          <span class="article-nav-date" data-nav-date="next">—</span>
+        </span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2026 AI Pulse. All rights reserved.</p>
+      <p class="footer-powered">
+        Powered by <strong>AI Pulse</strong> &middot;
+        <a href="../feed.xml" aria-label="RSS feed">RSS</a> &middot;
+        <a href="https://t.me/cyberrr_knighttt_bot" target="_blank" rel="noopener noreferrer" aria-label="Follow AI Pulse on Telegram">
+          Telegram
+          <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/article-nav.js"></script>
+</body>
+</html>

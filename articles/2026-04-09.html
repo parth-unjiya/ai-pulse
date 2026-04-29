@@ -11,7 +11,17 @@
   <meta property="og:title" content="AI Pulse — April 9, 2026 — AI Pulse">
   <meta property="og:description" content="OpenAI Introduces $100/month ChatGPT Pro Plan. OpenAI has introduced a new $100/month ChatGPT Pro plan, which offers 5x more Codex usage than the $20/month P...">
   <meta property="og:type" content="article">
+  <meta property="og:url" content="https://parth-unjiya.github.io/ai-pulse/articles/2026-04-09.html">
   <meta property="article:published_time" content="2026-04-09">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Pulse — April 9, 2026">
+  <meta name="twitter:description" content="OpenAI Introduces $100/month ChatGPT Pro Plan. OpenAI has introduced a new $100/month ChatGPT Pro plan, which offers 5x more Codex usage than the $20/month P...">
+
+  <!-- Canonical + RSS -->
+  <link rel="canonical" href="https://parth-unjiya.github.io/ai-pulse/articles/2026-04-09.html">
+  <link rel="alternate" type="application/rss+xml" title="AI Pulse RSS" href="../feed.xml">
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%234f46e5'/><stop offset='100%' stop-color='%237c3aed'/></linearGradient></defs><path d='M18 2L6 18h8l-2 12 12-16h-8z' fill='url(%23g)'/></svg>" type="image/svg+xml">
@@ -30,7 +40,7 @@
   <!-- Reading Progress Bar -->
   <div class="reading-progress-bar" id="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
-  <!-- Navigation -->
+  <!-- Top navbar -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner container">
       <a href="../" class="nav-logo" aria-label="AI Pulse home">
@@ -46,49 +56,42 @@
         <span>AI Pulse</span>
       </a>
 
-      <button
-        class="theme-toggle"
-        id="theme-toggle"
-        type="button"
-        aria-label="Toggle dark mode"
-        title="Toggle dark mode"
-      >
-        <!-- Sun icon (shown in dark mode) -->
-        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="12" cy="12" r="5"/>
-          <line x1="12" y1="1" x2="12" y2="3"/>
-          <line x1="12" y1="21" x2="12" y2="23"/>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-          <line x1="1" y1="12" x2="3" y2="12"/>
-          <line x1="21" y1="12" x2="23" y2="12"/>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-        </svg>
-        <!-- Moon icon (shown in light mode) -->
-        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-        </svg>
-      </button>
+      <div class="nav-actions">
+        <button class="toc-trigger-mobile" id="toc-trigger-mobile" type="button" aria-label="Open table of contents" title="Table of contents">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+            <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+          </svg>
+        </button>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </nav>
 
-  <!-- TOP article navigation (Prev / Index / Next) -->
-  <nav class="article-nav article-nav-top" id="article-nav-top" aria-label="Article navigation (top)">
-    <div class="container-narrow article-nav-inner">
+  <!-- TOP article navigation: Prev / All / Next -->
+  <nav class="article-nav article-nav-top" aria-label="Article navigation (top)">
+    <div class="container article-nav-inner">
       <a href="#" class="article-nav-btn article-nav-prev" data-nav="prev" aria-label="Previous digest">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         <span class="article-nav-label">
           <span class="article-nav-direction">Previous</span>
           <span class="article-nav-date" data-nav-date="prev">—</span>
         </span>
       </a>
-      <a href="../" class="article-nav-btn article-nav-index" aria-label="All digests">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-        </svg>
+      <a href="../" class="article-nav-btn article-nav-index">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         <span>All digests</span>
       </a>
       <a href="#" class="article-nav-btn article-nav-next" data-nav="next" aria-label="Next digest">
@@ -96,128 +99,125 @@
           <span class="article-nav-direction">Next</span>
           <span class="article-nav-date" data-nav-date="next">—</span>
         </span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
   </nav>
 
-  <!-- Article -->
-  <article class="article-page">
-    <header class="article-header">
-      <div class="container">
-        <span class="category-tag">Daily Digest</span>
-        <h1 class="article-title">AI Pulse — April 9, 2026</h1>
-        <div class="article-meta">
-          <time datetime="2026-04-09">April 9, 2026</time>
-          <span class="meta-separator" aria-hidden="true">&middot;</span>
-          <span>7 min read</span>
-          <span class="meta-separator" aria-hidden="true">&middot;</span>
-          <span>154 articles from 32 sources</span>
-        </div>
-
-        <div class="share-bar" aria-label="Share this digest">
-          <button class="share-btn" data-share="copy" type="button" aria-label="Copy link" title="Copy link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            <span class="share-label">Copy link</span>
-          </button>
-          <a class="share-btn" data-share="twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21l-6.514 7.443L22 22h-6.094l-4.77-6.231L5.65 22H2.892l6.97-7.964L2 2h6.244l4.318 5.711L18.244 2zm-1.07 18h1.687L7.59 4H5.785l11.39 16z"/></svg>
-            <span class="share-label">Share on X</span>
-          </a>
-          <a class="share-btn" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            <span class="share-label">Share on LinkedIn</span>
-          </a>
-        </div>
-</div>
-    </header>
-
-        <aside class="article-toc" id="article-toc" aria-label="Table of contents">
-      <div class="container-narrow">
-        <button class="toc-toggle" id="toc-toggle" type="button" aria-expanded="true" aria-controls="toc-list">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-          <span>Table of Contents</span>
-          <svg class="toc-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  <!-- Article body with optional left TOC sidebar -->
+  <div class="article-layout">
+    <!-- TOC sidebar (sticky on desktop, drawer on mobile) -->
+    <aside class="article-toc-sidebar" id="article-toc" aria-label="Table of contents">
+      <div class="toc-sidebar-inner">
+        <button class="toc-close-mobile" id="toc-close-mobile" aria-label="Close table of contents">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
         </button>
+        <h3 class="toc-title">On this page</h3>
         <ul class="toc-list" id="toc-list"></ul>
+
+        <div class="toc-meta">
+          <a class="toc-back-link" href="../">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            <span>All digests</span>
+          </a>
+        </div>
       </div>
     </aside>
+    <div class="article-toc-overlay" id="article-toc-overlay"></div>
 
-    <div class="article-content">
-      <div class="container-narrow">
-                <h2 class="content-section-header section-headlines"><span class="section-icon"></span>Top 3 Headlines</h2>
-        <div class="numbered-item"><span class="item-number">1</span><span class="item-content"><strong>OpenAI Introduces $100/month ChatGPT Pro Plan</strong> (TechCrunch)</span></div>
-        <p class="arrow-description">OpenAI has introduced a new $100/month ChatGPT Pro plan, which offers 5x more Codex usage than the $20/month Plus subscription. This move is significant as it undercuts competitors like Anthropic and Google, making OpenAI a more attractive option for heavy Codex users. The new plan affects developers and power users who rely on Codex for coding and other tasks. In terms of competitive dynamics, OpenAI's move puts pressure on other AI companies to revisit their pricing strategies. As for what to expect next, OpenAI may continue to refine its subscription tiers and expand its offerings to maintain its competitive edge.</p>
-        <div class="numbered-item"><span class="item-number">2</span><span class="item-content"><strong>OpenAI Faces Investigation by Florida Attorney General</strong> (The Verge, TechCrunch)</span></div>
-        <p class="arrow-description">OpenAI is facing an investigation by the Florida Attorney General over public safety and national security risks associated with its ChatGPT model. The investigation was prompted by a shooting incident allegedly involving ChatGPT. This development is crucial as it highlights the potential risks and consequences of AI models and the need for regulatory oversight. The investigation affects not only OpenAI but also the broader AI industry, as it may lead to increased scrutiny and regulation of AI models. In terms of what to expect next, OpenAI may need to implement additional safety measures and transparency protocols to address regulatory concerns.</p>
-        <div class="numbered-item"><span class="item-number">3</span><span class="item-content"><strong>Mercor Valued at $10B, Suffers Data Breach and Faces Lawsuits</strong> (TechCrunch)</span></div>
-        <p class="arrow-description">Mercor, a company valued at $10B, has suffered a data breach, lost big-name customers, and faces lawsuits. This story is significant as it underscores the importance of data security and the potential consequences of breaches. The incident affects Mercor's customers, partners, and the company's reputation. In terms of competitive dynamics, Mercor's data breach may create opportunities for competitors to gain market share. As for what to expect next, Mercor will likely need to invest in robust data security measures and rebuild trust with its customers and partners.</p>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-llm"><span class="section-icon"></span>LLM &amp; Model Updates</h2>
+    <article class="article-page">
+      <header class="article-header">
+        <div class="article-header-inner">
+          <span class="category-tag">Daily Digest</span>
+          <h1 class="article-title">AI Pulse — April 9, 2026</h1>
+          <div class="article-meta">
+            <time datetime="2026-04-09">Thursday, April 9, 2026</time>
+            <span class="meta-separator" aria-hidden="true">&middot;</span>
+            <span>7 min read</span>
+            <span class="meta-separator" aria-hidden="true">&middot;</span>
+            <span>154 articles from 32 sources</span>
+          </div>
+
+          <div class="share-bar" aria-label="Share this digest">
+            <button class="share-btn" data-share="copy" type="button" aria-label="Copy link" title="Copy link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="share-label">Copy link</span>
+            </button>
+            <a class="share-btn" data-share="twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.514 7.443L22 22h-6.094l-4.77-6.231L5.65 22H2.892l6.97-7.964L2 2h6.244l4.318 5.711L18.244 2zm-1.07 18h1.687L7.59 4H5.785l11.39 16z"/></svg>
+              <span class="share-label">Share on X</span>
+            </a>
+            <a class="share-btn" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span class="share-label">LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="article-content">
+        <div class="article-content-inner">
+          <p>Top 3 Headlines</p>
+          <div class="numbered-item"><span class="item-number">1</span><span class="item-content"><strong>OpenAI Introduces $100/month ChatGPT Pro Plan</strong> (TechCrunch)</span></div>
+          <p class="arrow-description">OpenAI has introduced a new $100/month ChatGPT Pro plan, which offers 5x more Codex usage than the $20/month Plus subscription. This move is significant as it undercuts competitors like Anthropic and Google, making OpenAI a more attractive option for heavy Codex users. The new plan affects developers and power users who rely on Codex for coding and other tasks. In terms of competitive dynamics, OpenAI's move puts pressure on other AI companies to revisit their pricing strategies. As for what to expect next, OpenAI may continue to refine its subscription tiers and expand its offerings to maintain its competitive edge.</p>
+          <div class="numbered-item"><span class="item-number">2</span><span class="item-content"><strong>OpenAI Faces Investigation by Florida Attorney General</strong> (The Verge, TechCrunch)</span></div>
+          <p class="arrow-description">OpenAI is facing an investigation by the Florida Attorney General over public safety and national security risks associated with its ChatGPT model. The investigation was prompted by a shooting incident allegedly involving ChatGPT. This development is crucial as it highlights the potential risks and consequences of AI models and the need for regulatory oversight. The investigation affects not only OpenAI but also the broader AI industry, as it may lead to increased scrutiny and regulation of AI models. In terms of what to expect next, OpenAI may need to implement additional safety measures and transparency protocols to address regulatory concerns.</p>
+          <div class="numbered-item"><span class="item-number">3</span><span class="item-content"><strong>Mercor Valued at $10B, Suffers Data Breach and Faces Lawsuits</strong> (TechCrunch)</span></div>
+          <p class="arrow-description">Mercor, a company valued at $10B, has suffered a data breach, lost big-name customers, and faces lawsuits. This story is significant as it underscores the importance of data security and the potential consequences of breaches. The incident affects Mercor's customers, partners, and the company's reputation. In terms of competitive dynamics, Mercor's data breach may create opportunities for competitors to gain market share. As for what to expect next, Mercor will likely need to invest in robust data security measures and rebuild trust with its customers and partners.</p>
+          <p>LLM &amp; Model Updates</p>
           <ul class="content-list">
-            <li>Anthropic limits the release of its new Mythos model due to its capability to find security exploits in software. This move highlights the challenges of developing and deploying AI models that can pose potential risks. The Mythos model is compared to other models like Claude, which has also been updated with new features and capabilities. For developers, the limited release of Mythos means they will have to wait for a more secure version or explore alternative models.</li>
-            <li>Meta AI launches a new model, causing its app to rise to No. 5 on the App Store. This development is significant as it demonstrates the growing demand for AI-powered apps and the importance of model updates in driving user engagement. The new model is likely to be compared to other models like Gemini, which has also been updated with interactive 3D models and simulations.</li>
-            <li>Google upgrades Gemini AI to generate interactive 3D models and simulations in response to user questions. This update is crucial as it enhances the user experience and provides more engaging and interactive content. For developers, the updated Gemini AI offers new opportunities for creating immersive and interactive applications.</li>
+          <li>Anthropic limits the release of its new Mythos model due to its capability to find security exploits in software. This move highlights the challenges of developing and deploying AI models that can pose potential risks. The Mythos model is compared to other models like Claude, which has also been updated with new features and capabilities. For developers, the limited release of Mythos means they will have to wait for a more secure version or explore alternative models.</li>
+          <li>Meta AI launches a new model, causing its app to rise to No. 5 on the App Store. This development is significant as it demonstrates the growing demand for AI-powered apps and the importance of model updates in driving user engagement. The new model is likely to be compared to other models like Gemini, which has also been updated with interactive 3D models and simulations.</li>
+          <li>Google upgrades Gemini AI to generate interactive 3D models and simulations in response to user questions. This update is crucial as it enhances the user experience and provides more engaging and interactive content. For developers, the updated Gemini AI offers new opportunities for creating immersive and interactive applications.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-research"><span class="section-icon"></span>Research &amp; Breakthroughs</h2>
+          <p>Research &amp; Breakthroughs</p>
           <ul class="content-list">
-            <li>Sierra launches Ghostwriter, an agent designed to build other agents, replacing traditional click-based web applications with natural language. This development is significant as it demonstrates the potential of AI in creating more intuitive and user-friendly interfaces. The Ghostwriter agent is likely to be compared to other models like Muse Spark, which is a multimodal reasoning model with thought compression and parallel agents.</li>
-            <li>A Stanford study reveals that the apparent advantage of multi-agent AI systems largely comes from using more compute, but there are important exceptions. This research is crucial as it provides insights into the development and deployment of multi-agent AI systems. For developers, the study's findings highlight the need to carefully evaluate the trade-offs between compute resources and system performance.</li>
-            <li>Researchers discover that applying PCA before truncation makes non-Matryoshka embeddings compressible, with results on BGE-M3. This breakthrough is significant as it demonstrates the potential for improving the efficiency and effectiveness of AI models. The discovery is likely to be applied to various AI applications, including natural language processing and computer vision.</li>
+          <li>Sierra launches Ghostwriter, an agent designed to build other agents, replacing traditional click-based web applications with natural language. This development is significant as it demonstrates the potential of AI in creating more intuitive and user-friendly interfaces. The Ghostwriter agent is likely to be compared to other models like Muse Spark, which is a multimodal reasoning model with thought compression and parallel agents.</li>
+          <li>A Stanford study reveals that the apparent advantage of multi-agent AI systems largely comes from using more compute, but there are important exceptions. This research is crucial as it provides insights into the development and deployment of multi-agent AI systems. For developers, the study's findings highlight the need to carefully evaluate the trade-offs between compute resources and system performance.</li>
+          <li>Researchers discover that applying PCA before truncation makes non-Matryoshka embeddings compressible, with results on BGE-M3. This breakthrough is significant as it demonstrates the potential for improving the efficiency and effectiveness of AI models. The discovery is likely to be applied to various AI applications, including natural language processing and computer vision.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-startups"><span class="section-icon"></span>Startup &amp; Funding</h2>
+          <p>Startup &amp; Funding</p>
           <ul class="content-list">
-            <li>Google and Intel deepen their AI infrastructure partnership to co-develop custom chips amidst a growing global CPU shortage. This partnership is significant as it highlights the importance of collaboration in addressing the challenges of AI infrastructure development. The partnership affects not only Google and Intel but also the broader AI industry, as it may lead to more efficient and effective AI solutions.</li>
-            <li>Black Forest Labs, a 70-person AI image startup, plans to power physical AI, competing with Silicon Valley giants. This development is crucial as it demonstrates the growing interest in AI-powered image processing and the potential for new startups to disrupt the market. For investors, Black Forest Labs' plans offer a promising opportunity for growth and innovation.</li>
+          <li>Google and Intel deepen their AI infrastructure partnership to co-develop custom chips amidst a growing global CPU shortage. This partnership is significant as it highlights the importance of collaboration in addressing the challenges of AI infrastructure development. The partnership affects not only Google and Intel but also the broader AI industry, as it may lead to more efficient and effective AI solutions.</li>
+          <li>Black Forest Labs, a 70-person AI image startup, plans to power physical AI, competing with Silicon Valley giants. This development is crucial as it demonstrates the growing interest in AI-powered image processing and the potential for new startups to disrupt the market. For investors, Black Forest Labs' plans offer a promising opportunity for growth and innovation.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-default"><span class="section-icon"></span>Ai Tools &amp; Products</h2>
+          <p>Ai Tools &amp; Products</p>
           <ul class="content-list">
-            <li>Google and Intel partner to address the high demand for CPUs due to a global shortage. This partnership is significant as it highlights the importance of collaboration in addressing the challenges of AI infrastructure development. The partnership affects not only Google and Intel but also the broader AI industry, as it may lead to more efficient and effective AI solutions.</li>
-            <li>Claude Cowork expands to all paid plans on macOS and Windows with new org controls. This development is crucial as it demonstrates the growing demand for AI-powered productivity tools and the importance of user-friendly interfaces. For developers, Claude Cowork offers new opportunities for creating more intuitive and user-friendly applications.</li>
-            <li>YouTube Shorts rolls out a new AI-powered feature giving creators an easy way to realistically clone themselves on camera. This feature is significant as it demonstrates the potential of AI in enhancing user experience and creating more engaging content. For creators, the new feature offers new opportunities for self-expression and creativity.</li>
+          <li>Google and Intel partner to address the high demand for CPUs due to a global shortage. This partnership is significant as it highlights the importance of collaboration in addressing the challenges of AI infrastructure development. The partnership affects not only Google and Intel but also the broader AI industry, as it may lead to more efficient and effective AI solutions.</li>
+          <li>Claude Cowork expands to all paid plans on macOS and Windows with new org controls. This development is crucial as it demonstrates the growing demand for AI-powered productivity tools and the importance of user-friendly interfaces. For developers, Claude Cowork offers new opportunities for creating more intuitive and user-friendly applications.</li>
+          <li>YouTube Shorts rolls out a new AI-powered feature giving creators an easy way to realistically clone themselves on camera. This feature is significant as it demonstrates the potential of AI in enhancing user experience and creating more engaging content. For creators, the new feature offers new opportunities for self-expression and creativity.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-policy"><span class="section-icon"></span>Policy &amp; Regulation</h2>
+          <p>Policy &amp; Regulation</p>
           <ul class="content-list">
-            <li>Florida Attorney General launches an investigation into OpenAI over public safety and national security risks. This development is significant as it highlights the potential risks and consequences of AI models and the need for regulatory oversight. The investigation affects not only OpenAI but also the broader AI industry, as it may lead to increased scrutiny and regulation of AI models.</li>
-            <li>Maine is set to become the first state to pass a temporary ban on data center construction, with similar bills introduced in over a dozen other states. This policy development is crucial as it demonstrates the growing concern about the environmental impact of data centers and the need for sustainable AI solutions. For AI companies, the ban may require them to reassess their infrastructure development plans and explore more sustainable options.</li>
+          <li>Florida Attorney General launches an investigation into OpenAI over public safety and national security risks. This development is significant as it highlights the potential risks and consequences of AI models and the need for regulatory oversight. The investigation affects not only OpenAI but also the broader AI industry, as it may lead to increased scrutiny and regulation of AI models.</li>
+          <li>Maine is set to become the first state to pass a temporary ban on data center construction, with similar bills introduced in over a dozen other states. This policy development is crucial as it demonstrates the growing concern about the environmental impact of data centers and the need for sustainable AI solutions. For AI companies, the ban may require them to reassess their infrastructure development plans and explore more sustainable options.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-robotics"><span class="section-icon"></span>Robotics &amp; Hardware</h2>
+          <p>Robotics &amp; Hardware</p>
           <ul class="content-list">
-            <li>Google and Intel collaborate on custom chip development to support AI infrastructure. This partnership is significant as it highlights the importance of collaboration in addressing the challenges of AI infrastructure development. The partnership affects not only Google and Intel but also the broader AI industry, as it may lead to more efficient and effective AI solutions.</li>
-            <li>Researchers develop a chip that can project video the size of a grain of sand, with potential applications in quantum computers and other industries. This breakthrough is significant as it demonstrates the potential for innovation in hardware development and the potential applications of AI in various fields. For developers, the new chip offers new opportunities for creating more efficient and effective AI-powered systems.</li>
+          <li>Google and Intel collaborate on custom chip development to support AI infrastructure. This partnership is significant as it highlights the importance of collaboration in addressing the challenges of AI infrastructure development. The partnership affects not only Google and Intel but also the broader AI industry, as it may lead to more efficient and effective AI solutions.</li>
+          <li>Researchers develop a chip that can project video the size of a grain of sand, with potential applications in quantum computers and other industries. This breakthrough is significant as it demonstrates the potential for innovation in hardware development and the potential applications of AI in various fields. For developers, the new chip offers new opportunities for creating more efficient and effective AI-powered systems.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-trend"><span class="section-icon"></span>Trend Analysis</h2>
-        <p>The dominant theme emerging from today's news is the growing importance of AI in various industries and the need for responsible AI development and deployment. The connections between stories that aren't obvious at first glance include the intersection of AI, hardware, and policy. For instance, the development of custom chips by Google and Intel is closely tied to the growing demand for AI-powered solutions and the need for sustainable infrastructure development. Similarly, the investigation into OpenAI by the Florida Attorney General highlights the potential risks and consequences of AI models and the need for regulatory oversight.</p>
-        <p>In the next 3-6 months, we can expect to see continued innovation in AI development, with a focus on creating more efficient, effective, and sustainable solutions. The growing demand for AI-powered tools and products will drive the development of new applications and services, from productivity tools to entertainment features. However, the increasing scrutiny of AI models and the need for regulatory oversight will require AI companies to prioritize transparency, accountability, and safety in their development and deployment practices.</p>
-        <p>Actionable takeaways for AI practitioners, founders, and investors include the need to prioritize responsible AI development and deployment, invest in sustainable infrastructure development, and explore new opportunities for innovation and growth. For AI practitioners, this means staying up-to-date with the latest developments in AI research and development, while also prioritizing transparency, accountability, and safety in their work. For founders, this means investing in sustainable infrastructure development and exploring new opportunities for innovation and growth. For investors, this means looking for AI companies that prioritize responsible AI development and deployment, sustainable infrastructure development, and innovation.</p>
+          <p>Trend Analysis</p>
+          <p>The dominant theme emerging from today's news is the growing importance of AI in various industries and the need for responsible AI development and deployment. The connections between stories that aren't obvious at first glance include the intersection of AI, hardware, and policy. For instance, the development of custom chips by Google and Intel is closely tied to the growing demand for AI-powered solutions and the need for sustainable infrastructure development. Similarly, the investigation into OpenAI by the Florida Attorney General highlights the potential risks and consequences of AI models and the need for regulatory oversight.</p>
+          <p>In the next 3-6 months, we can expect to see continued innovation in AI development, with a focus on creating more efficient, effective, and sustainable solutions. The growing demand for AI-powered tools and products will drive the development of new applications and services, from productivity tools to entertainment features. However, the increasing scrutiny of AI models and the need for regulatory oversight will require AI companies to prioritize transparency, accountability, and safety in their development and deployment practices.</p>
+          <p>Actionable takeaways for AI practitioners, founders, and investors include the need to prioritize responsible AI development and deployment, invest in sustainable infrastructure development, and explore new opportunities for innovation and growth. For AI practitioners, this means staying up-to-date with the latest developments in AI research and development, while also prioritizing transparency, accountability, and safety in their work. For founders, this means investing in sustainable infrastructure development and exploring new opportunities for innovation and growth. For investors, this means looking for AI companies that prioritize responsible AI development and deployment, sustainable infrastructure development, and innovation.</p>
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </div>
 
   <!-- BOTTOM article navigation -->
-  <nav class="article-nav article-nav-bottom" id="article-nav-bottom" aria-label="Article navigation (bottom)">
-    <div class="container-narrow article-nav-inner">
+  <nav class="article-nav article-nav-bottom" aria-label="Article navigation (bottom)">
+    <div class="container article-nav-inner">
       <a href="#" class="article-nav-btn article-nav-prev" data-nav="prev" aria-label="Previous digest">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         <span class="article-nav-label">
           <span class="article-nav-direction">Previous</span>
           <span class="article-nav-date" data-nav-date="prev">—</span>
         </span>
       </a>
-      <a href="../" class="article-nav-btn article-nav-index" aria-label="All digests">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-        </svg>
+      <a href="../" class="article-nav-btn article-nav-index">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         <span>All digests</span>
       </a>
       <a href="#" class="article-nav-btn article-nav-next" data-nav="next" aria-label="Next digest">
@@ -225,14 +225,11 @@
           <span class="article-nav-direction">Next</span>
           <span class="article-nav-date" data-nav-date="next">—</span>
         </span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
   </nav>
 
-  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
       <p class="footer-copy">&copy; 2026 AI Pulse. All rights reserved.</p>

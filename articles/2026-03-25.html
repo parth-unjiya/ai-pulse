@@ -3,15 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Google Unveils TurboQuant. Google&#x27;s introduction of **TurboQuant**, an AI memory compression algorithm, promises to shrink AI&#x27;s &quot;working memory&quot; by up to 6x....">
+  <meta name="description" content="Google Unveils TurboQuant. Google&amp;#x27;s introduction of **TurboQuant**, an AI memory compression algorithm, promises to shrink AI&amp;#x27;s &amp;quot;working memory&amp;q">
 
   <title>AI Pulse — March 25, 2026 — AI Pulse</title>
 
   <!-- Open Graph -->
   <meta property="og:title" content="AI Pulse — March 25, 2026 — AI Pulse">
-  <meta property="og:description" content="Google Unveils TurboQuant. Google&#x27;s introduction of **TurboQuant**, an AI memory compression algorithm, promises to shrink AI&#x27;s &quot;working memory&quot; by up to 6x....">
+  <meta property="og:description" content="Google Unveils TurboQuant. Google&amp;#x27;s introduction of **TurboQuant**, an AI memory compression algorithm, promises to shrink AI&amp;#x27;s &amp;quot;working memory&amp;q">
   <meta property="og:type" content="article">
+  <meta property="og:url" content="https://parth-unjiya.github.io/ai-pulse/articles/2026-03-25.html">
   <meta property="article:published_time" content="2026-03-25">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Pulse — March 25, 2026">
+  <meta name="twitter:description" content="Google Unveils TurboQuant. Google&amp;#x27;s introduction of **TurboQuant**, an AI memory compression algorithm, promises to shrink AI&amp;#x27;s &amp;quot;working memory&amp;q">
+
+  <!-- Canonical + RSS -->
+  <link rel="canonical" href="https://parth-unjiya.github.io/ai-pulse/articles/2026-03-25.html">
+  <link rel="alternate" type="application/rss+xml" title="AI Pulse RSS" href="../feed.xml">
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%234f46e5'/><stop offset='100%' stop-color='%237c3aed'/></linearGradient></defs><path d='M18 2L6 18h8l-2 12 12-16h-8z' fill='url(%23g)'/></svg>" type="image/svg+xml">
@@ -30,7 +40,7 @@
   <!-- Reading Progress Bar -->
   <div class="reading-progress-bar" id="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
-  <!-- Navigation -->
+  <!-- Top navbar -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner container">
       <a href="../" class="nav-logo" aria-label="AI Pulse home">
@@ -46,49 +56,42 @@
         <span>AI Pulse</span>
       </a>
 
-      <button
-        class="theme-toggle"
-        id="theme-toggle"
-        type="button"
-        aria-label="Toggle dark mode"
-        title="Toggle dark mode"
-      >
-        <!-- Sun icon (shown in dark mode) -->
-        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="12" cy="12" r="5"/>
-          <line x1="12" y1="1" x2="12" y2="3"/>
-          <line x1="12" y1="21" x2="12" y2="23"/>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-          <line x1="1" y1="12" x2="3" y2="12"/>
-          <line x1="21" y1="12" x2="23" y2="12"/>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-        </svg>
-        <!-- Moon icon (shown in light mode) -->
-        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-        </svg>
-      </button>
+      <div class="nav-actions">
+        <button class="toc-trigger-mobile" id="toc-trigger-mobile" type="button" aria-label="Open table of contents" title="Table of contents">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+            <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+          </svg>
+        </button>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </nav>
 
-  <!-- TOP article navigation (Prev / Index / Next) -->
-  <nav class="article-nav article-nav-top" id="article-nav-top" aria-label="Article navigation (top)">
-    <div class="container-narrow article-nav-inner">
+  <!-- TOP article navigation: Prev / All / Next -->
+  <nav class="article-nav article-nav-top" aria-label="Article navigation (top)">
+    <div class="container article-nav-inner">
       <a href="#" class="article-nav-btn article-nav-prev" data-nav="prev" aria-label="Previous digest">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         <span class="article-nav-label">
           <span class="article-nav-direction">Previous</span>
           <span class="article-nav-date" data-nav-date="prev">—</span>
         </span>
       </a>
-      <a href="../" class="article-nav-btn article-nav-index" aria-label="All digests">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-        </svg>
+      <a href="../" class="article-nav-btn article-nav-index">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         <span>All digests</span>
       </a>
       <a href="#" class="article-nav-btn article-nav-next" data-nav="next" aria-label="Next digest">
@@ -96,125 +99,122 @@
           <span class="article-nav-direction">Next</span>
           <span class="article-nav-date" data-nav-date="next">—</span>
         </span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
   </nav>
 
-  <!-- Article -->
-  <article class="article-page">
-    <header class="article-header">
-      <div class="container">
-        <span class="category-tag">Daily Digest</span>
-        <h1 class="article-title">AI Pulse — March 25, 2026</h1>
-        <div class="article-meta">
-          <time datetime="2026-03-25">March 25, 2026</time>
-          <span class="meta-separator" aria-hidden="true">&middot;</span>
-          <span>7 min read</span>
-          <span class="meta-separator" aria-hidden="true">&middot;</span>
-          <span>40 articles from 9 sources</span>
-        </div>
-
-        <div class="share-bar" aria-label="Share this digest">
-          <button class="share-btn" data-share="copy" type="button" aria-label="Copy link" title="Copy link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            <span class="share-label">Copy link</span>
-          </button>
-          <a class="share-btn" data-share="twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21l-6.514 7.443L22 22h-6.094l-4.77-6.231L5.65 22H2.892l6.97-7.964L2 2h6.244l4.318 5.711L18.244 2zm-1.07 18h1.687L7.59 4H5.785l11.39 16z"/></svg>
-            <span class="share-label">Share on X</span>
-          </a>
-          <a class="share-btn" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            <span class="share-label">Share on LinkedIn</span>
-          </a>
-        </div>
-</div>
-    </header>
-
-        <aside class="article-toc" id="article-toc" aria-label="Table of contents">
-      <div class="container-narrow">
-        <button class="toc-toggle" id="toc-toggle" type="button" aria-expanded="true" aria-controls="toc-list">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-          <span>Table of Contents</span>
-          <svg class="toc-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  <!-- Article body with optional left TOC sidebar -->
+  <div class="article-layout">
+    <!-- TOC sidebar (sticky on desktop, drawer on mobile) -->
+    <aside class="article-toc-sidebar" id="article-toc" aria-label="Table of contents">
+      <div class="toc-sidebar-inner">
+        <button class="toc-close-mobile" id="toc-close-mobile" aria-label="Close table of contents">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
         </button>
+        <h3 class="toc-title">On this page</h3>
         <ul class="toc-list" id="toc-list"></ul>
+
+        <div class="toc-meta">
+          <a class="toc-back-link" href="../">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            <span>All digests</span>
+          </a>
+        </div>
       </div>
     </aside>
+    <div class="article-toc-overlay" id="article-toc-overlay"></div>
 
-    <div class="article-content">
-      <div class="container-narrow">
-                <h2 class="content-section-header section-headlines"><span class="section-icon"></span>Top 3 Headlines</h2>
-        <div class="numbered-item"><span class="item-number">1</span><span class="item-content"><strong>Google Unveils TurboQuant</strong> (TechCrunch)</span></div>
-        <p class="arrow-description">Google's introduction of <strong>TurboQuant</strong>, an AI memory compression algorithm, promises to shrink AI's &quot;working memory&quot; by up to 6x. This development is significant because it could lead to more efficient AI models that require less computational power, making them more accessible and reducing their environmental impact. The unveiling of TurboQuant also highlights Google's ongoing efforts to advance AI technology, positioning the company as a leader in the field. As TurboQuant is currently in the experimental phase, its future applications and potential impact on the broader AI landscape will be closely watched. The success of TurboQuant could also influence the direction of AI research, with other companies potentially following suit in developing similar compression algorithms.</p>
-        <div class="numbered-item"><span class="item-number">2</span><span class="item-content"><strong>Disney Pulls Out of OpenAI Partnership</strong> (The Decoder)</span></div>
-        <p class="arrow-description"><strong>Disney</strong>'s decision to walk away from its billion-dollar deal with <strong>OpenAI</strong> after the shutdown of the Sora app and API marks a significant setback for OpenAI. This development matters because it underscores the risks and uncertainties associated with investing in AI technology, particularly when it comes to high-profile partnerships. The demise of the Sora app also raises questions about the viability of AI-powered content creation and the challenges of integrating AI into existing business models. As OpenAI expands its record funding round to over $120 billion, the company will need to reassure investors and partners about its ability to deliver on its promises and navigate the complexities of the AI landscape.</p>
-        <div class="numbered-item"><span class="item-number">3</span><span class="item-content"><strong>Anthropic Finds AI Isn’t Replacing Jobs Yet</strong> (TechCrunch)</span></div>
-        <p class="arrow-description"><strong>Anthropic</strong>'s finding that AI isn't replacing jobs yet, but is instead creating a growing skills gap, highlights the need for workers to develop new skills to remain relevant in an AI-driven economy. This development is important because it challenges the common narrative that AI will inevitably lead to widespread job displacement. Instead, Anthropic's research suggests that AI is creating new opportunities for &quot;power users&quot; who can leverage AI tools to enhance their productivity and capabilities. As the AI skills gap continues to grow, companies and governments will need to invest in education and training programs that equip workers with the skills necessary to thrive in an AI-driven workforce.</p>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-llm"><span class="section-icon"></span>LLM &amp; Model Updates</h2>
+    <article class="article-page">
+      <header class="article-header">
+        <div class="article-header-inner">
+          <span class="category-tag">Daily Digest</span>
+          <h1 class="article-title">AI Pulse — March 25, 2026</h1>
+          <div class="article-meta">
+            <time datetime="2026-03-25">Wednesday, March 25, 2026</time>
+            <span class="meta-separator" aria-hidden="true">&middot;</span>
+            <span>7 min read</span>
+            <span class="meta-separator" aria-hidden="true">&middot;</span>
+            <span>40 articles from 9 sources</span>
+          </div>
+
+          <div class="share-bar" aria-label="Share this digest">
+            <button class="share-btn" data-share="copy" type="button" aria-label="Copy link" title="Copy link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="share-label">Copy link</span>
+            </button>
+            <a class="share-btn" data-share="twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.514 7.443L22 22h-6.094l-4.77-6.231L5.65 22H2.892l6.97-7.964L2 2h6.244l4.318 5.711L18.244 2zm-1.07 18h1.687L7.59 4H5.785l11.39 16z"/></svg>
+              <span class="share-label">Share on X</span>
+            </a>
+            <a class="share-btn" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span class="share-label">LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="article-content">
+        <div class="article-content-inner">
+          <p>Top 3 Headlines</p>
+          <div class="numbered-item"><span class="item-number">1</span><span class="item-content"><strong>Google Unveils TurboQuant</strong> (TechCrunch)</span></div>
+          <p class="arrow-description">Google's introduction of <strong>TurboQuant</strong>, an AI memory compression algorithm, promises to shrink AI's "working memory" by up to 6x. This development is significant because it could lead to more efficient AI models that require less computational power, making them more accessible and reducing their environmental impact. The unveiling of TurboQuant also highlights Google's ongoing efforts to advance AI technology, positioning the company as a leader in the field. As TurboQuant is currently in the experimental phase, its future applications and potential impact on the broader AI landscape will be closely watched. The success of TurboQuant could also influence the direction of AI research, with other companies potentially following suit in developing similar compression algorithms.</p>
+          <div class="numbered-item"><span class="item-number">2</span><span class="item-content"><strong>Disney Pulls Out of OpenAI Partnership</strong> (The Decoder)</span></div>
+          <p class="arrow-description"><strong>Disney</strong>'s decision to walk away from its billion-dollar deal with <strong>OpenAI</strong> after the shutdown of the Sora app and API marks a significant setback for OpenAI. This development matters because it underscores the risks and uncertainties associated with investing in AI technology, particularly when it comes to high-profile partnerships. The demise of the Sora app also raises questions about the viability of AI-powered content creation and the challenges of integrating AI into existing business models. As OpenAI expands its record funding round to over $120 billion, the company will need to reassure investors and partners about its ability to deliver on its promises and navigate the complexities of the AI landscape.</p>
+          <div class="numbered-item"><span class="item-number">3</span><span class="item-content"><strong>Anthropic Finds AI Isn’t Replacing Jobs Yet</strong> (TechCrunch)</span></div>
+          <p class="arrow-description"><strong>Anthropic</strong>'s finding that AI isn't replacing jobs yet, but is instead creating a growing skills gap, highlights the need for workers to develop new skills to remain relevant in an AI-driven economy. This development is important because it challenges the common narrative that AI will inevitably lead to widespread job displacement. Instead, Anthropic's research suggests that AI is creating new opportunities for "power users" who can leverage AI tools to enhance their productivity and capabilities. As the AI skills gap continues to grow, companies and governments will need to invest in education and training programs that equip workers with the skills necessary to thrive in an AI-driven workforce.</p>
+          <p>LLM &amp; Model Updates</p>
           <ul class="content-list">
-            <li><strong>Google Lyria 3 Pro</strong> has been launched, enabling the creation of longer, more customizable music tracks. This update compares favorably to previous versions, offering increased flexibility and creativity for users. For developers, Lyria 3 Pro provides a more advanced tool for music generation, while end users can enjoy more sophisticated and personalized music experiences.</li>
-            <li><strong>Claude Code's new Auto Mode</strong> aims to balance safety and speed by offering a middle ground between manual approval and unchecked autonomy. This development is significant because it addresses a key challenge in AI development: finding the right balance between safety and efficiency. By providing a more nuanced approach to autonomy, Claude Code's Auto Mode could have important implications for the development of more advanced AI systems.</li>
+          <li><strong>Google Lyria 3 Pro</strong> has been launched, enabling the creation of longer, more customizable music tracks. This update compares favorably to previous versions, offering increased flexibility and creativity for users. For developers, Lyria 3 Pro provides a more advanced tool for music generation, while end users can enjoy more sophisticated and personalized music experiences.</li>
+          <li><strong>Claude Code's new Auto Mode</strong> aims to balance safety and speed by offering a middle ground between manual approval and unchecked autonomy. This development is significant because it addresses a key challenge in AI development: finding the right balance between safety and efficiency. By providing a more nuanced approach to autonomy, Claude Code's Auto Mode could have important implications for the development of more advanced AI systems.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-research"><span class="section-icon"></span>Research &amp; Breakthroughs</h2>
+          <p>Research &amp; Breakthroughs</p>
           <ul class="content-list">
-            <li>Researchers have found that <strong>self-distillation can degrade the reasoning capability of LLMs</strong> by suppressing epistemic verbalization, leading to performance drops of up to 40%. This discovery matters because it highlights the importance of preserving uncertainty expression in AI models, particularly in mathematical reasoning tasks. The findings underscore the need for more nuanced approaches to AI development, ones that balance optimization with the preservation of critical reasoning capabilities.</li>
-            <li>The introduction of <strong>GameplayQA</strong>, a framework for evaluating agentic-centric perception and reasoning, provides a new tool for assessing the capabilities of multimodal LLMs in 3D environments. This development is significant because it addresses a key challenge in AI research: the need for more effective evaluation frameworks. By providing a more comprehensive and nuanced approach to evaluation, GameplayQA could help drive advances in AI research and development.</li>
+          <li>Researchers have found that <strong>self-distillation can degrade the reasoning capability of LLMs</strong> by suppressing epistemic verbalization, leading to performance drops of up to 40%. This discovery matters because it highlights the importance of preserving uncertainty expression in AI models, particularly in mathematical reasoning tasks. The findings underscore the need for more nuanced approaches to AI development, ones that balance optimization with the preservation of critical reasoning capabilities.</li>
+          <li>The introduction of <strong>GameplayQA</strong>, a framework for evaluating agentic-centric perception and reasoning, provides a new tool for assessing the capabilities of multimodal LLMs in 3D environments. This development is significant because it addresses a key challenge in AI research: the need for more effective evaluation frameworks. By providing a more comprehensive and nuanced approach to evaluation, GameplayQA could help drive advances in AI research and development.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-startups"><span class="section-icon"></span>Startup &amp; Funding</h2>
+          <p>Startup &amp; Funding</p>
           <ul class="content-list">
-            <li><strong>Harvey</strong>, an AI legal tech startup, has confirmed an $11 billion valuation, with investors like <strong>Sequoia</strong> tripling down on their investment. This funding round signals a strong vote of confidence in Harvey's technology and market potential, positioning the company as a leader in the AI-powered legal tech space. The investment also highlights the growing interest in AI applications for the legal industry, with potential implications for the future of legal services and the role of AI in the courtroom.</li>
-            <li><strong>Granola</strong> has raised $125 million, hitting a $1.5 billion valuation, as it expands from a meeting notetaker to an enterprise AI app. This funding round underscores the potential of AI-powered productivity tools, with Granola's expansion into the enterprise space marking a significant milestone in the company's growth. The investment also highlights the growing demand for AI-driven solutions in the enterprise market, with Granola poised to capitalize on this trend.</li>
+          <li><strong>Harvey</strong>, an AI legal tech startup, has confirmed an $11 billion valuation, with investors like <strong>Sequoia</strong> tripling down on their investment. This funding round signals a strong vote of confidence in Harvey's technology and market potential, positioning the company as a leader in the AI-powered legal tech space. The investment also highlights the growing interest in AI applications for the legal industry, with potential implications for the future of legal services and the role of AI in the courtroom.</li>
+          <li><strong>Granola</strong> has raised $125 million, hitting a $1.5 billion valuation, as it expands from a meeting notetaker to an enterprise AI app. This funding round underscores the potential of AI-powered productivity tools, with Granola's expansion into the enterprise space marking a significant milestone in the company's growth. The investment also highlights the growing demand for AI-driven solutions in the enterprise market, with Granola poised to capitalize on this trend.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-tools"><span class="section-icon"></span>AI Tools &amp; Products</h2>
+          <p>AI Tools &amp; Products</p>
           <ul class="content-list">
-            <li><strong>Google Lyria 3 Pro</strong> offers a more advanced music generation tool, enabling the creation of longer, more customizable tracks. This launch is significant because it provides developers and end users with a more sophisticated tool for music creation, with potential applications in a range of industries, from entertainment to education.</li>
-            <li><strong>MolmoWeb</strong>, a fully open web agent, navigates the web using only screenshots, providing a new approach to web interaction. This development is important because it highlights the potential for AI-powered web agents to revolutionize the way we interact with online content, with implications for accessibility, usability, and the future of web design.</li>
+          <li><strong>Google Lyria 3 Pro</strong> offers a more advanced music generation tool, enabling the creation of longer, more customizable tracks. This launch is significant because it provides developers and end users with a more sophisticated tool for music creation, with potential applications in a range of industries, from entertainment to education.</li>
+          <li><strong>MolmoWeb</strong>, a fully open web agent, navigates the web using only screenshots, providing a new approach to web interaction. This development is important because it highlights the potential for AI-powered web agents to revolutionize the way we interact with online content, with implications for accessibility, usability, and the future of web design.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-policy"><span class="section-icon"></span>Policy &amp; Regulation</h2>
+          <p>Policy &amp; Regulation</p>
           <ul class="content-list">
-            <li><strong>Bernie Sanders and AOC</strong> have proposed a ban on data center construction until comprehensive AI regulation is passed. This development matters because it underscores the growing concern about the environmental and social impacts of AI development, with policymakers seeking to ensure that the benefits of AI are shared equitably and that its risks are mitigated. The proposed ban highlights the need for more effective regulation of the AI industry, with potential implications for the future of AI development and deployment.</li>
-            <li><strong>Senate Democrats</strong> are working to codify <strong>Anthropic's red lines</strong> on autonomous weapons and mass surveillance, highlighting the growing concern about the ethical implications of AI development. This development is significant because it underscores the need for more nuanced approaches to AI regulation, ones that balance the benefits of AI with the need to protect human rights and prevent misuse.</li>
+          <li><strong>Bernie Sanders and AOC</strong> have proposed a ban on data center construction until comprehensive AI regulation is passed. This development matters because it underscores the growing concern about the environmental and social impacts of AI development, with policymakers seeking to ensure that the benefits of AI are shared equitably and that its risks are mitigated. The proposed ban highlights the need for more effective regulation of the AI industry, with potential implications for the future of AI development and deployment.</li>
+          <li><strong>Senate Democrats</strong> are working to codify <strong>Anthropic's red lines</strong> on autonomous weapons and mass surveillance, highlighting the growing concern about the ethical implications of AI development. This development is significant because it underscores the need for more nuanced approaches to AI regulation, ones that balance the benefits of AI with the need to protect human rights and prevent misuse.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-robotics"><span class="section-icon"></span>Robotics &amp; Hardware</h2>
+          <p>Robotics &amp; Hardware</p>
           <ul class="content-list">
-            <li><strong>Arm</strong> has broken from its licensing-only model, manufacturing its first in-house chip built for AI data centers. This development is important because it marks a significant shift in Arm's business strategy, with potential implications for the future of AI hardware development. The new chip could provide a more efficient and effective solution for AI data centers, driving advances in AI research and deployment.</li>
+          <li><strong>Arm</strong> has broken from its licensing-only model, manufacturing its first in-house chip built for AI data centers. This development is important because it marks a significant shift in Arm's business strategy, with potential implications for the future of AI hardware development. The new chip could provide a more efficient and effective solution for AI data centers, driving advances in AI research and deployment.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-trend"><span class="section-icon"></span>Trend Analysis</h2>
-        <p>The dominant theme emerging from today's news is the ongoing evolution of the AI landscape, with significant developments in AI research, funding, and regulation. The launch of <strong>Google TurboQuant</strong> and <strong>Lyria 3 Pro</strong> highlights the rapid progress being made in AI technology, with potential implications for the future of AI development and deployment. The funding rounds for <strong>Harvey</strong> and <strong>Granola</strong> underscore the growing interest in AI applications, with investors seeking to capitalize on the potential of AI to drive innovation and growth.</p>
-        <p>The connections between these stories are not always obvious at first glance. However, upon closer examination, it becomes clear that they are all part of a larger narrative about the future of AI. The development of more advanced AI models, like <strong>TurboQuant</strong> and <strong>Lyria 3 Pro</strong>, is driving innovation and growth in the AI industry. The funding rounds for <strong>Harvey</strong> and <strong>Granola</strong> are a testament to the potential of AI to drive innovation and growth, with investors seeking to capitalize on the benefits of AI.</p>
-        <p>As the AI landscape continues to evolve, it is likely that we will see more significant developments in the coming months. The proposed ban on data center construction, for example, highlights the growing concern about the environmental and social impacts of AI development. The codification of <strong>Anthropic's red lines</strong> on autonomous weapons and mass surveillance underscores the need for more nuanced approaches to AI regulation, ones that balance the benefits of AI with the need to protect human rights and prevent misuse.</p>
-        <p>Overall, the trend analysis suggests that the AI industry is poised for significant growth and innovation in the coming months. As the technology continues to evolve, it is likely that we will see more advanced AI models, increased funding, and growing concern about the ethical implications of AI development. As such, it is essential for AI practitioners, founders, and investors to stay informed about the latest developments and to be prepared to adapt to the changing landscape.</p>
+          <p>Trend Analysis</p>
+          <p>The dominant theme emerging from today's news is the ongoing evolution of the AI landscape, with significant developments in AI research, funding, and regulation. The launch of <strong>Google TurboQuant</strong> and <strong>Lyria 3 Pro</strong> highlights the rapid progress being made in AI technology, with potential implications for the future of AI development and deployment. The funding rounds for <strong>Harvey</strong> and <strong>Granola</strong> underscore the growing interest in AI applications, with investors seeking to capitalize on the potential of AI to drive innovation and growth.</p>
+          <p>The connections between these stories are not always obvious at first glance. However, upon closer examination, it becomes clear that they are all part of a larger narrative about the future of AI. The development of more advanced AI models, like <strong>TurboQuant</strong> and <strong>Lyria 3 Pro</strong>, is driving innovation and growth in the AI industry. The funding rounds for <strong>Harvey</strong> and <strong>Granola</strong> are a testament to the potential of AI to drive innovation and growth, with investors seeking to capitalize on the benefits of AI.</p>
+          <p>As the AI landscape continues to evolve, it is likely that we will see more significant developments in the coming months. The proposed ban on data center construction, for example, highlights the growing concern about the environmental and social impacts of AI development. The codification of <strong>Anthropic's red lines</strong> on autonomous weapons and mass surveillance underscores the need for more nuanced approaches to AI regulation, ones that balance the benefits of AI with the need to protect human rights and prevent misuse.</p>
+          <p>Overall, the trend analysis suggests that the AI industry is poised for significant growth and innovation in the coming months. As the technology continues to evolve, it is likely that we will see more advanced AI models, increased funding, and growing concern about the ethical implications of AI development. As such, it is essential for AI practitioners, founders, and investors to stay informed about the latest developments and to be prepared to adapt to the changing landscape.</p>
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </div>
 
   <!-- BOTTOM article navigation -->
-  <nav class="article-nav article-nav-bottom" id="article-nav-bottom" aria-label="Article navigation (bottom)">
-    <div class="container-narrow article-nav-inner">
+  <nav class="article-nav article-nav-bottom" aria-label="Article navigation (bottom)">
+    <div class="container article-nav-inner">
       <a href="#" class="article-nav-btn article-nav-prev" data-nav="prev" aria-label="Previous digest">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         <span class="article-nav-label">
           <span class="article-nav-direction">Previous</span>
           <span class="article-nav-date" data-nav-date="prev">—</span>
         </span>
       </a>
-      <a href="../" class="article-nav-btn article-nav-index" aria-label="All digests">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-        </svg>
+      <a href="../" class="article-nav-btn article-nav-index">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         <span>All digests</span>
       </a>
       <a href="#" class="article-nav-btn article-nav-next" data-nav="next" aria-label="Next digest">
@@ -222,14 +222,11 @@
           <span class="article-nav-direction">Next</span>
           <span class="article-nav-date" data-nav-date="next">—</span>
         </span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
   </nav>
 
-  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
       <p class="footer-copy">&copy; 2026 AI Pulse. All rights reserved.</p>

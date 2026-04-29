@@ -3,15 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Microsoft Rolls Back Copilot AI Bloat on Windows. Microsoft&#x27;s decision to reduce **Copilot** entry points on **Windows** indicates a shift towards a more str...">
+  <meta name="description" content="Microsoft Rolls Back Copilot AI Bloat on Windows. Microsoft&amp;#x27;s decision to reduce **Copilot** entry points on **Windows** indicates a shift towards a more s">
 
   <title>AI Pulse — March 20, 2026 — AI Pulse</title>
 
   <!-- Open Graph -->
   <meta property="og:title" content="AI Pulse — March 20, 2026 — AI Pulse">
-  <meta property="og:description" content="Microsoft Rolls Back Copilot AI Bloat on Windows. Microsoft&#x27;s decision to reduce **Copilot** entry points on **Windows** indicates a shift towards a more str...">
+  <meta property="og:description" content="Microsoft Rolls Back Copilot AI Bloat on Windows. Microsoft&amp;#x27;s decision to reduce **Copilot** entry points on **Windows** indicates a shift towards a more s">
   <meta property="og:type" content="article">
+  <meta property="og:url" content="https://parth-unjiya.github.io/ai-pulse/articles/2026-03-20.html">
   <meta property="article:published_time" content="2026-03-20">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Pulse — March 20, 2026">
+  <meta name="twitter:description" content="Microsoft Rolls Back Copilot AI Bloat on Windows. Microsoft&amp;#x27;s decision to reduce **Copilot** entry points on **Windows** indicates a shift towards a more s">
+
+  <!-- Canonical + RSS -->
+  <link rel="canonical" href="https://parth-unjiya.github.io/ai-pulse/articles/2026-03-20.html">
+  <link rel="alternate" type="application/rss+xml" title="AI Pulse RSS" href="../feed.xml">
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%234f46e5'/><stop offset='100%' stop-color='%237c3aed'/></linearGradient></defs><path d='M18 2L6 18h8l-2 12 12-16h-8z' fill='url(%23g)'/></svg>" type="image/svg+xml">
@@ -30,7 +40,7 @@
   <!-- Reading Progress Bar -->
   <div class="reading-progress-bar" id="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
-  <!-- Navigation -->
+  <!-- Top navbar -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner container">
       <a href="../" class="nav-logo" aria-label="AI Pulse home">
@@ -46,49 +56,42 @@
         <span>AI Pulse</span>
       </a>
 
-      <button
-        class="theme-toggle"
-        id="theme-toggle"
-        type="button"
-        aria-label="Toggle dark mode"
-        title="Toggle dark mode"
-      >
-        <!-- Sun icon (shown in dark mode) -->
-        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="12" cy="12" r="5"/>
-          <line x1="12" y1="1" x2="12" y2="3"/>
-          <line x1="12" y1="21" x2="12" y2="23"/>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-          <line x1="1" y1="12" x2="3" y2="12"/>
-          <line x1="21" y1="12" x2="23" y2="12"/>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-        </svg>
-        <!-- Moon icon (shown in light mode) -->
-        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-        </svg>
-      </button>
+      <div class="nav-actions">
+        <button class="toc-trigger-mobile" id="toc-trigger-mobile" type="button" aria-label="Open table of contents" title="Table of contents">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+            <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+          </svg>
+        </button>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </nav>
 
-  <!-- TOP article navigation (Prev / Index / Next) -->
-  <nav class="article-nav article-nav-top" id="article-nav-top" aria-label="Article navigation (top)">
-    <div class="container-narrow article-nav-inner">
+  <!-- TOP article navigation: Prev / All / Next -->
+  <nav class="article-nav article-nav-top" aria-label="Article navigation (top)">
+    <div class="container article-nav-inner">
       <a href="#" class="article-nav-btn article-nav-prev" data-nav="prev" aria-label="Previous digest">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         <span class="article-nav-label">
           <span class="article-nav-direction">Previous</span>
           <span class="article-nav-date" data-nav-date="prev">—</span>
         </span>
       </a>
-      <a href="../" class="article-nav-btn article-nav-index" aria-label="All digests">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-        </svg>
+      <a href="../" class="article-nav-btn article-nav-index">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         <span>All digests</span>
       </a>
       <a href="#" class="article-nav-btn article-nav-next" data-nav="next" aria-label="Next digest">
@@ -96,122 +99,119 @@
           <span class="article-nav-direction">Next</span>
           <span class="article-nav-date" data-nav-date="next">—</span>
         </span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
   </nav>
 
-  <!-- Article -->
-  <article class="article-page">
-    <header class="article-header">
-      <div class="container">
-        <span class="category-tag">Daily Digest</span>
-        <h1 class="article-title">AI Pulse — March 20, 2026</h1>
-        <div class="article-meta">
-          <time datetime="2026-03-20">March 20, 2026</time>
-          <span class="meta-separator" aria-hidden="true">&middot;</span>
-          <span>5 min read</span>
-          <span class="meta-separator" aria-hidden="true">&middot;</span>
-          <span>40 articles from 8 sources</span>
-        </div>
-
-        <div class="share-bar" aria-label="Share this digest">
-          <button class="share-btn" data-share="copy" type="button" aria-label="Copy link" title="Copy link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            <span class="share-label">Copy link</span>
-          </button>
-          <a class="share-btn" data-share="twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21l-6.514 7.443L22 22h-6.094l-4.77-6.231L5.65 22H2.892l6.97-7.964L2 2h6.244l4.318 5.711L18.244 2zm-1.07 18h1.687L7.59 4H5.785l11.39 16z"/></svg>
-            <span class="share-label">Share on X</span>
-          </a>
-          <a class="share-btn" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            <span class="share-label">Share on LinkedIn</span>
-          </a>
-        </div>
-</div>
-    </header>
-
-        <aside class="article-toc" id="article-toc" aria-label="Table of contents">
-      <div class="container-narrow">
-        <button class="toc-toggle" id="toc-toggle" type="button" aria-expanded="true" aria-controls="toc-list">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-          <span>Table of Contents</span>
-          <svg class="toc-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  <!-- Article body with optional left TOC sidebar -->
+  <div class="article-layout">
+    <!-- TOC sidebar (sticky on desktop, drawer on mobile) -->
+    <aside class="article-toc-sidebar" id="article-toc" aria-label="Table of contents">
+      <div class="toc-sidebar-inner">
+        <button class="toc-close-mobile" id="toc-close-mobile" aria-label="Close table of contents">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
         </button>
+        <h3 class="toc-title">On this page</h3>
         <ul class="toc-list" id="toc-list"></ul>
+
+        <div class="toc-meta">
+          <a class="toc-back-link" href="../">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            <span>All digests</span>
+          </a>
+        </div>
       </div>
     </aside>
+    <div class="article-toc-overlay" id="article-toc-overlay"></div>
 
-    <div class="article-content">
-      <div class="container-narrow">
-                <h2 class="content-section-header section-headlines"><span class="section-icon"></span>Top 3 Headlines</h2>
-        <div class="numbered-item"><span class="item-number">1</span><span class="item-content"><strong>Microsoft Rolls Back Copilot AI Bloat on Windows</strong> (TechCrunch)</span></div>
-        <p class="arrow-description">Microsoft's decision to reduce <strong>Copilot</strong> entry points on <strong>Windows</strong> indicates a shift towards a more streamlined user experience, acknowledging potential over-saturation of AI features. This move affects <strong>Windows</strong> users and developers who integrate <strong>Copilot</strong> into their applications. In the broader AI landscape, it reflects a growing emphasis on user-centric design and the need for tech giants to balance innovation with usability. As <strong>Microsoft</strong> refines its AI strategy, we can expect further adjustments to its AI-powered services, potentially influencing how other companies approach AI integration.</p>
-        <div class="numbered-item"><span class="item-number">2</span><span class="item-content"><strong>Nvidia CEO Jensen Huang Projects $1 Trillion in AI Chip Sales</strong> (TechCrunch)</span></div>
-        <p class="arrow-description"><strong>Nvidia</strong>'s ambitious projection of $1 trillion in AI chip sales by 2027 underscores the company's confidence in the growth of the AI market and its position as a leader in AI computing hardware. This announcement affects the entire AI ecosystem, from developers relying on <strong>Nvidia</strong>'s <strong>GPU</strong> technology to investors eyeing the AI chip market. It also highlights <strong>Nvidia</strong>'s strategy to push for an &quot;OpenClaw&quot; approach, emphasizing openness and collaboration in AI development. As the AI industry evolves, <strong>Nvidia</strong>'s vision will likely influence the direction of AI research and application.</p>
-        <div class="numbered-item"><span class="item-number">3</span><span class="item-content"><strong>OpenAI Plans to Merge ChatGPT, Codex, and Atlas Browser into a Single Desktop Superapp</strong> (The Verge)</span></div>
-        <p class="arrow-description"><strong>OpenAI</strong>'s plan to merge <strong>ChatGPT</strong>, <strong>Codex</strong>, and <strong>Atlas Browser</strong> into a single desktop superapp signals a strategic shift towards simplifying its product offerings and enhancing user experience. This development affects <strong>OpenAI</strong>'s user base and the broader AI community, as it promises a more integrated and accessible AI toolset. By consolidating its services, <strong>OpenAI</strong> aims to increase adoption and usability, potentially setting a new standard for AI applications. This move also reflects <strong>OpenAI</strong>'s competitive dynamics, as it seeks to maintain its position in the rapidly evolving AI landscape.</p>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-llm"><span class="section-icon"></span>LLM &amp; Model Updates</h2>
+    <article class="article-page">
+      <header class="article-header">
+        <div class="article-header-inner">
+          <span class="category-tag">Daily Digest</span>
+          <h1 class="article-title">AI Pulse — March 20, 2026</h1>
+          <div class="article-meta">
+            <time datetime="2026-03-20">Friday, March 20, 2026</time>
+            <span class="meta-separator" aria-hidden="true">&middot;</span>
+            <span>5 min read</span>
+            <span class="meta-separator" aria-hidden="true">&middot;</span>
+            <span>40 articles from 8 sources</span>
+          </div>
+
+          <div class="share-bar" aria-label="Share this digest">
+            <button class="share-btn" data-share="copy" type="button" aria-label="Copy link" title="Copy link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="share-label">Copy link</span>
+            </button>
+            <a class="share-btn" data-share="twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.514 7.443L22 22h-6.094l-4.77-6.231L5.65 22H2.892l6.97-7.964L2 2h6.244l4.318 5.711L18.244 2zm-1.07 18h1.687L7.59 4H5.785l11.39 16z"/></svg>
+              <span class="share-label">Share on X</span>
+            </a>
+            <a class="share-btn" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span class="share-label">LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="article-content">
+        <div class="article-content-inner">
+          <p>Top 3 Headlines</p>
+          <div class="numbered-item"><span class="item-number">1</span><span class="item-content"><strong>Microsoft Rolls Back Copilot AI Bloat on Windows</strong> (TechCrunch)</span></div>
+          <p class="arrow-description">Microsoft's decision to reduce <strong>Copilot</strong> entry points on <strong>Windows</strong> indicates a shift towards a more streamlined user experience, acknowledging potential over-saturation of AI features. This move affects <strong>Windows</strong> users and developers who integrate <strong>Copilot</strong> into their applications. In the broader AI landscape, it reflects a growing emphasis on user-centric design and the need for tech giants to balance innovation with usability. As <strong>Microsoft</strong> refines its AI strategy, we can expect further adjustments to its AI-powered services, potentially influencing how other companies approach AI integration.</p>
+          <div class="numbered-item"><span class="item-number">2</span><span class="item-content"><strong>Nvidia CEO Jensen Huang Projects $1 Trillion in AI Chip Sales</strong> (TechCrunch)</span></div>
+          <p class="arrow-description"><strong>Nvidia</strong>'s ambitious projection of $1 trillion in AI chip sales by 2027 underscores the company's confidence in the growth of the AI market and its position as a leader in AI computing hardware. This announcement affects the entire AI ecosystem, from developers relying on <strong>Nvidia</strong>'s <strong>GPU</strong> technology to investors eyeing the AI chip market. It also highlights <strong>Nvidia</strong>'s strategy to push for an "OpenClaw" approach, emphasizing openness and collaboration in AI development. As the AI industry evolves, <strong>Nvidia</strong>'s vision will likely influence the direction of AI research and application.</p>
+          <div class="numbered-item"><span class="item-number">3</span><span class="item-content"><strong>OpenAI Plans to Merge ChatGPT, Codex, and Atlas Browser into a Single Desktop Superapp</strong> (The Verge)</span></div>
+          <p class="arrow-description"><strong>OpenAI</strong>'s plan to merge <strong>ChatGPT</strong>, <strong>Codex</strong>, and <strong>Atlas Browser</strong> into a single desktop superapp signals a strategic shift towards simplifying its product offerings and enhancing user experience. This development affects <strong>OpenAI</strong>'s user base and the broader AI community, as it promises a more integrated and accessible AI toolset. By consolidating its services, <strong>OpenAI</strong> aims to increase adoption and usability, potentially setting a new standard for AI applications. This move also reflects <strong>OpenAI</strong>'s competitive dynamics, as it seeks to maintain its position in the rapidly evolving AI landscape.</p>
+          <p>LLM &amp; Model Updates</p>
           <ul class="content-list">
-            <li><strong>OpenAI Acquires Astral to Enhance Codex AI Coding Platform</strong>: OpenAI's acquisition of Astral brings Python's most popular development tools into its <strong>Codex</strong> platform, enhancing its capabilities for AI-powered coding. This move compares favorably to competitors like <strong>Anthropic</strong>, which is also focusing on AI coding tools. For developers, this integration means more comprehensive support for coding tasks, while end-users can expect more efficient and accurate coding outputs.</li>
-            <li><strong>Qualcomm Shrinks AI Reasoning Chains by 2.4x</strong>: Qualcomm's achievement in compressing AI reasoning chains enables the deployment of more sophisticated language models on smartphones. This development surpasses previous attempts by reducing the complexity of AI models, making them more suitable for mobile devices. Developers can now create more advanced AI applications for smartphones, while users will benefit from enhanced AI capabilities on their mobile devices.</li>
+          <li><strong>OpenAI Acquires Astral to Enhance Codex AI Coding Platform</strong>: OpenAI's acquisition of Astral brings Python's most popular development tools into its <strong>Codex</strong> platform, enhancing its capabilities for AI-powered coding. This move compares favorably to competitors like <strong>Anthropic</strong>, which is also focusing on AI coding tools. For developers, this integration means more comprehensive support for coding tasks, while end-users can expect more efficient and accurate coding outputs.</li>
+          <li><strong>Qualcomm Shrinks AI Reasoning Chains by 2.4x</strong>: Qualcomm's achievement in compressing AI reasoning chains enables the deployment of more sophisticated language models on smartphones. This development surpasses previous attempts by reducing the complexity of AI models, making them more suitable for mobile devices. Developers can now create more advanced AI applications for smartphones, while users will benefit from enhanced AI capabilities on their mobile devices.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-research"><span class="section-icon"></span>Research &amp; Breakthroughs</h2>
+          <p>Research &amp; Breakthroughs</p>
           <ul class="content-list">
-            <li><strong>OpenAI's Fully Automated Researcher Project</strong>: OpenAI's new grand challenge involves building a fully automated researcher, an AI system capable of tackling complex problems independently. This project aims to overcome current limitations in AI research by creating a self-sufficient AI researcher. The practical implications are significant, as such a system could accelerate AI research, solve complex problems more efficiently, and potentially lead to breakthroughs in various fields.</li>
-            <li><strong>Mind-Altering Substances Falling Short in Clinical Trials</strong>: Research on psychedelics like psilocybin for health applications has shown promise but also faces challenges, including the placebo effect and variable efficacy. This study highlights the need for more rigorous clinical trials to fully understand the potential of these substances. The findings have implications for the development of treatments for depression, PTSD, and other conditions, emphasizing the importance of continued research into these compounds.</li>
+          <li><strong>OpenAI's Fully Automated Researcher Project</strong>: OpenAI's new grand challenge involves building a fully automated researcher, an AI system capable of tackling complex problems independently. This project aims to overcome current limitations in AI research by creating a self-sufficient AI researcher. The practical implications are significant, as such a system could accelerate AI research, solve complex problems more efficiently, and potentially lead to breakthroughs in various fields.</li>
+          <li><strong>Mind-Altering Substances Falling Short in Clinical Trials</strong>: Research on psychedelics like psilocybin for health applications has shown promise but also faces challenges, including the placebo effect and variable efficacy. This study highlights the need for more rigorous clinical trials to fully understand the potential of these substances. The findings have implications for the development of treatments for depression, PTSD, and other conditions, emphasizing the importance of continued research into these compounds.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-startups"><span class="section-icon"></span>Startup &amp; Funding</h2>
+          <p>Startup &amp; Funding</p>
           <ul class="content-list">
-            <li><strong>No startup news yesterday</strong>.</li>
+          <li><strong>No startup news yesterday</strong>.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-tools"><span class="section-icon"></span>AI Tools &amp; Products</h2>
+          <p>AI Tools &amp; Products</p>
           <ul class="content-list">
-            <li><strong>Adobe Firefly Now Bundles 30+ AI Models</strong>: Adobe's expansion of its <strong>Firefly</strong> creative platform to include over 30 AI models from different providers offers users a comprehensive environment for AI-powered creativity. This development targets creative professionals and businesses looking to leverage AI for design and content creation. By bundling multiple AI models, Adobe enhances the versatility and accessibility of <strong>Firefly</strong>, making it a competitive offering in the AI creative tools market.</li>
-            <li><strong>Google Gives AI Shopping Agents Cart, Catalog, and Loyalty Features</strong>: Google's update to its Universal Commerce Protocol (UCP) with shopping cart, catalog, and identity features facilitates easier online shopping for AI agents. This affects e-commerce businesses and developers integrating AI shopping agents into their platforms. The enhanced UCP enables more seamless interactions between AI agents and online stores, potentially increasing the efficiency and personalization of online shopping experiences.</li>
+          <li><strong>Adobe Firefly Now Bundles 30+ AI Models</strong>: Adobe's expansion of its <strong>Firefly</strong> creative platform to include over 30 AI models from different providers offers users a comprehensive environment for AI-powered creativity. This development targets creative professionals and businesses looking to leverage AI for design and content creation. By bundling multiple AI models, Adobe enhances the versatility and accessibility of <strong>Firefly</strong>, making it a competitive offering in the AI creative tools market.</li>
+          <li><strong>Google Gives AI Shopping Agents Cart, Catalog, and Loyalty Features</strong>: Google's update to its Universal Commerce Protocol (UCP) with shopping cart, catalog, and identity features facilitates easier online shopping for AI agents. This affects e-commerce businesses and developers integrating AI shopping agents into their platforms. The enhanced UCP enables more seamless interactions between AI agents and online stores, potentially increasing the efficiency and personalization of online shopping experiences.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-policy"><span class="section-icon"></span>Policy &amp; Regulation</h2>
+          <p>Policy &amp; Regulation</p>
           <ul class="content-list">
-            <li><strong>Trump's AI Framework Targets State Laws, Shifts Child Safety Burden to Parents</strong>: The proposed AI framework aims to preempt state laws, emphasizing federal regulation and innovation over stringent AI controls. This development affects tech companies, state governments, and parents, as it shifts the responsibility for child safety in AI contexts from companies to parents. The timeline for enforcement and the consequences of non-compliance are crucial aspects to watch, as this framework could significantly impact how AI is developed and used in the United States.</li>
+          <li><strong>Trump's AI Framework Targets State Laws, Shifts Child Safety Burden to Parents</strong>: The proposed AI framework aims to preempt state laws, emphasizing federal regulation and innovation over stringent AI controls. This development affects tech companies, state governments, and parents, as it shifts the responsibility for child safety in AI contexts from companies to parents. The timeline for enforcement and the consequences of non-compliance are crucial aspects to watch, as this framework could significantly impact how AI is developed and used in the United States.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-robotics"><span class="section-icon"></span>Robotics &amp; Hardware</h2>
+          <p>Robotics &amp; Hardware</p>
           <ul class="content-list">
-            <li><strong>No robotics news yesterday</strong>.</li>
+          <li><strong>No robotics news yesterday</strong>.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-trend"><span class="section-icon"></span>Trend Analysis</h2>
-        <p>The dominant theme emerging from today's news is the ongoing push for more integrated, accessible, and powerful AI tools and platforms. Whether it's <strong>OpenAI</strong> merging its services into a superapp, <strong>Nvidia</strong> projecting massive growth in AI chip sales, or <strong>Adobe</strong> expanding its creative AI platform, the trend is clear: the AI industry is moving towards greater consolidation, usability, and performance. This shift is driven by the need for more efficient development and deployment of AI applications, as well as the increasing demand for AI-powered products and services from both consumers and businesses.</p>
-        <p>Connections between these stories highlight the interconnected nature of the AI ecosystem. For instance, <strong>Nvidia</strong>'s success in AI chip sales is closely tied to the growth of AI applications, which in turn is influenced by the development of more user-friendly AI tools like <strong>OpenAI</strong>'s superapp. Similarly, <strong>Adobe</strong>'s expansion of <strong>Firefly</strong> reflects the broader trend of integrating AI into creative workflows, a trend that will continue as AI technology advances.</p>
-        <p>Looking ahead, the next 3-6 months will be critical for the AI industry. As companies like <strong>OpenAI</strong>, <strong>Nvidia</strong>, and <strong>Adobe</strong> continue to innovate and expand their offerings, we can expect significant advancements in AI capabilities, usability, and adoption. Investors, founders, and AI practitioners should pay close attention to these developments, as they will shape the future of the AI landscape. Key areas to watch include the evolution of AI-powered creative tools, the growth of AI chip sales, and the impact of regulatory frameworks on AI development and deployment.</p>
+          <p>Trend Analysis</p>
+          <p>The dominant theme emerging from today's news is the ongoing push for more integrated, accessible, and powerful AI tools and platforms. Whether it's <strong>OpenAI</strong> merging its services into a superapp, <strong>Nvidia</strong> projecting massive growth in AI chip sales, or <strong>Adobe</strong> expanding its creative AI platform, the trend is clear: the AI industry is moving towards greater consolidation, usability, and performance. This shift is driven by the need for more efficient development and deployment of AI applications, as well as the increasing demand for AI-powered products and services from both consumers and businesses.</p>
+          <p>Connections between these stories highlight the interconnected nature of the AI ecosystem. For instance, <strong>Nvidia</strong>'s success in AI chip sales is closely tied to the growth of AI applications, which in turn is influenced by the development of more user-friendly AI tools like <strong>OpenAI</strong>'s superapp. Similarly, <strong>Adobe</strong>'s expansion of <strong>Firefly</strong> reflects the broader trend of integrating AI into creative workflows, a trend that will continue as AI technology advances.</p>
+          <p>Looking ahead, the next 3-6 months will be critical for the AI industry. As companies like <strong>OpenAI</strong>, <strong>Nvidia</strong>, and <strong>Adobe</strong> continue to innovate and expand their offerings, we can expect significant advancements in AI capabilities, usability, and adoption. Investors, founders, and AI practitioners should pay close attention to these developments, as they will shape the future of the AI landscape. Key areas to watch include the evolution of AI-powered creative tools, the growth of AI chip sales, and the impact of regulatory frameworks on AI development and deployment.</p>
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </div>
 
   <!-- BOTTOM article navigation -->
-  <nav class="article-nav article-nav-bottom" id="article-nav-bottom" aria-label="Article navigation (bottom)">
-    <div class="container-narrow article-nav-inner">
+  <nav class="article-nav article-nav-bottom" aria-label="Article navigation (bottom)">
+    <div class="container article-nav-inner">
       <a href="#" class="article-nav-btn article-nav-prev" data-nav="prev" aria-label="Previous digest">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         <span class="article-nav-label">
           <span class="article-nav-direction">Previous</span>
           <span class="article-nav-date" data-nav-date="prev">—</span>
         </span>
       </a>
-      <a href="../" class="article-nav-btn article-nav-index" aria-label="All digests">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-        </svg>
+      <a href="../" class="article-nav-btn article-nav-index">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         <span>All digests</span>
       </a>
       <a href="#" class="article-nav-btn article-nav-next" data-nav="next" aria-label="Next digest">
@@ -219,14 +219,11 @@
           <span class="article-nav-direction">Next</span>
           <span class="article-nav-date" data-nav-date="next">—</span>
         </span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
   </nav>
 
-  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
       <p class="footer-copy">&copy; 2026 AI Pulse. All rights reserved.</p>

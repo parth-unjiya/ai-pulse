@@ -11,7 +11,17 @@
   <meta property="og:title" content="AI Pulse — March 3, 2026 — AI Pulse">
   <meta property="og:description" content="AI companies are spending millions to thwart this former tech exec’s congressional bid. The escalating battle over AI regulation is moving from white papers ...">
   <meta property="og:type" content="article">
+  <meta property="og:url" content="https://parth-unjiya.github.io/ai-pulse/articles/2026-03-03.html">
   <meta property="article:published_time" content="2026-03-03">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Pulse — March 3, 2026">
+  <meta name="twitter:description" content="AI companies are spending millions to thwart this former tech exec’s congressional bid. The escalating battle over AI regulation is moving from white papers ...">
+
+  <!-- Canonical + RSS -->
+  <link rel="canonical" href="https://parth-unjiya.github.io/ai-pulse/articles/2026-03-03.html">
+  <link rel="alternate" type="application/rss+xml" title="AI Pulse RSS" href="../feed.xml">
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%234f46e5'/><stop offset='100%' stop-color='%237c3aed'/></linearGradient></defs><path d='M18 2L6 18h8l-2 12 12-16h-8z' fill='url(%23g)'/></svg>" type="image/svg+xml">
@@ -30,7 +40,7 @@
   <!-- Reading Progress Bar -->
   <div class="reading-progress-bar" id="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
-  <!-- Navigation -->
+  <!-- Top navbar -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner container">
       <a href="../" class="nav-logo" aria-label="AI Pulse home">
@@ -46,49 +56,42 @@
         <span>AI Pulse</span>
       </a>
 
-      <button
-        class="theme-toggle"
-        id="theme-toggle"
-        type="button"
-        aria-label="Toggle dark mode"
-        title="Toggle dark mode"
-      >
-        <!-- Sun icon (shown in dark mode) -->
-        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="12" cy="12" r="5"/>
-          <line x1="12" y1="1" x2="12" y2="3"/>
-          <line x1="12" y1="21" x2="12" y2="23"/>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-          <line x1="1" y1="12" x2="3" y2="12"/>
-          <line x1="21" y1="12" x2="23" y2="12"/>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-        </svg>
-        <!-- Moon icon (shown in light mode) -->
-        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-        </svg>
-      </button>
+      <div class="nav-actions">
+        <button class="toc-trigger-mobile" id="toc-trigger-mobile" type="button" aria-label="Open table of contents" title="Table of contents">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+            <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+          </svg>
+        </button>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </nav>
 
-  <!-- TOP article navigation (Prev / Index / Next) -->
-  <nav class="article-nav article-nav-top" id="article-nav-top" aria-label="Article navigation (top)">
-    <div class="container-narrow article-nav-inner">
+  <!-- TOP article navigation: Prev / All / Next -->
+  <nav class="article-nav article-nav-top" aria-label="Article navigation (top)">
+    <div class="container article-nav-inner">
       <a href="#" class="article-nav-btn article-nav-prev" data-nav="prev" aria-label="Previous digest">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         <span class="article-nav-label">
           <span class="article-nav-direction">Previous</span>
           <span class="article-nav-date" data-nav-date="prev">—</span>
         </span>
       </a>
-      <a href="../" class="article-nav-btn article-nav-index" aria-label="All digests">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-        </svg>
+      <a href="../" class="article-nav-btn article-nav-index">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         <span>All digests</span>
       </a>
       <a href="#" class="article-nav-btn article-nav-next" data-nav="next" aria-label="Next digest">
@@ -96,134 +99,131 @@
           <span class="article-nav-direction">Next</span>
           <span class="article-nav-date" data-nav-date="next">—</span>
         </span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
   </nav>
 
-  <!-- Article -->
-  <article class="article-page">
-    <header class="article-header">
-      <div class="container">
-        <span class="category-tag">Daily Digest</span>
-        <h1 class="article-title">AI Pulse — March 3, 2026</h1>
-        <div class="article-meta">
-          <time datetime="2026-03-03">March 3, 2026</time>
-          <span class="meta-separator" aria-hidden="true">&middot;</span>
-          <span>7 min read</span>
-          <span class="meta-separator" aria-hidden="true">&middot;</span>
-          <span>21 articles from 7 sources</span>
-        </div>
-
-        <div class="share-bar" aria-label="Share this digest">
-          <button class="share-btn" data-share="copy" type="button" aria-label="Copy link" title="Copy link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            <span class="share-label">Copy link</span>
-          </button>
-          <a class="share-btn" data-share="twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21l-6.514 7.443L22 22h-6.094l-4.77-6.231L5.65 22H2.892l6.97-7.964L2 2h6.244l4.318 5.711L18.244 2zm-1.07 18h1.687L7.59 4H5.785l11.39 16z"/></svg>
-            <span class="share-label">Share on X</span>
-          </a>
-          <a class="share-btn" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            <span class="share-label">Share on LinkedIn</span>
-          </a>
-        </div>
-</div>
-    </header>
-
-        <aside class="article-toc" id="article-toc" aria-label="Table of contents">
-      <div class="container-narrow">
-        <button class="toc-toggle" id="toc-toggle" type="button" aria-expanded="true" aria-controls="toc-list">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-          <span>Table of Contents</span>
-          <svg class="toc-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  <!-- Article body with optional left TOC sidebar -->
+  <div class="article-layout">
+    <!-- TOC sidebar (sticky on desktop, drawer on mobile) -->
+    <aside class="article-toc-sidebar" id="article-toc" aria-label="Table of contents">
+      <div class="toc-sidebar-inner">
+        <button class="toc-close-mobile" id="toc-close-mobile" aria-label="Close table of contents">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
         </button>
+        <h3 class="toc-title">On this page</h3>
         <ul class="toc-list" id="toc-list"></ul>
+
+        <div class="toc-meta">
+          <a class="toc-back-link" href="../">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            <span>All digests</span>
+          </a>
+        </div>
       </div>
     </aside>
+    <div class="article-toc-overlay" id="article-toc-overlay"></div>
 
-    <div class="article-content">
-      <div class="container-narrow">
-                <h2 class="content-section-header section-headlines"><span class="section-icon"></span>Top 3 Headlines</h2>
-        <div class="numbered-item"><span class="item-number">1</span><span class="item-content"><strong>AI companies are spending millions to thwart this former tech exec’s congressional bid</strong> (TechCrunch)</span></div>
-        <p class="arrow-description">The escalating battle over AI regulation is moving from white papers and lobbying to direct political intervention. A tech billionaire-backed super PAC is pouring $125 million into campaigns to defeat candidates, like Alex Bores, who advocate for stricter AI oversight. This signals a new, aggressive phase in the industry's efforts to shape the regulatory landscape, mirroring tactics seen in other heavily regulated sectors like pharmaceuticals and finance. The sheer scale of the spending underscores the existential threat AI companies perceive from potential regulations that could stifle innovation or limit their business models. Expect to see more of these high-stakes political battles as AI becomes an increasingly prominent issue in elections.</p>
-        <div class="numbered-item"><span class="item-number">2</span><span class="item-content"><strong>Federal AI shakeup: State Department swaps Claude for aging GPT-4.1</strong> (The Decoder)</span></div>
-        <p class="arrow-description">The U.S. State Department's decision to switch from <strong>Anthropic</strong>'s <strong>Claude</strong> to <strong>OpenAI</strong>'s <strong>GPT-4.1</strong> is a significant blow to Anthropic and highlights the intense competition in the LLM market. While the article frames GPT-4.1 as &quot;aging,&quot; the move likely reflects a combination of factors, including performance, cost, and specific feature requirements. Government agencies often have complex procurement processes and stringent security needs, which can influence their choice of AI models. This decision could trigger a domino effect, with other federal agencies re-evaluating their AI deployments and potentially switching providers. It also underscores the importance of continuous model improvement and competitive pricing for AI vendors seeking to secure government contracts.</p>
-        <div class="numbered-item"><span class="item-number">3</span><span class="item-content"><strong>Google's fastest and cheapest model Gemini 3.1 Flash-Lite got smarter but also tripled the price</strong> (The Decoder)</span></div>
-        <p class="arrow-description"><strong>Google DeepMind</strong>'s release of <strong>Gemini 3.1 Flash-Lite</strong>, while boasting enhanced capabilities, comes with a significant price hike, more than tripling output costs. This presents a classic tradeoff for developers: improved performance versus increased expenses. The move suggests Google is prioritizing higher-quality output and potentially targeting use cases where speed and accuracy are paramount, even at a premium. This pricing strategy could impact adoption, particularly for applications requiring high volumes of API calls. It also raises questions about the long-term affordability of advanced AI models and whether developers will be forced to choose between cost-effectiveness and cutting-edge performance.</p>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-llm"><span class="section-icon"></span>LLM &amp; Model Updates</h2>
+    <article class="article-page">
+      <header class="article-header">
+        <div class="article-header-inner">
+          <span class="category-tag">Daily Digest</span>
+          <h1 class="article-title">AI Pulse — March 3, 2026</h1>
+          <div class="article-meta">
+            <time datetime="2026-03-03">Tuesday, March 3, 2026</time>
+            <span class="meta-separator" aria-hidden="true">&middot;</span>
+            <span>7 min read</span>
+            <span class="meta-separator" aria-hidden="true">&middot;</span>
+            <span>21 articles from 7 sources</span>
+          </div>
+
+          <div class="share-bar" aria-label="Share this digest">
+            <button class="share-btn" data-share="copy" type="button" aria-label="Copy link" title="Copy link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span class="share-label">Copy link</span>
+            </button>
+            <a class="share-btn" data-share="twitter" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.514 7.443L22 22h-6.094l-4.77-6.231L5.65 22H2.892l6.97-7.964L2 2h6.244l4.318 5.711L18.244 2zm-1.07 18h1.687L7.59 4H5.785l11.39 16z"/></svg>
+              <span class="share-label">Share on X</span>
+            </a>
+            <a class="share-btn" data-share="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span class="share-label">LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="article-content">
+        <div class="article-content-inner">
+          <p>Top 3 Headlines</p>
+          <div class="numbered-item"><span class="item-number">1</span><span class="item-content"><strong>AI companies are spending millions to thwart this former tech exec’s congressional bid</strong> (TechCrunch)</span></div>
+          <p class="arrow-description">The escalating battle over AI regulation is moving from white papers and lobbying to direct political intervention. A tech billionaire-backed super PAC is pouring $125 million into campaigns to defeat candidates, like Alex Bores, who advocate for stricter AI oversight. This signals a new, aggressive phase in the industry's efforts to shape the regulatory landscape, mirroring tactics seen in other heavily regulated sectors like pharmaceuticals and finance. The sheer scale of the spending underscores the existential threat AI companies perceive from potential regulations that could stifle innovation or limit their business models. Expect to see more of these high-stakes political battles as AI becomes an increasingly prominent issue in elections.</p>
+          <div class="numbered-item"><span class="item-number">2</span><span class="item-content"><strong>Federal AI shakeup: State Department swaps Claude for aging GPT-4.1</strong> (The Decoder)</span></div>
+          <p class="arrow-description">The U.S. State Department's decision to switch from <strong>Anthropic</strong>'s <strong>Claude</strong> to <strong>OpenAI</strong>'s <strong>GPT-4.1</strong> is a significant blow to Anthropic and highlights the intense competition in the LLM market. While the article frames GPT-4.1 as "aging," the move likely reflects a combination of factors, including performance, cost, and specific feature requirements. Government agencies often have complex procurement processes and stringent security needs, which can influence their choice of AI models. This decision could trigger a domino effect, with other federal agencies re-evaluating their AI deployments and potentially switching providers. It also underscores the importance of continuous model improvement and competitive pricing for AI vendors seeking to secure government contracts.</p>
+          <div class="numbered-item"><span class="item-number">3</span><span class="item-content"><strong>Google's fastest and cheapest model Gemini 3.1 Flash-Lite got smarter but also tripled the price</strong> (The Decoder)</span></div>
+          <p class="arrow-description"><strong>Google DeepMind</strong>'s release of <strong>Gemini 3.1 Flash-Lite</strong>, while boasting enhanced capabilities, comes with a significant price hike, more than tripling output costs. This presents a classic tradeoff for developers: improved performance versus increased expenses. The move suggests Google is prioritizing higher-quality output and potentially targeting use cases where speed and accuracy are paramount, even at a premium. This pricing strategy could impact adoption, particularly for applications requiring high volumes of API calls. It also raises questions about the long-term affordability of advanced AI models and whether developers will be forced to choose between cost-effectiveness and cutting-edge performance.</p>
+          <p>LLM &amp; Model Updates</p>
           <ul class="content-list">
-            <li><strong>OpenAI</strong> released <strong>GPT-5.3 Instant</strong>, designed for smoother, more natural conversations and reduced hallucinations, especially when using web search. This update focuses on improving the user experience by addressing common complaints about AI chatbots, such as overly cautious or patronizing responses. The model aims to provide more relevant and accurate information, making it more useful for everyday tasks. This is a direct response to user feedback and a competitive move against models like <strong>Google</strong>'s <strong>Gemini</strong>, which are also vying for dominance in the conversational AI space.</li>
+          <li><strong>OpenAI</strong> released <strong>GPT-5.3 Instant</strong>, designed for smoother, more natural conversations and reduced hallucinations, especially when using web search. This update focuses on improving the user experience by addressing common complaints about AI chatbots, such as overly cautious or patronizing responses. The model aims to provide more relevant and accurate information, making it more useful for everyday tasks. This is a direct response to user feedback and a competitive move against models like <strong>Google</strong>'s <strong>Gemini</strong>, which are also vying for dominance in the conversational AI space.</li>
           </ul>
           <ul class="content-list">
-            <li><strong>Google DeepMind</strong> launched <strong>Gemini 3.1 Flash-Lite</strong>, the fastest and cheapest model in the <strong>Gemini 3</strong> series, but with a tripled price. While significantly more capable than its predecessor, the increased cost could limit its adoption for high-volume applications. This model is likely optimized for speed and efficiency, making it suitable for tasks where rapid responses are crucial, such as real-time customer service or data processing. The price increase suggests Google is targeting users who prioritize performance over cost, potentially positioning it as a premium offering within the Gemini family.</li>
+          <li><strong>Google DeepMind</strong> launched <strong>Gemini 3.1 Flash-Lite</strong>, the fastest and cheapest model in the <strong>Gemini 3</strong> series, but with a tripled price. While significantly more capable than its predecessor, the increased cost could limit its adoption for high-volume applications. This model is likely optimized for speed and efficiency, making it suitable for tasks where rapid responses are crucial, such as real-time customer service or data processing. The price increase suggests Google is targeting users who prioritize performance over cost, potentially positioning it as a premium offering within the Gemini family.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-research"><span class="section-icon"></span>Research &amp; Breakthroughs</h2>
+          <p>Research &amp; Breakthroughs</p>
           <ul class="content-list">
-            <li><strong>Hugging Face</strong> published Part 3 of its PRX series, detailing the training of a text-to-image model in 24 hours. This achievement highlights the increasing accessibility of training complex AI models, thanks to advancements in hardware and software. The blog post likely provides insights into the specific techniques and resources used, offering valuable guidance for researchers and developers looking to replicate similar results. This democratization of AI model training could lead to a proliferation of specialized image generation models tailored to specific domains.</li>
-          </ul>
-          <ul class="content-list">
-            <li><strong>Skyward Wildfire</strong>, a startup, claims it can prevent catastrophic wildfires by stopping lightning strikes. While the article doesn't delve into the specific technology used, the concept is intriguing and addresses a critical environmental challenge. The ability to mitigate lightning-induced fires could have a significant impact on forest management and wildfire prevention efforts. However, the claim should be viewed with skepticism until the technology is proven effective in real-world conditions.</li>
-          </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-startups"><span class="section-icon"></span>Startup &amp; Funding</h2>
-        <p>No startup news yesterday.</p>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-tools"><span class="section-icon"></span>AI Tools &amp; Products</h2>
-          <ul class="content-list">
-            <li><strong>Anthropic</strong> rolled out <strong>Voice Mode</strong> in <strong>Claude Code</strong>, stepping up its game in the AI coding space. This feature allows developers to interact with the AI assistant using voice commands, potentially streamlining the coding process and improving accessibility. Voice Mode could be particularly useful for hands-free coding or for developers with disabilities. This move positions Claude Code as a more versatile and user-friendly coding assistant, competing with similar offerings from <strong>GitHub Copilot</strong> and other AI-powered coding tools.</li>
+          <li><strong>Hugging Face</strong> published Part 3 of its PRX series, detailing the training of a text-to-image model in 24 hours. This achievement highlights the increasing accessibility of training complex AI models, thanks to advancements in hardware and software. The blog post likely provides insights into the specific techniques and resources used, offering valuable guidance for researchers and developers looking to replicate similar results. This democratization of AI model training could lead to a proliferation of specialized image generation models tailored to specific domains.</li>
           </ul>
           <ul class="content-list">
-            <li><strong>Google</strong> is adding new features to <strong>Pixel</strong> phones with its latest March update, including the ability for <strong>Gemini</strong> to order groceries and book rides. This integration of AI into everyday tasks aims to make smartphones more proactive and helpful. By leveraging Gemini's capabilities, Pixel users can automate common tasks, freeing up their time and simplifying their lives. This move is part of Google's broader strategy to embed AI into all of its products and services, creating a more seamless and intelligent user experience.</li>
+          <li><strong>Skyward Wildfire</strong>, a startup, claims it can prevent catastrophic wildfires by stopping lightning strikes. While the article doesn't delve into the specific technology used, the concept is intriguing and addresses a critical environmental challenge. The ability to mitigate lightning-induced fires could have a significant impact on forest management and wildfire prevention efforts. However, the claim should be viewed with skepticism until the technology is proven effective in real-world conditions.</li>
+          </ul>
+          <p>Startup &amp; Funding</p>
+          <p>No startup news yesterday.</p>
+          <p>AI Tools &amp; Products</p>
+          <ul class="content-list">
+          <li><strong>Anthropic</strong> rolled out <strong>Voice Mode</strong> in <strong>Claude Code</strong>, stepping up its game in the AI coding space. This feature allows developers to interact with the AI assistant using voice commands, potentially streamlining the coding process and improving accessibility. Voice Mode could be particularly useful for hands-free coding or for developers with disabilities. This move positions Claude Code as a more versatile and user-friendly coding assistant, competing with similar offerings from <strong>GitHub Copilot</strong> and other AI-powered coding tools.</li>
           </ul>
           <ul class="content-list">
-            <li><strong>Meta</strong> is testing an AI-powered shopping search feature in its <strong>Meta AI</strong> chatbot to compete with <strong>ChatGPT</strong> and <strong>Gemini</strong>. This feature aims to provide users with a more intuitive and efficient way to find products online. By leveraging AI, Meta hopes to improve the shopping experience and drive more sales through its platform. This move reflects the growing importance of AI in e-commerce and the increasing competition among tech giants to dominate the online shopping space.</li>
+          <li><strong>Google</strong> is adding new features to <strong>Pixel</strong> phones with its latest March update, including the ability for <strong>Gemini</strong> to order groceries and book rides. This integration of AI into everyday tasks aims to make smartphones more proactive and helpful. By leveraging Gemini's capabilities, Pixel users can automate common tasks, freeing up their time and simplifying their lives. This move is part of Google's broader strategy to embed AI into all of its products and services, creating a more seamless and intelligent user experience.</li>
           </ul>
           <ul class="content-list">
-            <li><strong>Google AI</strong> published tips for prompt writing in <strong>Project Genie</strong>, an experimental interface for creating new worlds. This suggests Google is actively exploring new ways to leverage AI for creative applications. Project Genie could potentially empower users to generate immersive environments and interactive experiences. By providing guidance on prompt engineering, Google is aiming to make this technology more accessible and user-friendly.</li>
-          </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-policy"><span class="section-icon"></span>Policy &amp; Regulation</h2>
-          <ul class="content-list">
-            <li>A tech billionaire-backed super PAC is spending $125 million to undercut candidates pushing for AI regulation, including New York's Alex Bores. This demonstrates the significant financial resources being deployed to influence AI policy and the intense lobbying efforts by AI companies to avoid stricter regulations. This level of spending highlights the perceived threat that regulation poses to the industry's growth and profitability. The outcome of these political battles will have a significant impact on the future of AI development and deployment.</li>
+          <li><strong>Meta</strong> is testing an AI-powered shopping search feature in its <strong>Meta AI</strong> chatbot to compete with <strong>ChatGPT</strong> and <strong>Gemini</strong>. This feature aims to provide users with a more intuitive and efficient way to find products online. By leveraging AI, Meta hopes to improve the shopping experience and drive more sales through its platform. This move reflects the growing importance of AI in e-commerce and the increasing competition among tech giants to dominate the online shopping space.</li>
           </ul>
           <ul class="content-list">
-            <li><strong>Meta</strong> is sending private AI glasses footage to Kenya with few safeguards, raising concerns about privacy and data security, potentially triggering scrutiny from European privacy regulators. This practice highlights the ethical challenges associated with training AI models using sensitive data. The lack of safeguards raises questions about the protection of personal information and the potential for misuse. This incident could lead to stricter regulations on data collection and processing practices for AI companies.</li>
+          <li><strong>Google AI</strong> published tips for prompt writing in <strong>Project Genie</strong>, an experimental interface for creating new worlds. This suggests Google is actively exploring new ways to leverage AI for creative applications. Project Genie could potentially empower users to generate immersive environments and interactive experiences. By providing guidance on prompt engineering, Google is aiming to make this technology more accessible and user-friendly.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-robotics"><span class="section-icon"></span>Robotics &amp; Hardware</h2>
+          <p>Policy &amp; Regulation</p>
           <ul class="content-list">
-            <li><strong>Xiaomi</strong>, unlike <strong>Google</strong> and <strong>Samsung</strong>, is prioritizing camera hardware over AI in its new phone releases. This suggests a different approach to smartphone development, focusing on image quality and optical performance rather than relying solely on AI-powered image processing. Xiaomi's emphasis on hardware could appeal to users who value traditional photography principles and prefer natural-looking images. This strategy could differentiate Xiaomi from its competitors and attract a specific segment of the smartphone market.</li>
+          <li>A tech billionaire-backed super PAC is spending $125 million to undercut candidates pushing for AI regulation, including New York's Alex Bores. This demonstrates the significant financial resources being deployed to influence AI policy and the intense lobbying efforts by AI companies to avoid stricter regulations. This level of spending highlights the perceived threat that regulation poses to the industry's growth and profitability. The outcome of these political battles will have a significant impact on the future of AI development and deployment.</li>
           </ul>
-        <hr class="section-divider">
-        <h2 class="content-section-header section-trend"><span class="section-icon"></span>Trend Analysis</h2>
-        <p>The dominant theme emerging from today's AI news is the intensifying competition and strategic maneuvering among major players like <strong>OpenAI</strong>, <strong>Google</strong>, <strong>Anthropic</strong>, and <strong>Meta</strong>. We see this in the model updates (GPT-5.3 Instant vs. Gemini 3.1 Flash-Lite), the platform integrations (Gemini on Pixel, Meta AI shopping search), and even the political battles over regulation. The State Department's switch from Claude to GPT-4.1 underscores the fluidity of the market and the importance of continuous innovation to maintain a competitive edge. The price increase for Gemini 3.1 Flash-Lite, despite its improved performance, highlights the ongoing tension between capability and cost-effectiveness, a critical factor for developers choosing which models to adopt.</p>
-        <p>Beyond the headline-grabbing model releases, the news also reveals a growing focus on user experience and ethical considerations. OpenAI's efforts to reduce &quot;cringe&quot; in GPT-5.3 Instant and Meta's privacy concerns in Kenya demonstrate the need for AI companies to address user feedback and ensure responsible data handling. The political spending against AI regulation signals a potential clash between innovation and societal concerns, with the industry bracing for increased scrutiny and potential limitations. Actionable takeaways include: 1) Monitor the pricing strategies of leading AI vendors, as this will significantly impact the cost of building AI-powered applications. 2) Pay close attention to regulatory developments, as these could reshape the AI landscape and create new opportunities or challenges. 3) Prioritize user experience and ethical considerations in AI development to build trust and ensure responsible deployment.</p>
+          <ul class="content-list">
+          <li><strong>Meta</strong> is sending private AI glasses footage to Kenya with few safeguards, raising concerns about privacy and data security, potentially triggering scrutiny from European privacy regulators. This practice highlights the ethical challenges associated with training AI models using sensitive data. The lack of safeguards raises questions about the protection of personal information and the potential for misuse. This incident could lead to stricter regulations on data collection and processing practices for AI companies.</li>
+          </ul>
+          <p>Robotics &amp; Hardware</p>
+          <ul class="content-list">
+          <li><strong>Xiaomi</strong>, unlike <strong>Google</strong> and <strong>Samsung</strong>, is prioritizing camera hardware over AI in its new phone releases. This suggests a different approach to smartphone development, focusing on image quality and optical performance rather than relying solely on AI-powered image processing. Xiaomi's emphasis on hardware could appeal to users who value traditional photography principles and prefer natural-looking images. This strategy could differentiate Xiaomi from its competitors and attract a specific segment of the smartphone market.</li>
+          </ul>
+          <p>Trend Analysis</p>
+          <p>The dominant theme emerging from today's AI news is the intensifying competition and strategic maneuvering among major players like <strong>OpenAI</strong>, <strong>Google</strong>, <strong>Anthropic</strong>, and <strong>Meta</strong>. We see this in the model updates (GPT-5.3 Instant vs. Gemini 3.1 Flash-Lite), the platform integrations (Gemini on Pixel, Meta AI shopping search), and even the political battles over regulation. The State Department's switch from Claude to GPT-4.1 underscores the fluidity of the market and the importance of continuous innovation to maintain a competitive edge. The price increase for Gemini 3.1 Flash-Lite, despite its improved performance, highlights the ongoing tension between capability and cost-effectiveness, a critical factor for developers choosing which models to adopt.</p>
+          <p>Beyond the headline-grabbing model releases, the news also reveals a growing focus on user experience and ethical considerations. OpenAI's efforts to reduce "cringe" in GPT-5.3 Instant and Meta's privacy concerns in Kenya demonstrate the need for AI companies to address user feedback and ensure responsible data handling. The political spending against AI regulation signals a potential clash between innovation and societal concerns, with the industry bracing for increased scrutiny and potential limitations. Actionable takeaways include: 1) Monitor the pricing strategies of leading AI vendors, as this will significantly impact the cost of building AI-powered applications. 2) Pay close attention to regulatory developments, as these could reshape the AI landscape and create new opportunities or challenges. 3) Prioritize user experience and ethical considerations in AI development to build trust and ensure responsible deployment.</p>
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </div>
 
   <!-- BOTTOM article navigation -->
-  <nav class="article-nav article-nav-bottom" id="article-nav-bottom" aria-label="Article navigation (bottom)">
-    <div class="container-narrow article-nav-inner">
+  <nav class="article-nav article-nav-bottom" aria-label="Article navigation (bottom)">
+    <div class="container article-nav-inner">
       <a href="#" class="article-nav-btn article-nav-prev" data-nav="prev" aria-label="Previous digest">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         <span class="article-nav-label">
           <span class="article-nav-direction">Previous</span>
           <span class="article-nav-date" data-nav-date="prev">—</span>
         </span>
       </a>
-      <a href="../" class="article-nav-btn article-nav-index" aria-label="All digests">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-        </svg>
+      <a href="../" class="article-nav-btn article-nav-index">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         <span>All digests</span>
       </a>
       <a href="#" class="article-nav-btn article-nav-next" data-nav="next" aria-label="Next digest">
@@ -231,14 +231,11 @@
           <span class="article-nav-direction">Next</span>
           <span class="article-nav-date" data-nav-date="next">—</span>
         </span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
   </nav>
 
-  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
       <p class="footer-copy">&copy; 2026 AI Pulse. All rights reserved.</p>
