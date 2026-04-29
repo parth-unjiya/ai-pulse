@@ -202,8 +202,113 @@ with open(f"{REPO}/index.html", "w") as f:
     f.write(idx)
 print("INDEX_UPDATED")
 
+
+# ──────────────────────────────────────────────────────────────────────
+# Generate manifest.json, feed.xml (RSS), and sitemap.xml
+# ──────────────────────────────────────────────────────────────────────
+def _scan_articles():
+    """Scan articles/ dir and extract (date, title, excerpt, count, sources) for each."""
+    articles_dir = f"{REPO}/articles"
+    items = []
+    for fn in sorted(os.listdir(articles_dir), reverse=True):
+        if not fn.endswith(".html"):
+            continue
+        date = fn[:-5]  # strip .html
+        if not re.match(r"^\d{4}-\d{2}-\d{2}$", date):
+            continue
+        try:
+            with open(f"{articles_dir}/{fn}") as f:
+                content = f.read()
+            t_m = re.search(r"<title>([^<]+)</title>", content)
+            title_str = (t_m.group(1) if t_m else "").split(" — AI Pulse")[0].strip()
+            e_m = re.search(r'<meta name="description" content="([^"]*)"', content)
+            excerpt_str = e_m.group(1) if e_m else ""
+            c_m = re.search(r"(\d+)\s+articles?\s+from\s+(\d+)\s+sources?", content)
+            n_a = int(c_m.group(1)) if c_m else 0
+            n_s = int(c_m.group(2)) if c_m else 0
+            items.append({
+                "date": date,
+                "title": title_str,
+                "excerpt": excerpt_str,
+                "article_count": n_a,
+                "source_count": n_s,
+            })
+        except Exception as e:
+            print(f"WARN: failed to scan {fn}: {e}", file=sys.stderr)
+    return items
+
+
+_all_articles = _scan_articles()
+
+# 1. manifest.json — used by article-nav.js for prev/next links
+with open(f"{REPO}/manifest.json", "w") as f:
+    json.dump({"articles": _all_articles, "updated": datetime.now(timezone.utc).isoformat()}, f, indent=2)
+print(f"MANIFEST_WRITTEN ({len(_all_articles)} articles)")
+
+# 2. feed.xml — RSS feed for the blog
+def _rfc822(d_iso):
+    """Convert YYYY-MM-DD to RFC-822 date for RSS."""
+    try:
+        dt = datetime.strptime(d_iso, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+        return dt.strftime("%a, %d %b %Y 00:00:00 +0000")
+    except Exception:
+        return ""
+
+_base_url = "https://parth-unjiya.github.io/ai-pulse"
+_rss_items = []
+for it in _all_articles[:30]:  # last 30 in feed
+    _rss_items.append(
+        f"""    <item>
+      <title>{html.escape(it['title'])}</title>
+      <link>{_base_url}/articles/{it['date']}.html</link>
+      <guid isPermaLink="true">{_base_url}/articles/{it['date']}.html</guid>
+      <pubDate>{_rfc822(it['date'])}</pubDate>
+      <description>{html.escape(it['excerpt'])}</description>
+    </item>"""
+    )
+_rss_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Pulse — Daily AI News Digest</title>
+    <link>{_base_url}/</link>
+    <atom:link href="{_base_url}/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Daily AI news digest covering LLMs, research, startups, tools, policy, and robotics.</description>
+    <language>en-us</language>
+    <lastBuildDate>{datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")}</lastBuildDate>
+{chr(10).join(_rss_items)}
+  </channel>
+</rss>
+"""
+with open(f"{REPO}/feed.xml", "w") as f:
+    f.write(_rss_xml)
+print("FEED_WRITTEN")
+
+# 3. sitemap.xml — for SEO
+_sitemap_items = [
+    f"  <url><loc>{_base_url}/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>"
+]
+for it in _all_articles:
+    _sitemap_items.append(
+        f"  <url><loc>{_base_url}/articles/{it['date']}.html</loc><lastmod>{it['date']}</lastmod><priority>0.8</priority></url>"
+    )
+_sitemap_xml = (
+    '<?xml version="1.0" encoding="UTF-8"?>\n'
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    + "\n".join(_sitemap_items)
+    + "\n</urlset>\n"
+)
+with open(f"{REPO}/sitemap.xml", "w") as f:
+    f.write(_sitemap_xml)
+print("SITEMAP_WRITTEN")
+
+
+# ──────────────────────────────────────────────────────────────────────
 # Git commit and push
-subprocess.run(["git", "add", "index.html", "articles/"], cwd=REPO, check=True)
+# ──────────────────────────────────────────────────────────────────────
+subprocess.run(
+    ["git", "add", "index.html", "articles/", "manifest.json", "feed.xml", "sitemap.xml"],
+    cwd=REPO, check=True,
+)
 subprocess.run(["git", "commit", "-m", f"Add digest for {TARGET_DATE}"], cwd=REPO, check=True)
 subprocess.run(["git", "push", "origin", "main"], cwd=REPO, check=True)
 print(f"PUSHED https://parth-unjiya.github.io/ai-pulse/articles/{TARGET_DATE}.html")

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Pulse — Daily AI News Digest</title>
+    <link>https://parth-unjiya.github.io/ai-pulse/</link>
+    <atom:link href="https://parth-unjiya.github.io/ai-pulse/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Daily AI news digest covering LLMs, research, startups, tools, policy, robotics.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Apr 2026 10:03:11 +0000</lastBuildDate>
+    <item>
+      <title>AI Pulse — April 28, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-28.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-28.html</guid>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <description>OpenAI and Amazon Partnership. Amazon is now offering new OpenAI products on AWS, including a new agent service, after OpenAI ended its exclusive rights with...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 27, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-27.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-27.html</guid>
+      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
+      <description>OpenAI Ends Microsoft Exclusivity Agreement. OpenAI has ended its exclusivity agreement with Microsoft, allowing the company to partner with other cloud prov...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 26, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-26.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-26.html</guid>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+      <description>OpenAI Retires Codex, Integrates into GPT-5.5. OpenAI&amp;#x27;s decision to retire its dedicated Codex coding model and integrate its capabilities into GPT-5.5 marks...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 25, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-25.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-25.html</guid>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Anthropic Creates Test Marketplace for Agent-on-Agent Commerce. Anthropic has created a test marketplace where AI agents can buy and sell goods, marking a si...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 24, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-24.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-24.html</guid>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Google to Invest Up to $40B in Anthropic. Google&amp;#x27;s massive investment in Anthropic signifies a major push in the AI race, particularly in securing vast compu...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 23, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-23.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-23.html</guid>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Meta Lays Off 10% of Staff. Meta&amp;#x27;s decision to lay off 10% of its staff, approximately 8,000 people, and close around 6,000 open roles, marks a significant s...</description>
+    </item>
+    <item>
+      <title>AI Pulse — Wednesday, April 22, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-22.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-22.html</guid>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Meta publishes official Llama API client libraries in Python and TypeScript</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 21, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-21.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-21.html</guid>
+      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
+      <description>OpenAI Launches ChatGPT Images 2.0. OpenAI has released ChatGPT Images 2.0, a significant upgrade to its image generation model, which claims to have achieve...</description>
+    </item>
+    <item>
+      <title>AI Pulse — Monday, April 20, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-20.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-20.html</guid>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Hyatt Deploys ChatGPT Enterprise Globally Across Its Workforce</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 19, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-19.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-19.html</guid>
+      <pubDate>Sun, 19 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Anthropic&amp;#x27;s Revenue Surge. Anthropic has reportedly surged to $30 billion in annualized revenue, fueling talk of a $1 trillion valuation. This significant gr...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 18, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-18.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-18.html</guid>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Tesla Expands Robotaxi Service. Tesla has expanded its robotaxi service to Dallas and Houston, making it available in three Texas cities. This move is signif...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 17, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-17.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-17.html</guid>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <description>OpenAI Executive Exodus. The recent departure of OpenAI executives, including Kevin Weil and Fidji Simo, marks a significant shift in the company&amp;#x27;s leadershi...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 16, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-16.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-16.html</guid>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Anthropic Ships Claude Opus 4.7 with New &amp;quot;xhigh&amp;quot; Effort Tier and Token Budgets</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 15, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-15.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-15.html</guid>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Allbirds&amp;#x27; Pivot to AI. Allbirds, a shoe company, has announced a drastic pivot to AI, selling off its name and assets for $39 million, with its stock jumping...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 14, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-14.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-14.html</guid>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <description>OpenAI Acquires Hiro. OpenAI has acquired AI personal finance startup Hiro to integrate financial planning capabilities into **ChatGPT**. This move signifies...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 13, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-13.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-13.html</guid>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Microsoft is working on a new OpenClaw-like agent. Microsoft is developing a new OpenClaw-like agent with enhanced security controls, specifically designed f...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 12, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-12.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-12.html</guid>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Trump Officials May Be Encouraging Banks to Test Anthropic&amp;#x27;s Mythos Model. The Department of Defense has declared Anthropic a supply-chain risk, yet Trump of...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 11, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-11.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-11.html</guid>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <description>OpenAI CEO&amp;#x27;s Home Attacked. The recent attack on OpenAI CEO Sam Altman&amp;#x27;s home with a Molotov cocktail has sparked a wave of concern and discussion about the ...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 10, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-10.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-10.html</guid>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <description>OpenAI faces lawsuit and security threats. OpenAI is facing a lawsuit from a stalking victim who claims that ChatGPT fueled her abuser&amp;#x27;s delusions and ignore...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 9, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-09.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-09.html</guid>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+      <description>OpenAI Introduces $100/month ChatGPT Pro Plan. OpenAI has introduced a new $100/month ChatGPT Pro plan, which offers 5x more Codex usage than the $20/month P...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 8, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-08.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-08.html</guid>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Meta Launches Muse Spark. Meta has launched Muse Spark, its first frontier model since overhauling its AI efforts, to power the Meta AI app and website in th...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 7, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-07.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-07.html</guid>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Anthropic&amp;#x27;s Claude Mythos Preview Model. Anthropic has debuted a powerful new AI model called Claude Mythos Preview, designed for defensive cybersecurity wor...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 6, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-06.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-06.html</guid>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <description>OpenAI Proposes Taxes on AI Profits. OpenAI has proposed a series of measures to address the potential negative impacts of AI on the economy, including taxes...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 5, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-05.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-05.html</guid>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Microsoft Warns Against Unconditional Trust in AI Outputs. Microsoft has updated its terms of service to caution users against blindly trusting the outputs o...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 4, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-04.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-04.html</guid>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Netflix Open-Sources VOID AI Framework. Netflix has open-sourced its VOID AI framework, which can remove objects from videos and rewrite physics, making it a...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 3, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-03.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-03.html</guid>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Anthropic Acquires Biotech Startup Coefficient Bio. Anthropic&amp;#x27;s acquisition of Coefficient Bio for $400 million marks a significant expansion of its AI capab...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 2, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-02.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-02.html</guid>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+      <description>OpenAI Acquires TBPN. OpenAI&amp;#x27;s acquisition of TBPN, a founder-led business talk show, marks a significant move by the company to expand its reach and influen...</description>
+    </item>
+    <item>
+      <title>AI Pulse — April 1, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-04-01.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-04-01.html</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <description>OpenAI. OpenAI has raised a historic amount of money, with a $10 billion valuation and $1 billion funding, solidifying its position as one of the world&amp;#x27;s mos...</description>
+    </item>
+    <item>
+      <title>AI Pulse — March 31, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-03-31.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-03-31.html</guid>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      <description>OpenAI Raises $122 Billion in Funding. OpenAI has raised $122 billion in new funding, valuing the company at $852 billion. This massive investment will help ...</description>
+    </item>
+    <item>
+      <title>AI Pulse — March 30, 2026</title>
+      <link>https://parth-unjiya.github.io/ai-pulse/articles/2026-03-30.html</link>
+      <guid isPermaLink="true">https://parth-unjiya.github.io/ai-pulse/articles/2026-03-30.html</guid>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+      <description>15% of Americans say they’d be willing to work for an AI boss. This poll result indicates a growing acceptance of AI in the workplace, with 15% of Americans ...</description>
+    </item>
+  </channel>
+</rss>

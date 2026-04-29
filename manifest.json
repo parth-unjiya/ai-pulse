@@ -1,0 +1,453 @@
+{
+  "articles": [
+    {
+      "date": "2026-04-28",
+      "title": "AI Pulse \u2014 April 28, 2026",
+      "excerpt": "OpenAI and Amazon Partnership. Amazon is now offering new OpenAI products on AWS, including a new agent service, after OpenAI ended its exclusive rights with...",
+      "article_count": 164,
+      "source_count": 33
+    },
+    {
+      "date": "2026-04-27",
+      "title": "AI Pulse \u2014 April 27, 2026",
+      "excerpt": "OpenAI Ends Microsoft Exclusivity Agreement. OpenAI has ended its exclusivity agreement with Microsoft, allowing the company to partner with other cloud prov...",
+      "article_count": 156,
+      "source_count": 30
+    },
+    {
+      "date": "2026-04-26",
+      "title": "AI Pulse \u2014 April 26, 2026",
+      "excerpt": "OpenAI Retires Codex, Integrates into GPT-5.5. OpenAI&#x27;s decision to retire its dedicated Codex coding model and integrate its capabilities into GPT-5.5 marks...",
+      "article_count": 94,
+      "source_count": 17
+    },
+    {
+      "date": "2026-04-25",
+      "title": "AI Pulse \u2014 April 25, 2026",
+      "excerpt": "Anthropic Creates Test Marketplace for Agent-on-Agent Commerce. Anthropic has created a test marketplace where AI agents can buy and sell goods, marking a si...",
+      "article_count": 117,
+      "source_count": 20
+    },
+    {
+      "date": "2026-04-24",
+      "title": "AI Pulse \u2014 April 24, 2026",
+      "excerpt": "Google to Invest Up to $40B in Anthropic. Google&#x27;s massive investment in Anthropic signifies a major push in the AI race, particularly in securing vast compu...",
+      "article_count": 63,
+      "source_count": 21
+    },
+    {
+      "date": "2026-04-23",
+      "title": "AI Pulse \u2014 April 23, 2026",
+      "excerpt": "Meta Lays Off 10% of Staff. Meta&#x27;s decision to lay off 10% of its staff, approximately 8,000 people, and close around 6,000 open roles, marks a significant s...",
+      "article_count": 146,
+      "source_count": 31
+    },
+    {
+      "date": "2026-04-22",
+      "title": "AI Pulse \u2014 Wednesday, April 22, 2026",
+      "excerpt": "Meta publishes official Llama API client libraries in Python and TypeScript",
+      "article_count": 41,
+      "source_count": 8
+    },
+    {
+      "date": "2026-04-21",
+      "title": "AI Pulse \u2014 April 21, 2026",
+      "excerpt": "OpenAI Launches ChatGPT Images 2.0. OpenAI has released ChatGPT Images 2.0, a significant upgrade to its image generation model, which claims to have achieve...",
+      "article_count": 166,
+      "source_count": 31
+    },
+    {
+      "date": "2026-04-20",
+      "title": "AI Pulse \u2014 Monday, April 20, 2026",
+      "excerpt": "Hyatt Deploys ChatGPT Enterprise Globally Across Its Workforce",
+      "article_count": 26,
+      "source_count": 13
+    },
+    {
+      "date": "2026-04-19",
+      "title": "AI Pulse \u2014 April 19, 2026",
+      "excerpt": "Anthropic&#x27;s Revenue Surge. Anthropic has reportedly surged to $30 billion in annualized revenue, fueling talk of a $1 trillion valuation. This significant gr...",
+      "article_count": 117,
+      "source_count": 22
+    },
+    {
+      "date": "2026-04-18",
+      "title": "AI Pulse \u2014 April 18, 2026",
+      "excerpt": "Tesla Expands Robotaxi Service. Tesla has expanded its robotaxi service to Dallas and Houston, making it available in three Texas cities. This move is signif...",
+      "article_count": 38,
+      "source_count": 16
+    },
+    {
+      "date": "2026-04-17",
+      "title": "AI Pulse \u2014 April 17, 2026",
+      "excerpt": "OpenAI Executive Exodus. The recent departure of OpenAI executives, including Kevin Weil and Fidji Simo, marks a significant shift in the company&#x27;s leadershi...",
+      "article_count": 38,
+      "source_count": 15
+    },
+    {
+      "date": "2026-04-16",
+      "title": "AI Pulse \u2014 April 16, 2026",
+      "excerpt": "Anthropic Ships Claude Opus 4.7 with New &quot;xhigh&quot; Effort Tier and Token Budgets",
+      "article_count": 68,
+      "source_count": 25
+    },
+    {
+      "date": "2026-04-15",
+      "title": "AI Pulse \u2014 April 15, 2026",
+      "excerpt": "Allbirds&#x27; Pivot to AI. Allbirds, a shoe company, has announced a drastic pivot to AI, selling off its name and assets for $39 million, with its stock jumping...",
+      "article_count": 52,
+      "source_count": 20
+    },
+    {
+      "date": "2026-04-14",
+      "title": "AI Pulse \u2014 April 14, 2026",
+      "excerpt": "OpenAI Acquires Hiro. OpenAI has acquired AI personal finance startup Hiro to integrate financial planning capabilities into **ChatGPT**. This move signifies...",
+      "article_count": 151,
+      "source_count": 30
+    },
+    {
+      "date": "2026-04-13",
+      "title": "AI Pulse \u2014 April 13, 2026",
+      "excerpt": "Microsoft is working on a new OpenClaw-like agent. Microsoft is developing a new OpenClaw-like agent with enhanced security controls, specifically designed f...",
+      "article_count": 140,
+      "source_count": 28
+    },
+    {
+      "date": "2026-04-12",
+      "title": "AI Pulse \u2014 April 12, 2026",
+      "excerpt": "Trump Officials May Be Encouraging Banks to Test Anthropic&#x27;s Mythos Model. The Department of Defense has declared Anthropic a supply-chain risk, yet Trump of...",
+      "article_count": 110,
+      "source_count": 19
+    },
+    {
+      "date": "2026-04-11",
+      "title": "AI Pulse \u2014 April 11, 2026",
+      "excerpt": "OpenAI CEO&#x27;s Home Attacked. The recent attack on OpenAI CEO Sam Altman&#x27;s home with a Molotov cocktail has sparked a wave of concern and discussion about the ...",
+      "article_count": 93,
+      "source_count": 20
+    },
+    {
+      "date": "2026-04-10",
+      "title": "AI Pulse \u2014 April 10, 2026",
+      "excerpt": "OpenAI faces lawsuit and security threats. OpenAI is facing a lawsuit from a stalking victim who claims that ChatGPT fueled her abuser&#x27;s delusions and ignore...",
+      "article_count": 79,
+      "source_count": 22
+    },
+    {
+      "date": "2026-04-09",
+      "title": "AI Pulse \u2014 April 9, 2026",
+      "excerpt": "OpenAI Introduces $100/month ChatGPT Pro Plan. OpenAI has introduced a new $100/month ChatGPT Pro plan, which offers 5x more Codex usage than the $20/month P...",
+      "article_count": 154,
+      "source_count": 32
+    },
+    {
+      "date": "2026-04-08",
+      "title": "AI Pulse \u2014 April 8, 2026",
+      "excerpt": "Meta Launches Muse Spark. Meta has launched Muse Spark, its first frontier model since overhauling its AI efforts, to power the Meta AI app and website in th...",
+      "article_count": 53,
+      "source_count": 18
+    },
+    {
+      "date": "2026-04-07",
+      "title": "AI Pulse \u2014 April 7, 2026",
+      "excerpt": "Anthropic&#x27;s Claude Mythos Preview Model. Anthropic has debuted a powerful new AI model called Claude Mythos Preview, designed for defensive cybersecurity wor...",
+      "article_count": 147,
+      "source_count": 27
+    },
+    {
+      "date": "2026-04-06",
+      "title": "AI Pulse \u2014 April 6, 2026",
+      "excerpt": "OpenAI Proposes Taxes on AI Profits. OpenAI has proposed a series of measures to address the potential negative impacts of AI on the economy, including taxes...",
+      "article_count": 149,
+      "source_count": 29
+    },
+    {
+      "date": "2026-04-05",
+      "title": "AI Pulse \u2014 April 5, 2026",
+      "excerpt": "Microsoft Warns Against Unconditional Trust in AI Outputs. Microsoft has updated its terms of service to caution users against blindly trusting the outputs o...",
+      "article_count": 113,
+      "source_count": 21
+    },
+    {
+      "date": "2026-04-04",
+      "title": "AI Pulse \u2014 April 4, 2026",
+      "excerpt": "Netflix Open-Sources VOID AI Framework. Netflix has open-sourced its VOID AI framework, which can remove objects from videos and rewrite physics, making it a...",
+      "article_count": 104,
+      "source_count": 23
+    },
+    {
+      "date": "2026-04-03",
+      "title": "AI Pulse \u2014 April 3, 2026",
+      "excerpt": "Anthropic Acquires Biotech Startup Coefficient Bio. Anthropic&#x27;s acquisition of Coefficient Bio for $400 million marks a significant expansion of its AI capab...",
+      "article_count": 60,
+      "source_count": 19
+    },
+    {
+      "date": "2026-04-02",
+      "title": "AI Pulse \u2014 April 2, 2026",
+      "excerpt": "OpenAI Acquires TBPN. OpenAI&#x27;s acquisition of TBPN, a founder-led business talk show, marks a significant move by the company to expand its reach and influen...",
+      "article_count": 143,
+      "source_count": 33
+    },
+    {
+      "date": "2026-04-01",
+      "title": "AI Pulse \u2014 April 1, 2026",
+      "excerpt": "OpenAI. OpenAI has raised a historic amount of money, with a $10 billion valuation and $1 billion funding, solidifying its position as one of the world&#x27;s mos...",
+      "article_count": 160,
+      "source_count": 31
+    },
+    {
+      "date": "2026-03-31",
+      "title": "AI Pulse \u2014 March 31, 2026",
+      "excerpt": "OpenAI Raises $122 Billion in Funding. OpenAI has raised $122 billion in new funding, valuing the company at $852 billion. This massive investment will help ...",
+      "article_count": 116,
+      "source_count": 28
+    },
+    {
+      "date": "2026-03-30",
+      "title": "AI Pulse \u2014 March 30, 2026",
+      "excerpt": "15% of Americans say they\u2019d be willing to work for an AI boss. This poll result indicates a growing acceptance of AI in the workplace, with 15% of Americans ...",
+      "article_count": 40,
+      "source_count": 8
+    },
+    {
+      "date": "2026-03-29",
+      "title": "AI Pulse \u2014 March 29, 2026",
+      "excerpt": "Sora\u2019s shutdown could be a reality check moment for AI video. The shutdown of Sora, a company focused on AI-generated video, could signal a broader pullback ...",
+      "article_count": 40,
+      "source_count": 8
+    },
+    {
+      "date": "2026-03-28",
+      "title": "AI Pulse \u2014 March 28, 2026",
+      "excerpt": "Bluesky leans into AI with Attie. The introduction of **Attie**, an app for building custom feeds on the open social networking protocol **atproto**, marks a...",
+      "article_count": 27,
+      "source_count": 8
+    },
+    {
+      "date": "2026-03-27",
+      "title": "AI Pulse \u2014 March 27, 2026",
+      "excerpt": "SoftBank\u2019s $40B Loan. This massive loan from Wall Street giants JPMorgan and Goldman Sachs to SoftBank signals a significant vote of confidence in the Japane...",
+      "article_count": 11,
+      "source_count": 6
+    },
+    {
+      "date": "2026-03-26",
+      "title": "AI Pulse \u2014 March 26, 2026",
+      "excerpt": "Google Launches &quot;Switching Tools&quot; for Gemini. Google&#x27;s launch of &quot;switching tools&quot; for **Gemini** allows users to transfer their chats and personal informati...",
+      "article_count": 40,
+      "source_count": 7
+    },
+    {
+      "date": "2026-03-25",
+      "title": "AI Pulse \u2014 March 25, 2026",
+      "excerpt": "Google Unveils TurboQuant. Google&#x27;s introduction of **TurboQuant**, an AI memory compression algorithm, promises to shrink AI&#x27;s &quot;working memory&quot; by up to 6x....",
+      "article_count": 40,
+      "source_count": 9
+    },
+    {
+      "date": "2026-03-24",
+      "title": "AI Pulse \u2014 March 24, 2026",
+      "excerpt": "OpenAI Shutters Sora. OpenAI&#x27;s decision to shut down **Sora**, its AI-powered social feed app, marks a significant shift in the company&#x27;s strategy. Despite t...",
+      "article_count": 40,
+      "source_count": 8
+    },
+    {
+      "date": "2026-03-23",
+      "title": "AI Pulse \u2014 March 23, 2026",
+      "excerpt": "Nvidia CEO Jensen Huang says \u2018I think we\u2019ve achieved AGI\u2019. This statement by **Nvidia** CEO Jensen Huang is significant because it comes from a leader in the...",
+      "article_count": 40,
+      "source_count": 9
+    },
+    {
+      "date": "2026-03-22",
+      "title": "AI Pulse \u2014 March 22, 2026",
+      "excerpt": "Elon Musk unveils chip manufacturing plans for SpaceX and Tesla. Elon Musk&#x27;s announcement to build a Terafab chip plant in Austin, Texas, jointly run by **Te...",
+      "article_count": 40,
+      "source_count": 7
+    },
+    {
+      "date": "2026-03-21",
+      "title": "AI Pulse \u2014 March 21, 2026",
+      "excerpt": "OpenAI to nearly double workforce to 8,000 by end-2026. This significant expansion indicates **OpenAI**&#x27;s aggressive push into the enterprise AI market, aimi...",
+      "article_count": 40,
+      "source_count": 7
+    },
+    {
+      "date": "2026-03-20",
+      "title": "AI Pulse \u2014 March 20, 2026",
+      "excerpt": "Microsoft Rolls Back Copilot AI Bloat on Windows. Microsoft&#x27;s decision to reduce **Copilot** entry points on **Windows** indicates a shift towards a more str...",
+      "article_count": 40,
+      "source_count": 8
+    },
+    {
+      "date": "2026-03-19",
+      "title": "AI Pulse \u2014 March 19, 2026",
+      "excerpt": "Jeff Bezos&#x27; $100 Billion AI Manufacturing Plan. Jeff Bezos is reportedly planning to invest $100 billion in acquiring and transforming old manufacturing firm...",
+      "article_count": 40,
+      "source_count": 9
+    },
+    {
+      "date": "2026-03-18",
+      "title": "AI Pulse \u2014 March 18, 2026",
+      "excerpt": "Meta is having trouble with rogue AI agents. This report of a rogue AI agent at **Meta** exposing company and user data highlights a critical, and often over...",
+      "article_count": 40,
+      "source_count": 7
+    },
+    {
+      "date": "2026-03-17",
+      "title": "AI Pulse \u2014 March 17, 2026",
+      "excerpt": "Mistral bets on \u2018build-your-own AI\u2019 as it takes on OpenAI, Anthropic in the enterprise. **Mistral AI** is launching **Forge**, a platform allowing enterprise...",
+      "article_count": 40,
+      "source_count": 10
+    },
+    {
+      "date": "2026-03-16",
+      "title": "AI Pulse \u2014 March 16, 2026",
+      "excerpt": "Nvidia\u2019s version of OpenClaw could solve its biggest problem: security. Nvidia&#x27;s announcement of **NemoClaw**, an open enterprise AI agent platform built on ...",
+      "article_count": 40,
+      "source_count": 8
+    },
+    {
+      "date": "2026-03-15",
+      "title": "AI Pulse \u2014 March 15, 2026",
+      "excerpt": "ByteDance reportedly pauses global launch of its Seedance 2.0 video generator. ByteDance&#x27;s decision to halt the global rollout of **Seedance 2.0**, its AI vi...",
+      "article_count": 40,
+      "source_count": 9
+    },
+    {
+      "date": "2026-03-14",
+      "title": "AI Pulse \u2014 March 14, 2026",
+      "excerpt": "US Army announces contract with Anduril worth up to $20B. The US Army&#x27;s decision to award **Anduril** a contract potentially worth $20 billion signals a sign...",
+      "article_count": 40,
+      "source_count": 8
+    },
+    {
+      "date": "2026-03-13",
+      "title": "AI Pulse \u2014 March 13, 2026",
+      "excerpt": "$32B acquisition that one VC is calling the \u2018Deal of the Decade\u2019. Index Ventures Partner Shardul Shah believes **Google&#x27;s** $32 billion acquisition of cybers...",
+      "article_count": 40,
+      "source_count": 8
+    },
+    {
+      "date": "2026-03-12",
+      "title": "AI Pulse \u2014 March 12, 2026",
+      "excerpt": "Atlassian follows Block\u2019s footsteps and cuts staff in the name of AI. Atlassian&#x27;s layoff of 10% of its workforce (around 1,600 employees) to reallocate resou...",
+      "article_count": 40,
+      "source_count": 7
+    },
+    {
+      "date": "2026-03-11",
+      "title": "AI Pulse \u2014 March 11, 2026",
+      "excerpt": "Replit snags $9B valuation 6 months after hitting $3B. This valuation signals a strong belief in the future of browser-based development environments and the...",
+      "article_count": 40,
+      "source_count": 7
+    },
+    {
+      "date": "2026-03-10",
+      "title": "AI Pulse \u2014 March 10, 2026",
+      "excerpt": "Meta acquired Moltbook, the AI agent social network that went viral because of fake posts. Meta&#x27;s acquisition of **Moltbook**, a Reddit-like platform for AI ...",
+      "article_count": 40,
+      "source_count": 8
+    },
+    {
+      "date": "2026-03-09",
+      "title": "AI Pulse \u2014 March 9, 2026",
+      "excerpt": "Anthropic sues Defense Department over supply-chain risk designation. This lawsuit marks a significant escalation in the tension between AI developers and th...",
+      "article_count": 40,
+      "source_count": 9
+    },
+    {
+      "date": "2026-03-08",
+      "title": "AI Pulse \u2014 March 8, 2026",
+      "excerpt": "OpenAI robotics leader resigns over concerns about Pentagon AI deal. Caitlin Kalinowski, OpenAI&#x27;s head of robotics, resigned citing concerns about the compan...",
+      "article_count": 40,
+      "source_count": 10
+    },
+    {
+      "date": "2026-03-07",
+      "title": "AI Pulse \u2014 March 7, 2026",
+      "excerpt": "The OpenClaw superfan meetup serves optimism and lobster. The Verge reports on **ClawCon**, a meetup in New York City celebrating **OpenClaw**, an open-sourc...",
+      "article_count": 1,
+      "source_count": 1
+    },
+    {
+      "date": "2026-03-06",
+      "title": "AI Pulse \u2014 March 6, 2026",
+      "excerpt": "Anthropic\u2019s Pentagon deal is a cautionary tale for startups chasing federal contracts. The implosion of **Anthropic**&#x27;s $200 million contract with the Depart...",
+      "article_count": 15,
+      "source_count": 6
+    },
+    {
+      "date": "2026-03-05",
+      "title": "AI Pulse \u2014 March 5, 2026",
+      "excerpt": "OpenAI launches GPT-5.4 Thinking and Pro combining coding, reasoning, and computer use in one model. The release of **GPT-5.4** marks a significant step towa...",
+      "article_count": 31,
+      "source_count": 8
+    },
+    {
+      "date": "2026-03-04",
+      "title": "AI Pulse \u2014 March 4, 2026",
+      "excerpt": "Anthropic CEO Dario Amodei calls OpenAI\u2019s messaging around military deal \u2018straight up lies,\u2019 report says. This escalating feud between **Anthropic** and **Op...",
+      "article_count": 19,
+      "source_count": 6
+    },
+    {
+      "date": "2026-03-03",
+      "title": "AI Pulse \u2014 March 3, 2026",
+      "excerpt": "AI companies are spending millions to thwart this former tech exec\u2019s congressional bid. The escalating battle over AI regulation is moving from white papers ...",
+      "article_count": 21,
+      "source_count": 7
+    },
+    {
+      "date": "2026-03-02",
+      "title": "AI Pulse \u2014 March 2, 2026",
+      "excerpt": "How OpenAI caved to the Pentagon on AI surveillance. The revelation that **OpenAI** has reached a deal with the Pentagon allowing the US military to use its ...",
+      "article_count": 20,
+      "source_count": 5
+    },
+    {
+      "date": "2026-03-01",
+      "title": "AI Pulse \u2014 March 1, 2026",
+      "excerpt": "AI can link fake online names to real identities in minutes for just a few dollars. This research from ETH Zurich and **Anthropic** demonstrating the de-anon...",
+      "article_count": 10,
+      "source_count": 3
+    },
+    {
+      "date": "2026-02-28",
+      "title": "AI Pulse \u2014 February 28, 2026",
+      "excerpt": "Defense secretary Pete Hegseth designates Anthropic a supply chain risk. This is a dramatic escalation in the ongoing tension between **Anthropic** and eleme...",
+      "article_count": 10,
+      "source_count": 4
+    },
+    {
+      "date": "2026-02-27",
+      "title": "AI Pulse \u2014 February 27, 2026",
+      "excerpt": "Anthropic vs. the Pentagon: killer robots, mass surveillance, and red lines. The standoff between **Anthropic** and the Pentagon over AI use is reaching a fe...",
+      "article_count": 27,
+      "source_count": 6
+    },
+    {
+      "date": "2026-02-26",
+      "title": "AI Pulse \u2014 February 26, 2026",
+      "excerpt": "Anthropic refuses Pentagon\u2019s new terms, standing firm on lethal autonomous weapons and mass surveillance. This is a watershed moment for the AI industry. **A...",
+      "article_count": 26,
+      "source_count": 7
+    },
+    {
+      "date": "2026-02-25",
+      "title": "AI Pulse \u2014 February 25, 2026",
+      "excerpt": "Anthropic acquires computer-use AI startup Vercept after Meta poached one of its founders. This acquisition signals **Anthropic&#x27;s** intensified focus on deve...",
+      "article_count": 26,
+      "source_count": 7
+    },
+    {
+      "date": "2026-02-24",
+      "title": "AI Pulse \u2014 February 24, 2026",
+      "excerpt": "Anthropic won\u2019t budge as Pentagon escalates AI dispute. The standoff between **Anthropic** and the Pentagon highlights a critical tension in the burgeoning A...",
+      "article_count": 13,
+      "source_count": 6
+    }
+  ],
+  "updated": "2026-04-29T10:03:11.236525+00:00"
+}

@@ -1,0 +1,269 @@
+/* AI Pulse — article extras (prev/next nav, TOC, share, search button) */
+
+/* ──────────────────────────────────────────────────────────────────────
+   Nav actions in topbar
+   ────────────────────────────────────────────────────────────────────── */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.nav-btn:hover {
+  background: var(--accent-ghost);
+  color: var(--accent);
+  border-color: var(--accent-light);
+}
+
+/* ──────────────────────────────────────────────────────────────────────
+   Article prev/next navigation (top + bottom)
+   ────────────────────────────────────────────────────────────────────── */
+.article-nav {
+  padding: 1.25rem 0;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-primary);
+  border-bottom: 1px solid var(--border-primary);
+}
+.article-nav-top {
+  border-top: none;
+}
+.article-nav-bottom {
+  border-bottom: none;
+  margin-top: 2rem;
+}
+
+.article-nav-inner {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 0.75rem;
+  align-items: stretch;
+}
+
+.article-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  text-decoration: none;
+  border: 1px solid var(--border-primary);
+  border-radius: 10px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background 0.15s, border-color 0.15s, transform 0.08s;
+  min-height: 56px;
+}
+.article-nav-btn:hover {
+  background: var(--accent-ghost);
+  border-color: var(--accent-light);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+.article-nav-btn svg {
+  flex-shrink: 0;
+}
+.article-nav-prev {
+  justify-content: flex-start;
+  text-align: left;
+}
+.article-nav-next {
+  justify-content: flex-end;
+  text-align: right;
+}
+.article-nav-index {
+  justify-content: center;
+}
+
+.article-nav-label {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  min-width: 0;
+}
+.article-nav-direction {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+.article-nav-date {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.article-nav-btn:hover .article-nav-date {
+  color: var(--accent);
+}
+
+.article-nav-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+/* ──────────────────────────────────────────────────────────────────────
+   Share bar
+   ────────────────────────────────────────────────────────────────────── */
+.share-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.85rem;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  text-decoration: none;
+  border: 1px solid var(--border-primary);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+.share-btn:hover {
+  background: var(--accent-ghost);
+  color: var(--accent);
+  border-color: var(--accent-light);
+}
+.share-btn.share-copied {
+  background: #10b981;
+  color: white;
+  border-color: #059669;
+}
+
+/* ──────────────────────────────────────────────────────────────────────
+   Table of Contents
+   ────────────────────────────────────────────────────────────────────── */
+.article-toc {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-primary);
+  border-bottom: 1px solid var(--border-primary);
+  padding: 1rem 0;
+}
+
+.toc-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-family: inherit;
+}
+.toc-toggle:hover {
+  color: var(--accent);
+}
+.toc-toggle .toc-chevron {
+  margin-left: auto;
+  transition: transform 0.2s;
+}
+.toc-toggle[aria-expanded="false"] .toc-chevron {
+  transform: rotate(-90deg);
+}
+
+.toc-list {
+  list-style: none;
+  padding: 0.75rem 0 0 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.4rem 1rem;
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.3s, padding 0.3s, opacity 0.3s;
+  opacity: 1;
+}
+.toc-list.toc-collapsed {
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+}
+
+.toc-link {
+  display: block;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  transition: all 0.15s;
+}
+.toc-link:hover {
+  background: var(--accent-ghost);
+  color: var(--accent);
+  border-left-color: var(--accent-light);
+}
+.toc-link.active {
+  background: var(--accent-ghost);
+  color: var(--accent);
+  border-left-color: var(--accent);
+  font-weight: 600;
+}
+
+/* ──────────────────────────────────────────────────────────────────────
+   Responsive
+   ────────────────────────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .article-nav-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+  .article-nav-index {
+    grid-column: 1 / -1;
+    order: -1;
+  }
+  .share-label {
+    display: none; /* show only icons on small screens */
+  }
+  .toc-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-nav-direction {
+    font-size: 0.7rem;
+  }
+  .article-nav-date {
+    font-size: 0.85rem;
+  }
+  .article-nav-btn {
+    padding: 0.6rem 0.75rem;
+    min-height: 48px;
+  }
+}
+
+/* Dark mode support (uses existing CSS variables) */
+[data-theme="dark"] .article-nav,
+[data-theme="dark"] .article-toc {
+  background: var(--bg-tertiary, #1e293b);
+}
