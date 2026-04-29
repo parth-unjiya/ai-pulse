@@ -337,6 +337,8 @@ def main():
 
     # Read all article data files
     articles = []
+    known_dates = set()
+    skipped = 0
     for fn in sorted(os.listdir(DATA_DIR), reverse=True):
         if not fn.endswith(".md"):
             continue
@@ -344,6 +346,13 @@ def main():
         if not re.match(r"^\d{4}-\d{2}-\d{2}$", date):
             continue
         meta, body = parse_md(f"{DATA_DIR}/{fn}")
+
+        # Validation: require non-empty body with at least one ## section
+        if not body.strip() or "##" not in body:
+            print(f"  ⚠️ skipping {fn} (empty body or no ## sections)", file=sys.stderr)
+            skipped += 1
+            continue
+
         meta["date"] = date  # canonical
         if "title" not in meta:
             try:
@@ -358,6 +367,7 @@ def main():
         out_path = f"{ARTICLES_DIR}/{date}.html"
         with open(out_path, "w") as f:
             f.write(rendered)
+        known_dates.add(date)
 
         articles.append({
             "date": date,
@@ -369,7 +379,25 @@ def main():
         })
 
     # Articles already sorted descending (filenames sort that way after reverse=True)
-    print(f"BUILT {len(articles)} articles")
+    print(f"BUILT {len(articles)} articles" + (f" ({skipped} skipped)" if skipped else ""))
+
+    # Orphan cleanup: delete any articles/YYYY-MM-DD.html with no matching .md source
+    removed = 0
+    for fn in os.listdir(ARTICLES_DIR):
+        if not fn.endswith(".html"):
+            continue
+        date = fn[:-5]
+        if not re.match(r"^\d{4}-\d{2}-\d{2}$", date):
+            continue
+        if date not in known_dates:
+            try:
+                os.remove(f"{ARTICLES_DIR}/{fn}")
+                removed += 1
+                print(f"  🗑️  removed orphan {fn}", file=sys.stderr)
+            except OSError:
+                pass
+    if removed:
+        print(f"ORPHANS_REMOVED ({removed})")
 
     update_index(articles)
     print("INDEX_UPDATED")
