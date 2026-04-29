@@ -66,8 +66,10 @@
   border-top: 1px solid var(--border-primary);
   border-bottom: 1px solid var(--border-primary);
 }
+/* TOP nav must clear the fixed navbar */
 .article-nav-top {
   border-top: none;
+  margin-top: var(--nav-height, 72px);
   margin-bottom: 0;
 }
 .article-nav-bottom {
@@ -191,24 +193,39 @@
 
 .article-page {
   min-width: 0; /* prevents grid blowout */
+  padding-top: 0; /* override style.css — article-nav-top already cleared the navbar */
 }
 
 .article-header,
 .article-content {
   background: transparent;
+  border-bottom: none;  /* override style.css */
 }
 
-.article-header-inner,
+.article-header-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 1.5rem;
+  text-align: center;
+}
 .article-content-inner {
   max-width: 760px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 1.5rem 1rem 3rem;
+  text-align: left;
 }
 @media (max-width: 1023px) {
-  .article-header-inner,
-  .article-content-inner {
-    padding: 2rem 1.5rem;
+  .article-header-inner {
+    padding: 2rem 1.5rem 1.25rem;
   }
+  .article-content-inner {
+    padding: 1.25rem 1.5rem 2.5rem;
+  }
+}
+
+/* Center the share bar on desktop */
+.article-header .share-bar {
+  justify-content: center;
 }
 
 /* ──────────────────────────────────────────────────────────────────────
