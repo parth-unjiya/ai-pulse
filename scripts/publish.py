@@ -45,8 +45,18 @@ articles = json.load(open("/tmp/articles.json"))
 article_count = len(articles)
 source_count = len(set(a["source"] for a in articles))
 
-if article_count == 0:
-    print("ERROR: articles.json is empty — fetch must have failed. Aborting publish.", file=sys.stderr)
+# Quality gate — refuse to publish if fetch was clearly broken.
+# Below these thresholds the digest would be hallucinated or thin.
+MIN_ARTICLES = int(os.environ.get("MIN_ARTICLES", "30"))
+MIN_SOURCES = int(os.environ.get("MIN_SOURCES", "10"))
+
+if article_count < MIN_ARTICLES or source_count < MIN_SOURCES:
+    print(
+        f"ERROR: insufficient data — got {article_count} articles from {source_count} sources, "
+        f"need >= {MIN_ARTICLES} articles and >= {MIN_SOURCES} sources. "
+        f"Aborting publish so fallback can take over.",
+        file=sys.stderr,
+    )
     sys.exit(2)
 
 
